@@ -1,0 +1,29 @@
+[0.534s] Invoking command in '/home/pengxuan/hornet9/src/test141123': PYTHONPATH=/home/pengxuan/hornet9/build/test141123/prefix_override:/home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/pengxuan/hornet9/build/test141123/build install --record /home/pengxuan/hornet9/build/test141123/install.log --single-version-externally-managed
+[0.683s] running egg_info
+[0.684s] writing ../../build/test141123/test141123.egg-info/PKG-INFO
+[0.684s] writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt
+[0.685s] writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt
+[0.685s] writing requirements to ../../build/test141123/test141123.egg-info/requires.txt
+[0.685s] writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt
+[0.687s] reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[0.688s] writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[0.688s] running build
+[0.688s] running build_py
+[0.688s] running install
+[0.689s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.689s]   warnings.warn(
+[0.689s] running install_lib
+[0.690s] creating /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+[0.690s] copying /home/pengxuan/hornet9/build/test141123/build/lib/test141123/chat.py -> /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+[0.690s] copying /home/pengxuan/hornet9/build/test141123/build/lib/test141123/__init__.py -> /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+[0.690s] copying /home/pengxuan/hornet9/build/test141123/build/lib/test141123/publisher.py -> /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+[0.691s] byte-compiling /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123/chat.py to chat.cpython-310.pyc
+[0.693s] byte-compiling /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123/__init__.py to __init__.cpython-310.pyc
+[0.693s] byte-compiling /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123/publisher.py to publisher.cpython-310.pyc
+[0.695s] running install_data
+[0.695s] running install_egg_info
+[0.696s] Copying ../../build/test141123/test141123.egg-info to /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123-0.0.0-py3.10.egg-info
+[0.697s] running install_scripts
+[0.721s] Installing publisher script to /home/pengxuan/hornet9/install/test141123/lib/test141123
+[0.721s] writing list of installed files to '/home/pengxuan/hornet9/build/test141123/install.log'
+[0.758s] Invoked command in '/home/pengxuan/hornet9/src/test141123' returned '0': PYTHONPATH=/home/pengxuan/hornet9/build/test141123/prefix_override:/home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/pengxuan/hornet9/build/test141123/build install --record /home/pengxuan/hornet9/build/test141123/install.log --single-version-externally-managed

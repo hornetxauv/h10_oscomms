@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/test141123/test141123.egg-info/PKG-INFO
+writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt
+writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt
+writing requirements to ../../build/test141123/test141123.egg-info/requires.txt
+writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt
+reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+copying /home/pengxuan/hornet9/build/test141123/build/lib/test141123/chat.py -> /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+copying /home/pengxuan/hornet9/build/test141123/build/lib/test141123/__init__.py -> /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+copying /home/pengxuan/hornet9/build/test141123/build/lib/test141123/publisher.py -> /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123
+byte-compiling /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123/chat.py to chat.cpython-310.pyc
+byte-compiling /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123/publisher.py to publisher.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/test141123/test141123.egg-info to /home/pengxuan/hornet9/install/test141123/lib/python3.10/site-packages/test141123-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publisher script to /home/pengxuan/hornet9/install/test141123/lib/test141123
+writing list of installed files to '/home/pengxuan/hornet9/build/test141123/install.log'

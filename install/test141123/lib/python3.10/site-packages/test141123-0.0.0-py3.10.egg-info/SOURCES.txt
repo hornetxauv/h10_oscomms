@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/test141123/test141123.egg-info/PKG-INFO
+../../build/test141123/test141123.egg-info/SOURCES.txt
+../../build/test141123/test141123.egg-info/dependency_links.txt
+../../build/test141123/test141123.egg-info/entry_points.txt
+../../build/test141123/test141123.egg-info/requires.txt
+../../build/test141123/test141123.egg-info/top_level.txt
+../../build/test141123/test141123.egg-info/zip-safe
+resource/test141123
+test141123/__init__.py
+test141123/chat.py
+test141123/publisher.py
