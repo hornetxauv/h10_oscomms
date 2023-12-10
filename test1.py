@@ -7,6 +7,7 @@ bus = can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000)
 #  is_extended_id=False
 #)
 
+#added random comment
 
 with bus as buss:
     for msg in buss:
