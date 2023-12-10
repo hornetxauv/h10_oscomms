@@ -1,0 +1,116 @@
+[0.000000] (-) TimerEvent: {}
+[0.000683] (-) JobUnselected: {'identifier': 'test141123'}
+[0.001512] (-) JobUnselected: {'identifier': 'test141123'}
+[0.002773] (IMU_sensor) JobQueued: {'identifier': 'IMU_sensor', 'dependencies': OrderedDict()}
+[0.003507] (IMU_sensor) JobStarted: {'identifier': 'IMU_sensor'}
+[0.098813] (-) TimerEvent: {}
+[0.201243] (-) TimerEvent: {}
+[0.302960] (-) TimerEvent: {}
+[0.404386] (-) TimerEvent: {}
+[0.505591] (-) TimerEvent: {}
+[0.607687] (-) TimerEvent: {}
+[0.713529] (-) TimerEvent: {}
+[0.815736] (-) TimerEvent: {}
+[0.920640] (-) TimerEvent: {}
+[1.024215] (-) TimerEvent: {}
+[1.125137] (-) TimerEvent: {}
+[1.226074] (-) TimerEvent: {}
+[1.327172] (-) TimerEvent: {}
+[1.428128] (-) TimerEvent: {}
+[1.529113] (-) TimerEvent: {}
+[1.630105] (-) TimerEvent: {}
+[1.731130] (-) TimerEvent: {}
+[1.832133] (-) TimerEvent: {}
+[1.933131] (-) TimerEvent: {}
+[2.034169] (-) TimerEvent: {}
+[2.135376] (-) TimerEvent: {}
+[2.236696] (-) TimerEvent: {}
+[2.340068] (-) TimerEvent: {}
+[2.443581] (-) TimerEvent: {}
+[2.545206] (-) TimerEvent: {}
+[2.647055] (-) TimerEvent: {}
+[2.752097] (-) TimerEvent: {}
+[2.855224] (-) TimerEvent: {}
+[2.958706] (-) TimerEvent: {}
+[3.060858] (-) TimerEvent: {}
+[3.161873] (-) TimerEvent: {}
+[3.262949] (-) TimerEvent: {}
+[3.363968] (-) TimerEvent: {}
+[3.465035] (-) TimerEvent: {}
+[3.565971] (-) TimerEvent: {}
+[3.667012] (-) TimerEvent: {}
+[3.768013] (-) TimerEvent: {}
+[3.869118] (-) TimerEvent: {}
+[3.970165] (-) TimerEvent: {}
+[4.071228] (-) TimerEvent: {}
+[4.172239] (-) TimerEvent: {}
+[4.273226] (-) TimerEvent: {}
+[4.374268] (-) TimerEvent: {}
+[4.475312] (-) TimerEvent: {}
+[4.576294] (-) TimerEvent: {}
+[4.677336] (-) TimerEvent: {}
+[4.778272] (-) TimerEvent: {}
+[4.879188] (-) TimerEvent: {}
+[4.980246] (-) TimerEvent: {}
+[5.029698] (IMU_sensor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/IMU_sensor', 'build', '--build-base', '/home/bb/ros2_ws/build/IMU_sensor/build', 'install', '--record', '/home/bb/ros2_ws/build/IMU_sensor/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/IMU_sensor', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2163', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1608', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:51303', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2577,unix/bb-desktop:/tmp/.ICE-unix/2577', 'INVOCATION_ID': '77bc253c63554b7b82f232bcaf401c32', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dc497bf2_60f1_48ff_981a_31f7b1359552', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/IMU_sensor', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/IMU_sensor/prefix_override:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[5.080951] (-) TimerEvent: {}
+[5.182935] (-) TimerEvent: {}
+[5.283847] (-) TimerEvent: {}
+[5.384781] (-) TimerEvent: {}
+[5.485717] (-) TimerEvent: {}
+[5.586664] (-) TimerEvent: {}
+[5.687634] (-) TimerEvent: {}
+[5.788569] (-) TimerEvent: {}
+[5.889534] (-) TimerEvent: {}
+[5.990571] (-) TimerEvent: {}
+[6.091580] (-) TimerEvent: {}
+[6.192605] (-) TimerEvent: {}
+[6.243474] (IMU_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[6.245922] (IMU_sensor) StdoutLine: {'line': b'creating ../../build/IMU_sensor/IMU_sensor.egg-info\n'}
+[6.246795] (IMU_sensor) StdoutLine: {'line': b'writing ../../build/IMU_sensor/IMU_sensor.egg-info/PKG-INFO\n'}
+[6.248271] (IMU_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/IMU_sensor/IMU_sensor.egg-info/dependency_links.txt\n'}
+[6.248929] (IMU_sensor) StdoutLine: {'line': b'writing entry points to ../../build/IMU_sensor/IMU_sensor.egg-info/entry_points.txt\n'}
+[6.249777] (IMU_sensor) StdoutLine: {'line': b'writing requirements to ../../build/IMU_sensor/IMU_sensor.egg-info/requires.txt\n'}
+[6.250535] (IMU_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/IMU_sensor/IMU_sensor.egg-info/top_level.txt\n'}
+[6.251268] (IMU_sensor) StdoutLine: {'line': b"writing manifest file '../../build/IMU_sensor/IMU_sensor.egg-info/SOURCES.txt'\n"}
+[6.292800] (-) TimerEvent: {}
+[6.393783] (-) TimerEvent: {}
+[6.417617] (IMU_sensor) StdoutLine: {'line': b"reading manifest file '../../build/IMU_sensor/IMU_sensor.egg-info/SOURCES.txt'\n"}
+[6.421083] (IMU_sensor) StdoutLine: {'line': b"writing manifest file '../../build/IMU_sensor/IMU_sensor.egg-info/SOURCES.txt'\n"}
+[6.421919] (IMU_sensor) StdoutLine: {'line': b'running build\n'}
+[6.422692] (IMU_sensor) StdoutLine: {'line': b'running build_py\n'}
+[6.424801] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/build/IMU_sensor/build\n'}
+[6.425602] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/build/IMU_sensor/build/lib\n'}
+[6.426182] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor\n'}
+[6.426742] (IMU_sensor) StdoutLine: {'line': b'copying IMU_sensor/publisher.py -> /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor\n'}
+[6.427233] (IMU_sensor) StdoutLine: {'line': b'copying IMU_sensor/__init__.py -> /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor\n'}
+[6.427692] (IMU_sensor) StdoutLine: {'line': b'running install\n'}
+[6.430371] (IMU_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[6.435087] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor\n'}
+[6.435816] (IMU_sensor) StdoutLine: {'line': b'copying /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor/publisher.py -> /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor\n'}
+[6.436422] (IMU_sensor) StdoutLine: {'line': b'copying /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor/__init__.py -> /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor\n'}
+[6.439121] (IMU_sensor) StdoutLine: {'line': b'byte-compiling /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor/publisher.py to publisher.cpython-38.pyc\n'}
+[6.444235] (IMU_sensor) StderrLine: {'line': b'Sorry: TabError: inconsistent use of tabs and spaces in indentation (publisher.py, line 39)\n'}
+[6.450898] (IMU_sensor) StdoutLine: {'line': b'byte-compiling /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor/__init__.py to __init__.cpython-38.pyc\n'}
+[6.451358] (IMU_sensor) StdoutLine: {'line': b'running install_data\n'}
+[6.451746] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/install/IMU_sensor/share/ament_index\n'}
+[6.452132] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/install/IMU_sensor/share/ament_index/resource_index\n'}
+[6.452578] (IMU_sensor) StdoutLine: {'line': b'creating /home/bb/ros2_ws/install/IMU_sensor/share/ament_index/resource_index/packages\n'}
+[6.453011] (IMU_sensor) StdoutLine: {'line': b'copying resource/IMU_sensor -> /home/bb/ros2_ws/install/IMU_sensor/share/ament_index/resource_index/packages\n'}
+[6.453397] (IMU_sensor) StdoutLine: {'line': b'copying package.xml -> /home/bb/ros2_ws/install/IMU_sensor/share/IMU_sensor\n'}
+[6.453768] (IMU_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.458007] (IMU_sensor) StdoutLine: {'line': b'Copying ../../build/IMU_sensor/IMU_sensor.egg-info to /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor-0.0.0-py3.8.egg-info\n'}
+[6.468374] (IMU_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[6.494028] (-) TimerEvent: {}
+[6.548322] (IMU_sensor) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/IMU_sensor/lib/IMU_sensor\n'}
+[6.549222] (IMU_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/IMU_sensor/install.log'\n"}
+[6.594488] (-) TimerEvent: {}
+[6.641041] (IMU_sensor) CommandEnded: {'returncode': 0}
+[6.695050] (-) TimerEvent: {}
+[6.797825] (-) TimerEvent: {}
+[6.900100] (-) TimerEvent: {}
+[7.002801] (-) TimerEvent: {}
+[7.105565] (-) TimerEvent: {}
+[7.211286] (-) TimerEvent: {}
+[7.231872] (IMU_sensor) JobEnded: {'identifier': 'IMU_sensor', 'rc': 0}
+[7.236560] (-) EventReactorShutdown: {}

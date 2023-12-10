@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/test141123/test141123.egg-info
+writing ../../build/test141123/test141123.egg-info/PKG-INFO
+writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt
+writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt
+writing requirements to ../../build/test141123/test141123.egg-info/requires.txt
+writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt
+writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/bb/ros2_ws/build/test141123/build
+creating /home/bb/ros2_ws/build/test141123/build/lib
+creating /home/bb/ros2_ws/build/test141123/build/lib/test141123
+copying test141123/chat.py -> /home/bb/ros2_ws/build/test141123/build/lib/test141123
+copying test141123/__init__.py -> /home/bb/ros2_ws/build/test141123/build/lib/test141123
+running install
+running install_lib
+creating /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123
+copying /home/bb/ros2_ws/build/test141123/build/lib/test141123/chat.py -> /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123
+copying /home/bb/ros2_ws/build/test141123/build/lib/test141123/__init__.py -> /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123
+byte-compiling /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123/chat.py to chat.cpython-38.pyc
+byte-compiling /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/bb/ros2_ws/install/test141123/share/ament_index
+creating /home/bb/ros2_ws/install/test141123/share/ament_index/resource_index
+creating /home/bb/ros2_ws/install/test141123/share/ament_index/resource_index/packages
+copying resource/test141123 -> /home/bb/ros2_ws/install/test141123/share/ament_index/resource_index/packages
+copying package.xml -> /home/bb/ros2_ws/install/test141123/share/test141123
+running install_egg_info
+Copying ../../build/test141123/test141123.egg-info to /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info
+running install_scripts
+Installing talker script to /home/bb/ros2_ws/install/test141123/lib/test141123
+writing list of installed files to '/home/bb/ros2_ws/build/test141123/install.log'

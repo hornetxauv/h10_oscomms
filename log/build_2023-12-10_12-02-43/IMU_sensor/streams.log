@@ -1,0 +1,25 @@
+[4.903s] Invoking command in '/home/bb/ros2_ws/src/IMU_sensor': PYTHONPATH=/home/bb/ros2_ws/build/IMU_sensor/prefix_override:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/IMU_sensor build --build-base /home/bb/ros2_ws/build/IMU_sensor/build install --record /home/bb/ros2_ws/build/IMU_sensor/install.log --single-version-externally-managed
+[6.067s] running egg_info
+[6.069s] writing ../../build/IMU_sensor/IMU_sensor.egg-info/PKG-INFO
+[6.070s] writing dependency_links to ../../build/IMU_sensor/IMU_sensor.egg-info/dependency_links.txt
+[6.071s] writing entry points to ../../build/IMU_sensor/IMU_sensor.egg-info/entry_points.txt
+[6.072s] writing requirements to ../../build/IMU_sensor/IMU_sensor.egg-info/requires.txt
+[6.073s] writing top-level names to ../../build/IMU_sensor/IMU_sensor.egg-info/top_level.txt
+[6.241s] reading manifest file '../../build/IMU_sensor/IMU_sensor.egg-info/SOURCES.txt'
+[6.246s] writing manifest file '../../build/IMU_sensor/IMU_sensor.egg-info/SOURCES.txt'
+[6.246s] running build
+[6.247s] running build_py
+[6.248s] copying IMU_sensor/publisher.py -> /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor
+[6.249s] running install
+[6.253s] running install_lib
+[6.258s] copying /home/bb/ros2_ws/build/IMU_sensor/build/lib/IMU_sensor/publisher.py -> /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor
+[6.260s] byte-compiling /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor/publisher.py to publisher.cpython-38.pyc
+[6.266s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (publisher.py, line 39)
+[6.266s] running install_data
+[6.268s] running install_egg_info
+[6.275s] removing '/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor-0.0.0-py3.8.egg-info' (and everything under it)
+[6.277s] Copying ../../build/IMU_sensor/IMU_sensor.egg-info to /home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages/IMU_sensor-0.0.0-py3.8.egg-info
+[6.283s] running install_scripts
+[6.363s] Installing publisher script to /home/bb/ros2_ws/install/IMU_sensor/lib/IMU_sensor
+[6.365s] writing list of installed files to '/home/bb/ros2_ws/build/IMU_sensor/install.log'
+[6.468s] Invoked command in '/home/bb/ros2_ws/src/IMU_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/IMU_sensor/prefix_override:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/IMU_sensor build --build-base /home/bb/ros2_ws/build/IMU_sensor/build install --record /home/bb/ros2_ws/build/IMU_sensor/install.log --single-version-externally-managed

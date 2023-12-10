@@ -1,0 +1,21 @@
+[5.359s] Invoking command in '/home/bb/ros2_ws/src/test141123': PYTHONPATH=/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/bb/ros2_ws/build/test141123/build install --record /home/bb/ros2_ws/build/test141123/install.log --single-version-externally-managed
+[6.614s] running egg_info
+[6.615s] writing ../../build/test141123/test141123.egg-info/PKG-INFO
+[6.621s] writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt
+[6.622s] writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt
+[6.627s] writing requirements to ../../build/test141123/test141123.egg-info/requires.txt
+[6.628s] writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt
+[6.793s] reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[6.797s] writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[6.798s] running build
+[6.799s] running build_py
+[6.801s] running install
+[6.805s] running install_lib
+[6.813s] running install_data
+[6.815s] running install_egg_info
+[6.824s] removing '/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info' (and everything under it)
+[6.826s] Copying ../../build/test141123/test141123.egg-info to /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info
+[6.832s] running install_scripts
+[6.911s] Installing publisher script to /home/bb/ros2_ws/install/test141123/lib/test141123
+[6.913s] writing list of installed files to '/home/bb/ros2_ws/build/test141123/install.log'
+[7.013s] Invoked command in '/home/bb/ros2_ws/src/test141123' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/bb/ros2_ws/build/test141123/build install --record /home/bb/ros2_ws/build/test141123/install.log --single-version-externally-managed

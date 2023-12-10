@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.002166] (test141123) JobQueued: {'identifier': 'test141123', 'dependencies': OrderedDict()}
+[0.002942] (test141123) JobStarted: {'identifier': 'test141123'}
+[0.099807] (-) TimerEvent: {}
+[0.202507] (-) TimerEvent: {}
+[0.305165] (-) TimerEvent: {}
+[0.408387] (-) TimerEvent: {}
+[0.510493] (-) TimerEvent: {}
+[0.612204] (-) TimerEvent: {}
+[0.717100] (-) TimerEvent: {}
+[0.819646] (-) TimerEvent: {}
+[0.921620] (-) TimerEvent: {}
+[1.022601] (-) TimerEvent: {}
+[1.124683] (-) TimerEvent: {}
+[1.227157] (-) TimerEvent: {}
+[1.328372] (-) TimerEvent: {}
+[1.429710] (-) TimerEvent: {}
+[1.531295] (-) TimerEvent: {}
+[1.632327] (-) TimerEvent: {}
+[1.734022] (-) TimerEvent: {}
+[1.835095] (-) TimerEvent: {}
+[1.936920] (-) TimerEvent: {}
+[2.038544] (-) TimerEvent: {}
+[2.139705] (-) TimerEvent: {}
+[2.240704] (-) TimerEvent: {}
+[2.341777] (-) TimerEvent: {}
+[2.443332] (-) TimerEvent: {}
+[2.546196] (-) TimerEvent: {}
+[2.654270] (-) TimerEvent: {}
+[2.757658] (-) TimerEvent: {}
+[2.860641] (-) TimerEvent: {}
+[2.963182] (-) TimerEvent: {}
+[3.065254] (-) TimerEvent: {}
+[3.170235] (-) TimerEvent: {}
+[3.272125] (-) TimerEvent: {}
+[3.373647] (-) TimerEvent: {}
+[3.475916] (-) TimerEvent: {}
+[3.576926] (-) TimerEvent: {}
+[3.677814] (-) TimerEvent: {}
+[3.778826] (-) TimerEvent: {}
+[3.879867] (-) TimerEvent: {}
+[3.980932] (-) TimerEvent: {}
+[4.082562] (-) TimerEvent: {}
+[4.183661] (-) TimerEvent: {}
+[4.284675] (-) TimerEvent: {}
+[4.385819] (-) TimerEvent: {}
+[4.486757] (-) TimerEvent: {}
+[4.587868] (-) TimerEvent: {}
+[4.688904] (-) TimerEvent: {}
+[4.789928] (-) TimerEvent: {}
+[4.890961] (-) TimerEvent: {}
+[4.992240] (-) TimerEvent: {}
+[5.093257] (-) TimerEvent: {}
+[5.194214] (-) TimerEvent: {}
+[5.295108] (-) TimerEvent: {}
+[5.396146] (-) TimerEvent: {}
+[5.461715] (test141123) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/test141123', 'build', '--build-base', '/home/bb/ros2_ws/build/test141123/build', 'install', '--record', '/home/bb/ros2_ws/build/test141123/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/test141123', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '1974', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1302', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:47683', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2009,unix/bb-desktop:/tmp/.ICE-unix/2009', 'INVOCATION_ID': 'cee2531275ac4afcb07f503ae8baeb49', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/baf9d0e4_7f0c_40fc_bc66_fab06ed2f711', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/test141123', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[5.496766] (-) TimerEvent: {}
+[5.601762] (-) TimerEvent: {}
+[5.702760] (-) TimerEvent: {}
+[5.803762] (-) TimerEvent: {}
+[5.904666] (-) TimerEvent: {}
+[6.005637] (-) TimerEvent: {}
+[6.106597] (-) TimerEvent: {}
+[6.207650] (-) TimerEvent: {}
+[6.308568] (-) TimerEvent: {}
+[6.409496] (-) TimerEvent: {}
+[6.510369] (-) TimerEvent: {}
+[6.611349] (-) TimerEvent: {}
+[6.712372] (-) TimerEvent: {}
+[6.813417] (-) TimerEvent: {}
+[6.834194] (test141123) StdoutLine: {'line': b'running egg_info\n'}
+[6.837302] (test141123) StdoutLine: {'line': b'writing ../../build/test141123/test141123.egg-info/PKG-INFO\n'}
+[6.839128] (test141123) StdoutLine: {'line': b'writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt\n'}
+[6.840423] (test141123) StdoutLine: {'line': b'writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt\n'}
+[6.841517] (test141123) StdoutLine: {'line': b'writing requirements to ../../build/test141123/test141123.egg-info/requires.txt\n'}
+[6.842497] (test141123) StdoutLine: {'line': b'writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt\n'}
+[6.913613] (-) TimerEvent: {}
+[7.014517] (-) TimerEvent: {}
+[7.019780] (test141123) StdoutLine: {'line': b"reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'\n"}
+[7.024069] (test141123) StdoutLine: {'line': b"writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'\n"}
+[7.024771] (test141123) StdoutLine: {'line': b'running build\n'}
+[7.025411] (test141123) StdoutLine: {'line': b'running build_py\n'}
+[7.025973] (test141123) StdoutLine: {'line': b'copying test141123/publisher.py -> /home/bb/ros2_ws/build/test141123/build/lib/test141123\n'}
+[7.027879] (test141123) StdoutLine: {'line': b'running install\n'}
+[7.031425] (test141123) StdoutLine: {'line': b'running install_lib\n'}
+[7.036689] (test141123) StdoutLine: {'line': b'copying /home/bb/ros2_ws/build/test141123/build/lib/test141123/publisher.py -> /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123\n'}
+[7.039959] (test141123) StdoutLine: {'line': b'byte-compiling /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123/publisher.py to publisher.cpython-38.pyc\n'}
+[7.047881] (test141123) StdoutLine: {'line': b'running install_data\n'}
+[7.050346] (test141123) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.057945] (test141123) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.060114] (test141123) StdoutLine: {'line': b'Copying ../../build/test141123/test141123.egg-info to /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info\n'}
+[7.066034] (test141123) StdoutLine: {'line': b'running install_scripts\n'}
+[7.115000] (-) TimerEvent: {}
+[7.148648] (test141123) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/test141123/lib/test141123\n'}
+[7.149571] (test141123) StdoutLine: {'line': b'Installing talker script to /home/bb/ros2_ws/install/test141123/lib/test141123\n'}
+[7.151209] (test141123) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/test141123/install.log'\n"}
+[7.215361] (-) TimerEvent: {}
+[7.254095] (test141123) CommandEnded: {'returncode': 0}
+[7.315839] (-) TimerEvent: {}
+[7.418684] (-) TimerEvent: {}
+[7.522191] (-) TimerEvent: {}
+[7.624215] (-) TimerEvent: {}
+[7.727297] (-) TimerEvent: {}
+[7.829771] (-) TimerEvent: {}
+[7.916275] (test141123) JobEnded: {'identifier': 'test141123', 'rc': 0}
+[7.920830] (-) EventReactorShutdown: {}

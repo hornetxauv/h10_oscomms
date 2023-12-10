@@ -1,0 +1,25 @@
+[5.509s] Invoking command in '/home/bb/ros2_ws/src/test141123': PYTHONPATH=/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/bb/ros2_ws/build/test141123/build install --record /home/bb/ros2_ws/build/test141123/install.log --single-version-externally-managed
+[6.778s] running egg_info
+[6.781s] writing ../../build/test141123/test141123.egg-info/PKG-INFO
+[6.782s] writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt
+[6.783s] writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt
+[6.783s] writing requirements to ../../build/test141123/test141123.egg-info/requires.txt
+[6.784s] writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt
+[6.957s] reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[6.962s] writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[6.962s] running build
+[6.963s] running build_py
+[6.964s] copying test141123/publisher.py -> /home/bb/ros2_ws/build/test141123/build/lib/test141123
+[6.966s] running install
+[6.970s] running install_lib
+[6.975s] copying /home/bb/ros2_ws/build/test141123/build/lib/test141123/publisher.py -> /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123
+[6.979s] byte-compiling /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123/publisher.py to publisher.cpython-38.pyc
+[6.987s] running install_data
+[6.990s] running install_egg_info
+[7.000s] removing '/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info' (and everything under it)
+[7.001s] Copying ../../build/test141123/test141123.egg-info to /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info
+[7.008s] running install_scripts
+[7.093s] Installing publisher script to /home/bb/ros2_ws/install/test141123/lib/test141123
+[7.093s] Installing talker script to /home/bb/ros2_ws/install/test141123/lib/test141123
+[7.095s] writing list of installed files to '/home/bb/ros2_ws/build/test141123/install.log'
+[7.195s] Invoked command in '/home/bb/ros2_ws/src/test141123' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/bb/ros2_ws/build/test141123/build install --record /home/bb/ros2_ws/build/test141123/install.log --single-version-externally-managed
