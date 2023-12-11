@@ -1,11 +1,6 @@
 import can
 
-# bus = can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000)
-# msg = can.Message(
-#   arbitration_id=123,
-#   data=[1, 2, 3, 4, 5, 6, 7, 8],
-#   is_extended_id=False
-# )
+bus = can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000)
 
 #use decimal values, last 2 are useless values
 thrusters = [127, 127, 127, 127, 127, 127, 0, 0]
@@ -22,6 +17,7 @@ t_msg = can.Message(
     is_extended_id = False
 )
 
+#test
 
 with bus as bus:
     try:
