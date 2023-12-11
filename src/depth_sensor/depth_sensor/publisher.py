@@ -22,25 +22,28 @@ class MinimalPublisher(Node):
         with self.bus as bus:
             for msg in bus:
                 #print(msg.data)
-                temp = list(msg.data)
-                depth = (hex((temp[0] << 8 | temp[1])))
-		
-                print(depth, type(depth))
-                
-                # Create an Depth message
-                depth_msg = FluidPressure()
+                msg_id = msg.arbitration_id
+                print("message id:", msg_id)
+                if (msg_id == 0):
+                    temp = list(msg.data)
+                    depth = (hex((temp[0] << 8 | temp[1])))
+            
+                    print(depth, type(depth))
+                    
+                    # Create an Depth message
+                    depth_msg = FluidPressure()
 
-                # Fill in the header
-                depth_msg.header = Header()
-                #depth_msg.header.stamp = 123.0 error, need type Time
-                depth_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
-                
-                #NEED TEST if this works
-                depth_msg.fluid_pressure = depth
+                    # Fill in the header
+                    depth_msg.header = Header()
+                    #depth_msg.header.stamp = 123.0 error, need type Time
+                    depth_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
+                    
+                    #NEED TEST if this works
+                    depth_msg.fluid_pressure = depth
 
-                self.publisher_.publish(depth_msg)
-                self.get_logger().info("Publishing: %s" % depth_msg)
-                #self.get_logger().info("Publishing: %s" % depth_msg.header.stamp)
+                    self.publisher_.publish(depth_msg)
+                    self.get_logger().info("Publishing: %s" % depth_msg)
+                    #self.get_logger().info("Publishing: %s" % depth_msg.header.stamp)
         """
         msg = String()
         msg.data = 'Hello World: %d' % self.i
