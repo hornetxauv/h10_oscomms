@@ -1,0 +1,26 @@
+running egg_info
+creating ../../build/acoustic_sensor/acoustic_sensor.egg-info
+writing ../../build/acoustic_sensor/acoustic_sensor.egg-info/PKG-INFO
+writing dependency_links to ../../build/acoustic_sensor/acoustic_sensor.egg-info/dependency_links.txt
+writing entry points to ../../build/acoustic_sensor/acoustic_sensor.egg-info/entry_points.txt
+writing requirements to ../../build/acoustic_sensor/acoustic_sensor.egg-info/requires.txt
+writing top-level names to ../../build/acoustic_sensor/acoustic_sensor.egg-info/top_level.txt
+writing manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'
+reading manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'
+writing manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/bb/ros2_ws/build/acoustic_sensor/build
+creating /home/bb/ros2_ws/build/acoustic_sensor/build/lib
+creating /home/bb/ros2_ws/build/acoustic_sensor/build/lib/acoustic_sensor
+copying acoustic_sensor/publisher.py -> /home/bb/ros2_ws/build/acoustic_sensor/build/lib/acoustic_sensor
+copying acoustic_sensor/__init__.py -> /home/bb/ros2_ws/build/acoustic_sensor/build/lib/acoustic_sensor
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages/acoustic_sensor-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/acoustic_sensor/acoustic_sensor.egg-info to /home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages/acoustic_sensor-0.0.0-py3.8.egg-info
+running install_scripts
+Installing publisher script to /home/bb/ros2_ws/install/acoustic_sensor/lib/acoustic_sensor
+writing list of installed files to '/home/bb/ros2_ws/build/acoustic_sensor/install.log'

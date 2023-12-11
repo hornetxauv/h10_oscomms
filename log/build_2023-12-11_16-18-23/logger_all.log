@@ -1,0 +1,178 @@
+[11.337s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'acoustic_msg']
+[11.337s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffae28f100>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['acoustic_msg'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffae28f100>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffade62dc0>)
+[11.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[11.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[11.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[11.824s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[11.824s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[11.824s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[11.824s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bb/ros2_ws'
+[11.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[11.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[11.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[11.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[11.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[11.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[11.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[11.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[11.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[11.917s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[11.918s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[11.918s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[11.918s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[11.918s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[11.919s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[11.920s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[11.920s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[11.921s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[11.921s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[11.921s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[11.922s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[11.923s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[11.923s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[11.923s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[11.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[11.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[11.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[11.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[11.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[11.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[11.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[11.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[11.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[11.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[11.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[11.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[11.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[11.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['ignore', 'ignore_ament_install']
+[11.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'ignore'
+[11.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'ignore_ament_install'
+[11.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['colcon_pkg']
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'colcon_pkg'
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['colcon_meta']
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'colcon_meta'
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['ros']
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'ros'
+[11.942s] DEBUG:colcon.colcon_core.package_identification:Package 'src/acoustic_msg' with type 'ros.ament_cmake' and name 'acoustic_msg'
+[11.943s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['ignore', 'ignore_ament_install']
+[11.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'ignore'
+[11.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'ignore_ament_install'
+[11.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['colcon_pkg']
+[11.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'colcon_pkg'
+[11.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['colcon_meta']
+[11.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'colcon_meta'
+[11.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['ros']
+[11.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'ros'
+[11.948s] DEBUG:colcon.colcon_core.package_identification:Package 'src/acoustic_sensor' with type 'ros.ament_python' and name 'acoustic_sensor'
+[11.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[11.949s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[11.949s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[11.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['ignore', 'ignore_ament_install']
+[11.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'ignore'
+[11.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'ignore_ament_install'
+[11.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['colcon_pkg']
+[11.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'colcon_pkg'
+[11.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['colcon_meta']
+[11.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'colcon_meta'
+[11.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['ros']
+[11.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'ros'
+[11.954s] DEBUG:colcon.colcon_core.package_identification:Package 'src/depth_sensor' with type 'ros.ament_python' and name 'depth_sensor'
+[11.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['ignore', 'ignore_ament_install']
+[11.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ignore'
+[11.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ignore_ament_install'
+[11.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['colcon_pkg']
+[11.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'colcon_pkg'
+[11.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['colcon_meta']
+[11.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'colcon_meta'
+[11.957s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['ros']
+[11.957s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ros'
+[11.959s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_sensor' with type 'ros.ament_python' and name 'imu_sensor'
+[11.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[11.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[11.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[11.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[11.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[11.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[11.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extensions ['ignore', 'ignore_ament_install']
+[11.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extension 'ignore'
+[11.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extension 'ignore_ament_install'
+[11.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extensions ['colcon_pkg']
+[11.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extension 'colcon_pkg'
+[11.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extensions ['colcon_meta']
+[11.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extension 'colcon_meta'
+[11.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extensions ['ros']
+[11.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/test141123) by extension 'ros'
+[11.968s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test141123' with type 'ros.ament_python' and name 'test141123'
+[11.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[11.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[11.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[11.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[11.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[12.596s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'acoustic_sensor' in 'src/acoustic_sensor'
+[12.596s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'depth_sensor' in 'src/depth_sensor'
+[12.596s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'imu_sensor' in 'src/imu_sensor'
+[12.597s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'test141123' in 'src/test141123'
+[12.949s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[12.949s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[13.314s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/bb/ros2_ws/install
+[13.497s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/humble
+[13.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[14.400s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_args' from command line to 'None'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_target' from command line to 'None'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_clean_first' from command line to 'False'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_force_configure' from command line to 'False'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'ament_cmake_args' from command line to 'None'
+[14.401s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[14.402s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[14.402s] DEBUG:colcon.colcon_core.verb:Building package 'acoustic_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/acoustic_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/acoustic_msg', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/acoustic_msg', 'symlink_install': False, 'test_result_base': None}
+[14.576s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[14.758s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[14.759s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bb/ros2_ws/src/acoustic_msg' with build type 'ament_cmake'
+[14.760s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bb/ros2_ws/src/acoustic_msg'
+[14.961s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[14.962s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.963s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/acoustic_msg': CMAKE_PREFIX_PATH=/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/acoustic_msg -- -j6 -l6
+[15.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/acoustic_msg' returned '1': CMAKE_PREFIX_PATH=/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/acoustic_msg -- -j6 -l6
+[15.798s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(acoustic_msg)
+[16.018s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg' for CMake module files
+[16.022s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg' for CMake config files
+[16.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_msg', 'cmake_prefix_path')
+[16.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.ps1'
+[16.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.dsv'
+[16.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.sh'
+[16.222s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib'
+[16.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_msg', 'ld_library_path_lib')
+[16.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.ps1'
+[16.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.dsv'
+[16.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.sh'
+[16.407s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/bin'
+[16.407s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib/pkgconfig/acoustic_msg.pc'
+[16.409s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.8/site-packages'
+[16.410s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/bin'
+[16.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.ps1'
+[16.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.dsv'
+[16.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.sh'
+[16.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.bash'
+[16.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.zsh'
+[16.609s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/acoustic_msg/share/colcon-core/packages/acoustic_msg)
+[16.623s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.624s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.624s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[16.624s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.836s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.837s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.837s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.938s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.123s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.ps1'
+[17.128s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bb/ros2_ws/install/_local_setup_util_ps1.py'
+[17.134s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.ps1'
+[17.317s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.sh'
+[17.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bb/ros2_ws/install/_local_setup_util_sh.py'
+[17.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.sh'
+[17.505s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.bash'
+[17.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.bash'
+[17.692s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.zsh'
+[17.694s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.zsh'

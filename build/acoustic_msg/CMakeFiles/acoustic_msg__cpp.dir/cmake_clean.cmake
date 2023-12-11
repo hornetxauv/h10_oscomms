@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/acoustic_msg__cpp"
-  "rosidl_generator_cpp/acoustic_msg/msg/acoustics.hpp"
-  "rosidl_generator_cpp/acoustic_msg/msg/detail/acoustics__builder.hpp"
-  "rosidl_generator_cpp/acoustic_msg/msg/detail/acoustics__struct.hpp"
-  "rosidl_generator_cpp/acoustic_msg/msg/detail/acoustics__traits.hpp"
+  "rosidl_generator_cpp/acoustic_msg/msg/acoustic.hpp"
+  "rosidl_generator_cpp/acoustic_msg/msg/detail/acoustic__builder.hpp"
+  "rosidl_generator_cpp/acoustic_msg/msg/detail/acoustic__struct.hpp"
+  "rosidl_generator_cpp/acoustic_msg/msg/detail/acoustic__traits.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

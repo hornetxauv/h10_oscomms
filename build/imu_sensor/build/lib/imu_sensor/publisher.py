@@ -1,4 +1,5 @@
 import can
+import time
 
 import rclpy
 from rclpy.node import Node
@@ -24,8 +25,10 @@ class MinimalPublisher(Node):
             for msg in bus:
                 #filter for canbus id
                 msg_id = msg.arbitration_id
-                print("message id: ", msg_id)
-                if (msg_id == 1):
+                
+                # change the condition when done testing
+                if (msg_id == 2):
+                    print("message id: ", msg_id)
                     #print(msg.data)
                     temp = list(msg.data) #msg.data is byte array, entries are in hex.
                     msg_data = []
@@ -45,21 +48,21 @@ class MinimalPublisher(Node):
 
                     # Fill in the orientation (quaternion)
                     #imu_msg.orientation = Quaternion(0.0, 0.0, 0.0, 1.0)  # Adjust the values accordingly
-                    imu_msg.orientation = Quaternion(
-                        msg_data[0], 
-                        msg_data[1], 
-                        msg_data[2], 
-                        msg_data[3])  # Adjust the values accordingly
+                    imu_msg.orientation = Quaternion()  # Adjust the values accordingly
+                    imu_msg.orientation.x = msg_data[0]
+                    imu_msg.orientation.y = msg_data[1]
+                    imu_msg.orientation.z = msg_data[2]
+                    imu_msg.orientation.w = msg_data[3]	
+                    # Fill in the angular velocity
+                    imu_msg.angular_velocity = Vector3()  # Adjust the values accordingly
 
-                # Fill in the angular velocity
-                imu_msg.angular_velocity = Vector3()  # Adjust the values accordingly
+                    # Fill in the linear acceleration
+                    imu_msg.linear_acceleration = Vector3()  # Adjust the values accordingly
 
-                 # Fill in the linear acceleration
-                imu_msg.linear_acceleration = Vector3()  # Adjust the values accordingly
-
-                self.publisher_.publish(imu_msg)
-                self.get_logger().info("Publishing: %s" % imu_msg)
-                #self.get_logger().info("Publishing: %s" % imu_msg.header.stamp)
+                    self.publisher_.publish(imu_msg)
+                    self.get_logger().info("Publishing: %s" % imu_msg)
+                    #self.get_logger().info("Publishing: %s" % imu_msg.header.stamp)
+                    #time.sleep(1)
         """
         msg = String()
         msg.data = 'Hello World: %d' % self.i

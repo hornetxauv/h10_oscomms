@@ -1,17 +1,17 @@
 {
   "package_name": "acoustic_msg",
-  "output_dir": "/home/pengxuan/hornet9/build/acoustic_msg/rosidl_typesupport_c/acoustic_msg",
+  "output_dir": "/home/bb/ros2_ws/build/acoustic_msg/rosidl_typesupport_c/acoustic_msg",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/home/pengxuan/hornet9/build/acoustic_msg/rosidl_adapter/acoustic_msg:msg/Acoustics.idl"
+    "/home/bb/ros2_ws/build/acoustic_msg/rosidl_adapter/acoustic_msg:msg/Acoustic.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c",
-    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py",
+    "/opt/ros/humble/lib/python3.8/site-packages/rosidl_typesupport_c/__init__.py",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/action__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/home/pengxuan/hornet9/build/acoustic_msg/rosidl_adapter/acoustic_msg/msg/Acoustics.idl"
+    "/home/bb/ros2_ws/build/acoustic_msg/rosidl_adapter/acoustic_msg/msg/Acoustic.idl"
   ]
 }

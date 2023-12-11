@@ -1,0 +1,27 @@
+[5.203s] Invoking command in '/home/bb/ros2_ws/src/imu_sensor': PYTHONPATH=/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_sensor build --build-base /home/bb/ros2_ws/build/imu_sensor/build install --record /home/bb/ros2_ws/build/imu_sensor/install.log --single-version-externally-managed
+[6.407s] running egg_info
+[6.410s] writing ../../build/imu_sensor/imu_sensor.egg-info/PKG-INFO
+[6.411s] writing dependency_links to ../../build/imu_sensor/imu_sensor.egg-info/dependency_links.txt
+[6.412s] writing entry points to ../../build/imu_sensor/imu_sensor.egg-info/entry_points.txt
+[6.413s] writing requirements to ../../build/imu_sensor/imu_sensor.egg-info/requires.txt
+[6.414s] writing top-level names to ../../build/imu_sensor/imu_sensor.egg-info/top_level.txt
+[6.582s] reading manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'
+[6.586s] writing manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'
+[6.587s] running build
+[6.588s] running build_py
+[6.588s] copying imu_sensor/publisher.py -> /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor
+[6.589s] copying imu_sensor/__init__.py -> /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor
+[6.590s] running install
+[6.594s] running install_lib
+[6.598s] creating /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor
+[6.599s] copying /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor/publisher.py -> /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor
+[6.600s] copying /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor/__init__.py -> /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor
+[6.602s] byte-compiling /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher.py to publisher.cpython-38.pyc
+[6.611s] byte-compiling /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/__init__.py to __init__.cpython-38.pyc
+[6.611s] running install_data
+[6.614s] running install_egg_info
+[6.622s] Copying ../../build/imu_sensor/imu_sensor.egg-info to /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info
+[6.628s] running install_scripts
+[6.705s] Installing publisher script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor
+[6.707s] writing list of installed files to '/home/bb/ros2_ws/build/imu_sensor/install.log'
+[6.803s] Invoked command in '/home/bb/ros2_ws/src/imu_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_sensor build --build-base /home/bb/ros2_ws/build/imu_sensor/build install --record /home/bb/ros2_ws/build/imu_sensor/install.log --single-version-externally-managed
