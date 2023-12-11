@@ -1,0 +1,6 @@
+{
+  "package_name": "acoustic_msg",
+  "non_idl_tuples": [
+    "/home/pengxuan/hornet9/src/acoustic_msg:msg/Acoustics.msg"
+  ]
+}

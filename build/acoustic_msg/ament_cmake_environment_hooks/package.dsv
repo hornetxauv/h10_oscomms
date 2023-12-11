@@ -1,0 +1,4 @@
+source;share/acoustic_msg/local_setup.bash
+source;share/acoustic_msg/local_setup.dsv
+source;share/acoustic_msg/local_setup.sh
+source;share/acoustic_msg/local_setup.zsh
