@@ -1,8 +1,8 @@
-# Install script for directory: /home/pengxuan/hornet9/build/acoustic_msg/acoustic_msg__py
+# Install script for directory: /home/bb/ros2_ws/build/acoustic_msg/acoustic_msg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pengxuan/hornet9/install/acoustic_msg")
+  set(CMAKE_INSTALL_PREFIX "/home/bb/ros2_ws/install/acoustic_msg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,10 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

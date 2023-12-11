@@ -1,20 +1,34 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/bb/ros2_ws/build/acoustic_msg/rosidl_generator_py/acoustic_msg/msg/_acoustic_s.c" "/home/bb/ros2_ws/build/acoustic_msg/CMakeFiles/acoustic_msg__rosidl_generator_py.dir/rosidl_generator_py/acoustic_msg/msg/_acoustic_s.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "RCUTILS_ENABLE_FAULT_INJECTION"
+  "ROS_PACKAGE_NAME=\"acoustic_msg\""
+  "acoustic_msg__rosidl_generator_py_EXPORTS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pengxuan/hornet9/build/acoustic_msg/rosidl_generator_py/acoustic_msg/msg/_acoustics_s.c" "CMakeFiles/acoustic_msg__rosidl_generator_py.dir/rosidl_generator_py/acoustic_msg/msg/_acoustics_s.c.o" "gcc" "CMakeFiles/acoustic_msg__rosidl_generator_py.dir/rosidl_generator_py/acoustic_msg/msg/_acoustics_s.c.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "rosidl_generator_c"
+  "rosidl_generator_py"
+  "/usr/include/python3.8"
+  "/opt/ros/humble/include/rosidl_runtime_c"
+  "/opt/ros/humble/include/rcutils"
+  "/opt/ros/humble/include/rosidl_typesupport_interface"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/pengxuan/hornet9/build/acoustic_msg/CMakeFiles/acoustic_msg__rosidl_typesupport_c.dir/DependInfo.cmake"
-  "/home/pengxuan/hornet9/build/acoustic_msg/CMakeFiles/acoustic_msg__rosidl_generator_c.dir/DependInfo.cmake"
+  "/home/bb/ros2_ws/build/acoustic_msg/CMakeFiles/acoustic_msg__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/bb/ros2_ws/build/acoustic_msg/CMakeFiles/acoustic_msg__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

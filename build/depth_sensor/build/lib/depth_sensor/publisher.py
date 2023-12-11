@@ -22,11 +22,13 @@ class MinimalPublisher(Node):
         with self.bus as bus:
             for msg in bus:
                 #print(msg.data)
+                
+                # chnage the condition after testing
                 msg_id = msg.arbitration_id
-                print("message id:", msg_id)
-                if (msg_id == 0):
+                if (msg_id == 4):
+                    print("message id:", msg_id)
                     temp = list(msg.data)
-                    depth = (hex((temp[0] << 8 | temp[1])))
+                    depth = (float((temp[0] << 8 | temp[1])))
             
                     print(depth, type(depth))
                     

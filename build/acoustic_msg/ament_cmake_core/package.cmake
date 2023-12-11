@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "acoustic_msg")
 set(acoustic_msg_VERSION "0.0.0")
-set(acoustic_msg_MAINTAINER "pengxuan <ang.peng.xuan@gmail.com>")
+set(acoustic_msg_MAINTAINER "bb <ang.peng.xuan@gmail.com>")
 set(acoustic_msg_BUILD_DEPENDS "rosidl_default_generators")
 set(acoustic_msg_BUILDTOOL_DEPENDS "ament_cmake")
 set(acoustic_msg_BUILD_EXPORT_DEPENDS )

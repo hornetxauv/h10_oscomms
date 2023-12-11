@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.001730] (-) JobUnselected: {'identifier': 'acoustic_msg'}
+[0.003050] (-) JobUnselected: {'identifier': 'acoustic_sensor'}
+[0.003891] (-) JobUnselected: {'identifier': 'depth_sensor'}
+[0.004050] (-) JobUnselected: {'identifier': 'test141123'}
+[0.004318] (imu_sensor) JobQueued: {'identifier': 'imu_sensor', 'dependencies': OrderedDict()}
+[0.004782] (imu_sensor) JobStarted: {'identifier': 'imu_sensor'}
+[0.099545] (-) TimerEvent: {}
+[0.200842] (-) TimerEvent: {}
+[0.302645] (-) TimerEvent: {}
+[0.404071] (-) TimerEvent: {}
+[0.505220] (-) TimerEvent: {}
+[0.606402] (-) TimerEvent: {}
+[0.707586] (-) TimerEvent: {}
+[0.810527] (-) TimerEvent: {}
+[0.912845] (-) TimerEvent: {}
+[1.013999] (-) TimerEvent: {}
+[1.116043] (-) TimerEvent: {}
+[1.219439] (-) TimerEvent: {}
+[1.320500] (-) TimerEvent: {}
+[1.421504] (-) TimerEvent: {}
+[1.522594] (-) TimerEvent: {}
+[1.623643] (-) TimerEvent: {}
+[1.724865] (-) TimerEvent: {}
+[1.825910] (-) TimerEvent: {}
+[1.926906] (-) TimerEvent: {}
+[2.028037] (-) TimerEvent: {}
+[2.129148] (-) TimerEvent: {}
+[2.230163] (-) TimerEvent: {}
+[2.331883] (-) TimerEvent: {}
+[2.436218] (-) TimerEvent: {}
+[2.538941] (-) TimerEvent: {}
+[2.640570] (-) TimerEvent: {}
+[2.742268] (-) TimerEvent: {}
+[2.843431] (-) TimerEvent: {}
+[2.945785] (-) TimerEvent: {}
+[3.046995] (-) TimerEvent: {}
+[3.149684] (-) TimerEvent: {}
+[3.254940] (-) TimerEvent: {}
+[3.360674] (-) TimerEvent: {}
+[3.463046] (-) TimerEvent: {}
+[3.564224] (-) TimerEvent: {}
+[3.665180] (-) TimerEvent: {}
+[3.766229] (-) TimerEvent: {}
+[3.867218] (-) TimerEvent: {}
+[3.968254] (-) TimerEvent: {}
+[4.069220] (-) TimerEvent: {}
+[4.170146] (-) TimerEvent: {}
+[4.271169] (-) TimerEvent: {}
+[4.372964] (-) TimerEvent: {}
+[4.473966] (-) TimerEvent: {}
+[4.575123] (-) TimerEvent: {}
+[4.676734] (-) TimerEvent: {}
+[4.777843] (-) TimerEvent: {}
+[4.878820] (-) TimerEvent: {}
+[4.979871] (-) TimerEvent: {}
+[5.081071] (-) TimerEvent: {}
+[5.182055] (-) TimerEvent: {}
+[5.283154] (-) TimerEvent: {}
+[5.384857] (-) TimerEvent: {}
+[5.477539] (imu_sensor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_sensor', 'build', '--build-base', '/home/bb/ros2_ws/build/imu_sensor/build', 'install', '--record', '/home/bb/ros2_ws/build/imu_sensor/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/imu_sensor', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2224', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1325', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:47766', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2637,unix/bb-desktop:/tmp/.ICE-unix/2637', 'INVOCATION_ID': '4d912d2e06c24afcb23c4ce40b21a0b1', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/560973bb_b2cf_4119_99e0_f19fb8e019fc', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/imu_sensor', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/bb/ros2_ws/install/acoustic_msg'}, 'shell': False}
+[5.489542] (-) TimerEvent: {}
+[5.591161] (-) TimerEvent: {}
+[5.693322] (-) TimerEvent: {}
+[5.799294] (-) TimerEvent: {}
+[5.900333] (-) TimerEvent: {}
+[6.001475] (-) TimerEvent: {}
+[6.102500] (-) TimerEvent: {}
+[6.203419] (-) TimerEvent: {}
+[6.304629] (-) TimerEvent: {}
+[6.405621] (-) TimerEvent: {}
+[6.506588] (-) TimerEvent: {}
+[6.607575] (-) TimerEvent: {}
+[6.708565] (-) TimerEvent: {}
+[6.802572] (imu_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[6.805608] (imu_sensor) StdoutLine: {'line': b'writing ../../build/imu_sensor/imu_sensor.egg-info/PKG-INFO\n'}
+[6.806993] (imu_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_sensor/imu_sensor.egg-info/dependency_links.txt\n'}
+[6.808222] (imu_sensor) StdoutLine: {'line': b'writing entry points to ../../build/imu_sensor/imu_sensor.egg-info/entry_points.txt\n'}
+[6.808982] (-) TimerEvent: {}
+[6.809511] (imu_sensor) StdoutLine: {'line': b'writing requirements to ../../build/imu_sensor/imu_sensor.egg-info/requires.txt\n'}
+[6.810224] (imu_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/imu_sensor/imu_sensor.egg-info/top_level.txt\n'}
+[6.909236] (-) TimerEvent: {}
+[6.990018] (imu_sensor) StdoutLine: {'line': b"reading manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'\n"}
+[6.994359] (imu_sensor) StdoutLine: {'line': b"writing manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'\n"}
+[6.995412] (imu_sensor) StdoutLine: {'line': b'running build\n'}
+[6.996252] (imu_sensor) StdoutLine: {'line': b'running build_py\n'}
+[6.996769] (imu_sensor) StdoutLine: {'line': b'copying imu_sensor/publisher.py -> /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor\n'}
+[6.997733] (imu_sensor) StdoutLine: {'line': b'running install\n'}
+[7.002031] (imu_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[7.007121] (imu_sensor) StdoutLine: {'line': b'copying /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor/publisher.py -> /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor\n'}
+[7.009410] (-) TimerEvent: {}
+[7.010601] (imu_sensor) StdoutLine: {'line': b'byte-compiling /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher.py to publisher.cpython-38.pyc\n'}
+[7.019095] (imu_sensor) StdoutLine: {'line': b'running install_data\n'}
+[7.021699] (imu_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.029351] (imu_sensor) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.031968] (imu_sensor) StdoutLine: {'line': b'Copying ../../build/imu_sensor/imu_sensor.egg-info to /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info\n'}
+[7.041251] (imu_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[7.110099] (-) TimerEvent: {}
+[7.134630] (imu_sensor) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor\n'}
+[7.136659] (imu_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/imu_sensor/install.log'\n"}
+[7.210477] (-) TimerEvent: {}
+[7.245943] (imu_sensor) CommandEnded: {'returncode': 0}
+[7.310727] (-) TimerEvent: {}
+[7.412619] (-) TimerEvent: {}
+[7.516421] (-) TimerEvent: {}
+[7.619039] (-) TimerEvent: {}
+[7.721232] (-) TimerEvent: {}
+[7.823260] (-) TimerEvent: {}
+[7.924368] (-) TimerEvent: {}
+[7.926906] (imu_sensor) JobEnded: {'identifier': 'imu_sensor', 'rc': 0}
+[7.931536] (-) EventReactorShutdown: {}
