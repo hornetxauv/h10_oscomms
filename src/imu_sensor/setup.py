@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'publisher = imu_sensor.publisher:main'
+            'publisher_quat = imu_sensor.publisher_quat:main',
+            'publisher_xyz = imu_sensor.publisher_xyz:main'
         ],
     },
 )

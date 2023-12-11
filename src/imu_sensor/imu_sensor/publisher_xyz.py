@@ -5,8 +5,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import Header
-from sensor_msgs.msg import Imu
-from geometry_msgs.msg import Quaternion, Vector3
+from linear_acceleration_msg.msg import Acceleration
 
 from std_msgs.msg import String
 
@@ -14,7 +13,7 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(Imu, 'topic', 10)
+        self.publisher_ = self.create_publisher(Acceleration, 'topic', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
@@ -32,35 +31,43 @@ class MinimalPublisher(Node):
                     #print(msg.data)
                     temp = list(msg.data) #msg.data is byte array, entries are in hex.
                     msg_data = []
-                    for i in range(0 ,len(temp), 2):
+                    for i in range(0 ,len(temp), 4):
                         #left shift, or operations
-                        msg_data.append(float((temp[i] << 8 | temp[i + 1])))
+                        # check the shift amount the excel say 4 used
+                        msg_data.append(float(temp[i] << 24 | temp[i+1] << 16 | temp[i+2] << 8 | temp[i+3]))
             
                     print(msg_data, type(msg_data))
                     
                     # Create an Imu message
-                    imu_msg = Imu()
+                    accel_msg = Acceleration()
 
                     # Fill in the header
-                    imu_msg.header = Header()
-                    #imu_msg.header.stamp = 123.0 error, need type Time
-                    imu_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
+                    accel_msg.header = Header()
+                    #accel_msg.header.stamp = 123.0 error, need type Time
+                    accel_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
 
-                    # Fill in the orientation (quaternion)
-                    #imu_msg.orientation = Quaternion(0.0, 0.0, 0.0, 1.0)  # Adjust the values accordingly
-                    imu_msg.orientation = Quaternion()  # Adjust the values accordingly
-                    imu_msg.orientation.x = msg_data[0]
-                    imu_msg.orientation.y = msg_data[1]
-                    imu_msg.orientation.z = msg_data[2]
-                    imu_msg.orientation.w = msg_data[3]	
-                    # Fill in the angular velocity
-                    imu_msg.angular_velocity = Vector3()  # Adjust the values accordingly
+                    accel_msg.x = msg_data[0]
+                    accel_msg.y = msg_data[1]
+                    
+                    self.publisher_.publish(accel_msg)
+                    self.get_logger().info("Publishing: %s" % accel_msg)
+                if (msg_id == 3):
+                    print("message id: ", msg_id)
+                    #print(msg.data)
+                    temp = list(msg.data) #msg.data is byte array, entries are in hex.
+                    
+                    # Create an Imu message
+                    accel_msg = Acceleration()
 
-                    # Fill in the linear acceleration
-                    imu_msg.linear_acceleration = Vector3()  # Adjust the values accordingly
+                    # Fill in the header
+                    accel_msg.header = Header()
+                    #accel_msg.header.stamp = 123.0 error, need type Time
+                    accel_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
 
-                    self.publisher_.publish(imu_msg)
-                    self.get_logger().info("Publishing: %s" % imu_msg)
+                    accel_msg = float(temp[0] << 24 | temp[1] << 16 | temp[2] << 8 | temp[3]))
+                    
+                    self.publisher_.publish(accel_msg)
+                    self.get_logger().info("Publishing: %s" % accel_msg)
                     #self.get_logger().info("Publishing: %s" % imu_msg.header.stamp)
                     #time.sleep(1)
         """
