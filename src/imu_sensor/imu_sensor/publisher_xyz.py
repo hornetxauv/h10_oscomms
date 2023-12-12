@@ -64,7 +64,7 @@ class MinimalPublisher(Node):
                     #accel_msg.header.stamp = 123.0 error, need type Time
                     accel_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
 
-                    accel_msg = float(temp[0] << 24 | temp[1] << 16 | temp[2] << 8 | temp[3]))
+                    accel_msg.z = float(temp[0] << 24 | temp[1] << 16 | temp[2] << 8 | temp[3]))
                     
                     self.publisher_.publish(accel_msg)
                     self.get_logger().info("Publishing: %s" % accel_msg)
