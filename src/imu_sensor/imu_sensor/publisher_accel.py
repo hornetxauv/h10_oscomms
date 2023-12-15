@@ -28,6 +28,7 @@ class MinimalSubscriber(Node):
 
     def timer_callback(self):
         if self.msgs != None:
+            # no header dk if will have issue
             imu_msg = Vector3()
             imu_msg.linear_acceleration.x = self.msgs[0]
             imu_msg.linear_acceleration.y = self.msgs[1]
