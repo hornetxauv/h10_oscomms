@@ -54,13 +54,13 @@ class MinimalPublisher(Node):
                     imu_msg.orientation.z = msg_data[2]
                     imu_msg.orientation.w = msg_data[3]	
                     # Fill in the angular velocity
-                    imu_msg.angular_velocity = Vector3()  # Adjust the values accordingly
+                    # imu_msg.angular_velocity = Vector3()  # Adjust the values accordingly
 
                     # Fill in the linear acceleration
-                    imu_msg.linear_acceleration = Vector3()  # Adjust the values accordingly
+                    # imu_msg.linear_acceleration = Vector3()  # Adjust the values accordingly
 
                     self.publisher_.publish(imu_msg)
-                    self.get_logger().info("Publishing: %s" % imu_msg)
+                    self.get_logger().info("Publishing: %s" % imu_msg.orientation)
                     #self.get_logger().info("Publishing: %s" % imu_msg.header.stamp)
                     #time.sleep(1)
         """
