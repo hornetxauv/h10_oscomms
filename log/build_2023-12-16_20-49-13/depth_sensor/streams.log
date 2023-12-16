@@ -1,0 +1,24 @@
+[13.428s] Invoking command in '/home/bb/ros2_ws/src/depth_sensor': PYTHONPATH=/home/bb/ros2_ws/build/depth_sensor/prefix_override:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/depth_sensor build --build-base /home/bb/ros2_ws/build/depth_sensor/build install --record /home/bb/ros2_ws/build/depth_sensor/install.log --single-version-externally-managed
+[15.026s] running egg_info
+[15.030s] writing ../../build/depth_sensor/depth_sensor.egg-info/PKG-INFO
+[15.031s] writing dependency_links to ../../build/depth_sensor/depth_sensor.egg-info/dependency_links.txt
+[15.032s] writing entry points to ../../build/depth_sensor/depth_sensor.egg-info/entry_points.txt
+[15.034s] writing requirements to ../../build/depth_sensor/depth_sensor.egg-info/requires.txt
+[15.035s] writing top-level names to ../../build/depth_sensor/depth_sensor.egg-info/top_level.txt
+[15.252s] reading manifest file '../../build/depth_sensor/depth_sensor.egg-info/SOURCES.txt'
+[15.278s] writing manifest file '../../build/depth_sensor/depth_sensor.egg-info/SOURCES.txt'
+[15.283s] running build
+[15.283s] running build_py
+[15.284s] copying depth_sensor/publisher.py -> /home/bb/ros2_ws/build/depth_sensor/build/lib/depth_sensor
+[15.301s] running install
+[15.306s] running install_lib
+[15.322s] copying /home/bb/ros2_ws/build/depth_sensor/build/lib/depth_sensor/publisher.py -> /home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages/depth_sensor
+[15.330s] byte-compiling /home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages/depth_sensor/publisher.py to publisher.cpython-38.pyc
+[15.340s] running install_data
+[15.343s] running install_egg_info
+[15.348s] removing '/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages/depth_sensor-0.0.0-py3.8.egg-info' (and everything under it)
+[15.350s] Copying ../../build/depth_sensor/depth_sensor.egg-info to /home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages/depth_sensor-0.0.0-py3.8.egg-info
+[15.351s] running install_scripts
+[15.389s] Installing publisher script to /home/bb/ros2_ws/install/depth_sensor/lib/depth_sensor
+[15.393s] writing list of installed files to '/home/bb/ros2_ws/build/depth_sensor/install.log'
+[18.127s] Invoked command in '/home/bb/ros2_ws/src/depth_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/depth_sensor/prefix_override:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/depth_sensor build --build-base /home/bb/ros2_ws/build/depth_sensor/build install --record /home/bb/ros2_ws/build/depth_sensor/install.log --single-version-externally-managed

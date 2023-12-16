@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from linear_acceleration_msg/msg/AccelerationZ.msg
+// generated code does not contain a copyright notice
+
+
+module linear_acceleration_msg {
+  module msg {
+    struct AccelerationZ {
+      double z;
+    };
+  };
+};

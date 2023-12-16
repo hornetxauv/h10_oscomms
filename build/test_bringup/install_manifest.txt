@@ -1,0 +1,16 @@
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/launch/test.launch.py
+/home/bb/ros2_ws/install/test_bringup/share/ament_index/resource_index/package_run_dependencies/test_bringup
+/home/bb/ros2_ws/install/test_bringup/share/ament_index/resource_index/parent_prefix_path/test_bringup
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/ament_prefix_path.sh
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/ament_prefix_path.dsv
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/path.sh
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/path.dsv
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.bash
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.sh
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.zsh
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.dsv
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/package.dsv
+/home/bb/ros2_ws/install/test_bringup/share/ament_index/resource_index/packages/test_bringup
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/cmake/test_bringupConfig.cmake
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/cmake/test_bringupConfig-version.cmake
+/home/bb/ros2_ws/install/test_bringup/share/test_bringup/package.xml

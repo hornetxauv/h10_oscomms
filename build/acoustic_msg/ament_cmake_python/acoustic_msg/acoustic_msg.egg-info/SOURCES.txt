@@ -4,3 +4,5 @@ acoustic_msg.egg-info/PKG-INFO
 acoustic_msg.egg-info/SOURCES.txt
 acoustic_msg.egg-info/dependency_links.txt
 acoustic_msg.egg-info/top_level.txt
+acoustic_msg/msg/__init__.py
+acoustic_msg/msg/_acoustic.py

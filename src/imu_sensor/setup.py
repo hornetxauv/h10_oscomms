@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'publisher_quat = imu_sensor.publisher_quat:main',
-            'publisher_xyz = imu_sensor.publisher_xyz:main',
+            'publisher_xy = imu_sensor.publisher_xy:main',
+            'publisher_z = imu_sensor.publisher_z:main',
             'publisher_accel = imu_sensor.publisher_accel:main'
         ],
     },

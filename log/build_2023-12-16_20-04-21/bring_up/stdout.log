@@ -1,0 +1,27 @@
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bb/ros2_ws/build/bring_up
+-- Install configuration: ""
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/launch
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/launch/comms_nodes.launch.py
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/ament_index/resource_index/package_run_dependencies/bring_up
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/ament_index/resource_index/parent_prefix_path/bring_up
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/ament_prefix_path.sh
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/path.sh
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/path.dsv
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.bash
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.sh
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.zsh
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.dsv
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/package.dsv
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/ament_index/resource_index/packages/bring_up
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/cmake/bring_upConfig.cmake
+-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/cmake/bring_upConfig-version.cmake
+-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/package.xml

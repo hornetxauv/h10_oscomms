@@ -1,0 +1,21 @@
+[11.174s] Invoking command in '/home/bb/ros2_ws/src/test141123': PYTHONPATH=/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/bb/ros2_ws/build/test141123/build install --record /home/bb/ros2_ws/build/test141123/install.log --single-version-externally-managed
+[14.609s] running egg_info
+[14.614s] writing ../../build/test141123/test141123.egg-info/PKG-INFO
+[14.619s] writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt
+[14.620s] writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt
+[14.623s] writing requirements to ../../build/test141123/test141123.egg-info/requires.txt
+[14.624s] writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt
+[14.830s] reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[14.845s] writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'
+[14.846s] running build
+[14.846s] running build_py
+[14.848s] running install
+[14.853s] running install_lib
+[14.864s] running install_data
+[14.867s] running install_egg_info
+[14.876s] removing '/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info' (and everything under it)
+[14.879s] Copying ../../build/test141123/test141123.egg-info to /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info
+[14.892s] running install_scripts
+[15.117s] Installing publisher script to /home/bb/ros2_ws/install/test141123/lib/test141123
+[15.119s] writing list of installed files to '/home/bb/ros2_ws/build/test141123/install.log'
+[15.431s] Invoked command in '/home/bb/ros2_ws/src/test141123' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test141123 build --build-base /home/bb/ros2_ws/build/test141123/build install --record /home/bb/ros2_ws/build/test141123/install.log --single-version-externally-managed

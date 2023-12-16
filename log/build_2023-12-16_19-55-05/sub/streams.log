@@ -1,0 +1,24 @@
+[14.921s] Invoking command in '/home/bb/ros2_ws/ros2_test_ws/src/sub': AMENT_PREFIX_PATH=/home/bb/ros2_ws/install/test_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bb/ros2_ws/install/test_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bb/ros2_ws/install/test_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bb/ros2_ws/build/sub/prefix_override:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/sub build --build-base /home/bb/ros2_ws/build/sub/build install --record /home/bb/ros2_ws/build/sub/install.log --single-version-externally-managed
+[16.254s] running egg_info
+[16.256s] writing ../../../build/sub/sub.egg-info/PKG-INFO
+[16.257s] writing dependency_links to ../../../build/sub/sub.egg-info/dependency_links.txt
+[16.258s] writing entry points to ../../../build/sub/sub.egg-info/entry_points.txt
+[16.259s] writing requirements to ../../../build/sub/sub.egg-info/requires.txt
+[16.260s] writing top-level names to ../../../build/sub/sub.egg-info/top_level.txt
+[16.431s] reading manifest file '../../../build/sub/sub.egg-info/SOURCES.txt'
+[16.436s] writing manifest file '../../../build/sub/sub.egg-info/SOURCES.txt'
+[16.437s] running build
+[16.437s] running build_py
+[16.439s] running install
+[16.443s] running install_lib
+[16.452s] running install_data
+[16.455s] running install_egg_info
+[16.463s] removing '/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages/sub-0.0.0-py3.8.egg-info' (and everything under it)
+[16.465s] Copying ../../../build/sub/sub.egg-info to /home/bb/ros2_ws/install/sub/lib/python3.8/site-packages/sub-0.0.0-py3.8.egg-info
+[16.471s] running install_scripts
+[16.556s] Installing check script to /home/bb/ros2_ws/install/sub/lib/sub
+[16.558s] Installing publisher script to /home/bb/ros2_ws/install/sub/lib/sub
+[16.558s] Installing test_pub script to /home/bb/ros2_ws/install/sub/lib/sub
+[16.559s] Installing test_subscriber script to /home/bb/ros2_ws/install/sub/lib/sub
+[16.561s] writing list of installed files to '/home/bb/ros2_ws/build/sub/install.log'
+[16.672s] Invoked command in '/home/bb/ros2_ws/ros2_test_ws/src/sub' returned '0': AMENT_PREFIX_PATH=/home/bb/ros2_ws/install/test_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bb/ros2_ws/install/test_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bb/ros2_ws/install/test_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bb/ros2_ws/build/sub/prefix_override:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/sub build --build-base /home/bb/ros2_ws/build/sub/build install --record /home/bb/ros2_ws/build/sub/install.log --single-version-externally-managed

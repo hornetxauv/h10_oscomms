@@ -1,0 +1,433 @@
+[10.505s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[10.506s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa7d1b220>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa7d1b220>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa78bc910>)
+[10.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[10.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[10.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[10.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[10.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[10.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[10.994s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bb/ros2_ws'
+[10.994s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[10.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[10.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[10.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[10.995s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[10.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[10.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[10.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[10.996s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[11.050s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[11.051s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[11.051s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[11.051s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[11.051s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[11.052s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[11.053s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[11.053s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[11.054s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[11.054s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[11.054s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[11.055s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[11.056s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[11.056s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[11.056s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[11.057s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[11.057s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[11.057s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[11.057s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[11.058s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[11.058s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[11.058s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[11.058s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[11.059s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[11.059s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[11.059s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[11.059s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[11.060s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[11.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['ignore', 'ignore_ament_install']
+[11.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'ignore'
+[11.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'ignore_ament_install'
+[11.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['colcon_pkg']
+[11.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'colcon_pkg'
+[11.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['colcon_meta']
+[11.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'colcon_meta'
+[11.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extensions ['ros']
+[11.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_msg) by extension 'ros'
+[11.075s] DEBUG:colcon.colcon_core.package_identification:Package 'src/acoustic_msg' with type 'ros.ament_cmake' and name 'acoustic_msg'
+[11.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['ignore', 'ignore_ament_install']
+[11.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'ignore'
+[11.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'ignore_ament_install'
+[11.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['colcon_pkg']
+[11.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'colcon_pkg'
+[11.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['colcon_meta']
+[11.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'colcon_meta'
+[11.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extensions ['ros']
+[11.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/acoustic_sensor) by extension 'ros'
+[11.080s] DEBUG:colcon.colcon_core.package_identification:Package 'src/acoustic_sensor' with type 'ros.ament_python' and name 'acoustic_sensor'
+[11.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extensions ['ignore', 'ignore_ament_install']
+[11.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extension 'ignore'
+[11.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extension 'ignore_ament_install'
+[11.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extensions ['colcon_pkg']
+[11.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extension 'colcon_pkg'
+[11.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extensions ['colcon_meta']
+[11.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extension 'colcon_meta'
+[11.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extensions ['ros']
+[11.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/bring_up) by extension 'ros'
+[11.085s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bring_up' with type 'ros.ament_cmake' and name 'bring_up'
+[11.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['ignore', 'ignore_ament_install']
+[11.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'ignore'
+[11.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'ignore_ament_install'
+[11.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['colcon_pkg']
+[11.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'colcon_pkg'
+[11.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['colcon_meta']
+[11.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'colcon_meta'
+[11.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extensions ['ros']
+[11.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_sensor) by extension 'ros'
+[11.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/depth_sensor' with type 'ros.ament_python' and name 'depth_sensor'
+[11.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['ignore', 'ignore_ament_install']
+[11.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ignore'
+[11.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ignore_ament_install'
+[11.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['colcon_pkg']
+[11.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'colcon_pkg'
+[11.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['colcon_meta']
+[11.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'colcon_meta'
+[11.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['ros']
+[11.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ros'
+[11.095s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_sensor' with type 'ros.ament_python' and name 'imu_sensor'
+[11.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extensions ['ignore', 'ignore_ament_install']
+[11.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extension 'ignore'
+[11.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extension 'ignore_ament_install'
+[11.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extensions ['colcon_pkg']
+[11.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extension 'colcon_pkg'
+[11.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extensions ['colcon_meta']
+[11.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extension 'colcon_meta'
+[11.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extensions ['ros']
+[11.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/linear_acceleration_msg) by extension 'ros'
+[11.101s] DEBUG:colcon.colcon_core.package_identification:Package 'src/linear_acceleration_msg' with type 'ros.ament_cmake' and name 'linear_acceleration_msg'
+[11.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[11.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[11.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[11.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[11.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[12.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[12.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[12.420s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/bb/ros2_ws/install
+[12.601s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 309 installed packages in /opt/ros/humble
+[12.609s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[13.437s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_args' from command line to 'None'
+[13.438s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_target' from command line to 'None'
+[13.438s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.438s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[13.438s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_clean_first' from command line to 'False'
+[13.438s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'cmake_force_configure' from command line to 'False'
+[13.439s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'ament_cmake_args' from command line to 'None'
+[13.439s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[13.439s] Level 5:colcon.colcon_core.verb:set package 'acoustic_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.439s] DEBUG:colcon.colcon_core.verb:Building package 'acoustic_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/acoustic_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/acoustic_msg', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/acoustic_msg', 'symlink_install': False, 'test_result_base': None}
+[13.617s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'cmake_args' from command line to 'None'
+[13.618s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'cmake_target' from command line to 'None'
+[13.618s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.618s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[13.618s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[13.618s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[13.619s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[13.619s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[13.619s] Level 5:colcon.colcon_core.verb:set package 'acoustic_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.619s] DEBUG:colcon.colcon_core.verb:Building package 'acoustic_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/acoustic_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/acoustic_sensor', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/acoustic_sensor', 'symlink_install': False, 'test_result_base': None}
+[13.792s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'cmake_args' from command line to 'None'
+[13.792s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'cmake_target' from command line to 'None'
+[13.792s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.792s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[13.793s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[13.793s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[13.793s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[13.793s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[13.793s] Level 5:colcon.colcon_core.verb:set package 'depth_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.794s] DEBUG:colcon.colcon_core.verb:Building package 'depth_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/depth_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/depth_sensor', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/depth_sensor', 'symlink_install': False, 'test_result_base': None}
+[13.965s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_args' from command line to 'None'
+[13.966s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_target' from command line to 'None'
+[13.966s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.966s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[13.966s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[13.966s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[13.967s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[13.967s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[13.967s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.967s] DEBUG:colcon.colcon_core.verb:Building package 'imu_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/imu_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/imu_sensor', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/imu_sensor', 'symlink_install': False, 'test_result_base': None}
+[14.137s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'cmake_args' from command line to 'None'
+[14.137s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'cmake_target' from command line to 'None'
+[14.138s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[14.138s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[14.138s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'cmake_clean_first' from command line to 'False'
+[14.138s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'cmake_force_configure' from command line to 'False'
+[14.138s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'ament_cmake_args' from command line to 'None'
+[14.138s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[14.139s] Level 5:colcon.colcon_core.verb:set package 'linear_acceleration_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[14.139s] DEBUG:colcon.colcon_core.verb:Building package 'linear_acceleration_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/linear_acceleration_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/linear_acceleration_msg', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/linear_acceleration_msg', 'symlink_install': False, 'test_result_base': None}
+[14.310s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'cmake_args' from command line to 'None'
+[14.310s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'cmake_target' from command line to 'None'
+[14.310s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[14.310s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'cmake_clean_cache' from command line to 'False'
+[14.310s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'cmake_clean_first' from command line to 'False'
+[14.311s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'cmake_force_configure' from command line to 'False'
+[14.311s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'ament_cmake_args' from command line to 'None'
+[14.311s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'catkin_cmake_args' from command line to 'None'
+[14.311s] Level 5:colcon.colcon_core.verb:set package 'bring_up' build argument 'catkin_skip_building_tests' from command line to 'False'
+[14.312s] DEBUG:colcon.colcon_core.verb:Building package 'bring_up' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bb/ros2_ws/build/bring_up', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bb/ros2_ws/install/bring_up', 'merge_install': False, 'path': '/home/bb/ros2_ws/src/bring_up', 'symlink_install': False, 'test_result_base': None}
+[14.483s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[14.657s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[14.659s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bb/ros2_ws/src/acoustic_sensor' with build type 'ament_python'
+[14.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_sensor', 'ament_prefix_path')
+[14.848s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[14.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/hook/ament_prefix_path.ps1'
+[14.852s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/hook/ament_prefix_path.dsv'
+[14.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/hook/ament_prefix_path.sh'
+[15.036s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.036s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.606s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bb/ros2_ws/src/depth_sensor' with build type 'ament_python'
+[15.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('depth_sensor', 'ament_prefix_path')
+[15.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/hook/ament_prefix_path.ps1'
+[15.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/hook/ament_prefix_path.dsv'
+[15.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/hook/ament_prefix_path.sh'
+[15.995s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.995s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.567s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bb/ros2_ws/src/imu_sensor' with build type 'ament_python'
+[16.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_sensor', 'ament_prefix_path')
+[16.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/hook/ament_prefix_path.ps1'
+[16.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/hook/ament_prefix_path.dsv'
+[16.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/hook/ament_prefix_path.sh'
+[16.958s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.959s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.548s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bb/ros2_ws/src/acoustic_msg' with build type 'ament_cmake'
+[17.552s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bb/ros2_ws/src/acoustic_msg'
+[17.751s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.751s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.326s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bb/ros2_ws/src/linear_acceleration_msg' with build type 'ament_cmake'
+[18.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bb/ros2_ws/src/linear_acceleration_msg'
+[18.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.424s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bb/ros2_ws/src/acoustic_sensor'
+[20.687s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.688s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.547s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bb/ros2_ws/src/depth_sensor'
+[22.742s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.743s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.585s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bb/ros2_ws/src/imu_sensor'
+[24.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.784s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[25.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/acoustic_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/acoustic_msg -- -j6 -l6
+[25.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/linear_acceleration_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/linear_acceleration_msg -- -j6 -l6
+[28.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/src/imu_sensor': PYTHONPATH=/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_sensor build --build-base /home/bb/ros2_ws/build/imu_sensor/build install --record /home/bb/ros2_ws/build/imu_sensor/install.log --single-version-externally-managed
+[28.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/src/depth_sensor': PYTHONPATH=/home/bb/ros2_ws/build/depth_sensor/prefix_override:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/depth_sensor build --build-base /home/bb/ros2_ws/build/depth_sensor/build install --record /home/bb/ros2_ws/build/depth_sensor/install.log --single-version-externally-managed
+[28.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/src/acoustic_sensor': PYTHONPATH=/home/bb/ros2_ws/build/acoustic_sensor/prefix_override:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/acoustic_sensor build --build-base /home/bb/ros2_ws/build/acoustic_sensor/build install --record /home/bb/ros2_ws/build/acoustic_sensor/install.log --single-version-externally-managed
+[29.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/acoustic_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/acoustic_msg -- -j6 -l6
+[29.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/acoustic_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/acoustic_msg
+[30.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/src/imu_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_sensor build --build-base /home/bb/ros2_ws/build/imu_sensor/build install --record /home/bb/ros2_ws/build/imu_sensor/install.log --single-version-externally-managed
+[30.607s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor' for CMake module files
+[30.612s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor' for CMake config files
+[30.619s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor/lib'
+[30.620s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor/bin'
+[30.621s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor/lib/pkgconfig/imu_sensor.pc'
+[30.623s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages'
+[30.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_sensor', 'pythonpath')
+[30.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/hook/pythonpath.ps1'
+[30.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/hook/pythonpath.dsv'
+[30.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/hook/pythonpath.sh'
+[30.854s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/imu_sensor/bin'
+[30.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_sensor)
+[31.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/package.ps1'
+[31.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/package.dsv'
+[31.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/package.sh'
+[31.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/package.bash'
+[31.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/imu_sensor/share/imu_sensor/package.zsh'
+[31.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/imu_sensor/share/colcon-core/packages/imu_sensor)
+[31.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(acoustic_msg)
+[31.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/acoustic_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/acoustic_msg
+[31.291s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg' for CMake module files
+[31.295s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg' for CMake config files
+[31.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_msg', 'cmake_prefix_path')
+[31.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.ps1'
+[31.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.dsv'
+[31.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.sh'
+[31.512s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib'
+[31.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_msg', 'ld_library_path_lib')
+[31.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.ps1'
+[31.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.dsv'
+[31.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.sh'
+[31.755s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/bin'
+[31.755s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib/pkgconfig/acoustic_msg.pc'
+[31.757s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.8/site-packages'
+[31.758s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/bin'
+[31.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.ps1'
+[31.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.dsv'
+[31.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.sh'
+[32.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.bash'
+[32.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.zsh'
+[32.008s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/acoustic_msg/share/colcon-core/packages/acoustic_msg)
+[32.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/src/acoustic_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/acoustic_sensor/prefix_override:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/acoustic_sensor build --build-base /home/bb/ros2_ws/build/acoustic_sensor/build install --record /home/bb/ros2_ws/build/acoustic_sensor/install.log --single-version-externally-managed
+[32.263s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor' for CMake module files
+[32.266s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor' for CMake config files
+[32.272s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor/lib'
+[32.273s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor/bin'
+[32.273s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor/lib/pkgconfig/acoustic_sensor.pc'
+[32.275s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages'
+[32.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_sensor', 'pythonpath')
+[32.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/hook/pythonpath.ps1'
+[32.503s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/hook/pythonpath.dsv'
+[32.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/hook/pythonpath.sh'
+[32.508s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_sensor/bin'
+[32.509s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(acoustic_sensor)
+[32.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/package.ps1'
+[32.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/package.dsv'
+[32.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/package.sh'
+[32.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/package.bash'
+[32.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_sensor/share/acoustic_sensor/package.zsh'
+[32.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/acoustic_sensor/share/colcon-core/packages/acoustic_sensor)
+[32.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/src/depth_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/depth_sensor/prefix_override:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/depth_sensor build --build-base /home/bb/ros2_ws/build/depth_sensor/build install --record /home/bb/ros2_ws/build/depth_sensor/install.log --single-version-externally-managed
+[33.071s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor' for CMake module files
+[33.075s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor' for CMake config files
+[33.080s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor/lib'
+[33.081s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor/bin'
+[33.081s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor/lib/pkgconfig/depth_sensor.pc'
+[33.082s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages'
+[33.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('depth_sensor', 'pythonpath')
+[33.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/hook/pythonpath.ps1'
+[33.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/hook/pythonpath.dsv'
+[33.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/hook/pythonpath.sh'
+[33.459s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/depth_sensor/bin'
+[33.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depth_sensor)
+[33.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/package.ps1'
+[33.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/package.dsv'
+[33.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/package.sh'
+[33.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/package.bash'
+[33.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/depth_sensor/share/depth_sensor/package.zsh'
+[33.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/depth_sensor/share/colcon-core/packages/depth_sensor)
+[33.776s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bb/ros2_ws/src/bring_up' with build type 'ament_cmake'
+[33.778s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bb/ros2_ws/src/bring_up'
+[34.019s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[34.019s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[35.163s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(acoustic_msg)
+[35.395s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg' for CMake module files
+[35.400s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg' for CMake config files
+[35.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_msg', 'cmake_prefix_path')
+[35.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.ps1'
+[35.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.dsv'
+[35.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/cmake_prefix_path.sh'
+[35.664s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib'
+[35.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('acoustic_msg', 'ld_library_path_lib')
+[35.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.ps1'
+[35.947s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.dsv'
+[35.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/hook/ld_library_path_lib.sh'
+[35.952s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/bin'
+[35.953s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib/pkgconfig/acoustic_msg.pc'
+[35.955s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.8/site-packages'
+[35.956s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/acoustic_msg/bin'
+[36.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.ps1'
+[36.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.dsv'
+[36.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.sh'
+[36.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.bash'
+[36.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.zsh'
+[36.235s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/acoustic_msg/share/colcon-core/packages/acoustic_msg)
+[36.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/bring_up': AMENT_PREFIX_PATH=/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/test_bringup:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/linear_acceleration_msg:/home/bb/ros2_ws/install/bring_up:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble PYTHONPATH=/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /home/bb/ros2_ws/build/bring_up -- -j6 -l6
+[36.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/bring_up' returned '0': AMENT_PREFIX_PATH=/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/test_bringup:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/linear_acceleration_msg:/home/bb/ros2_ws/install/bring_up:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble PYTHONPATH=/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /home/bb/ros2_ws/build/bring_up -- -j6 -l6
+[36.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/bring_up': AMENT_PREFIX_PATH=/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/test_bringup:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/linear_acceleration_msg:/home/bb/ros2_ws/install/bring_up:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble PYTHONPATH=/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --install /home/bb/ros2_ws/build/bring_up
+[36.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bring_up)
+[36.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/bring_up' returned '0': AMENT_PREFIX_PATH=/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/test_bringup:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/linear_acceleration_msg:/home/bb/ros2_ws/install/bring_up:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble PYTHONPATH=/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --install /home/bb/ros2_ws/build/bring_up
+[37.125s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up' for CMake module files
+[37.128s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up' for CMake config files
+[37.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('bring_up', 'cmake_prefix_path')
+[37.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/bring_up/share/bring_up/hook/cmake_prefix_path.ps1'
+[37.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/bring_up/share/bring_up/hook/cmake_prefix_path.dsv'
+[37.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/bring_up/share/bring_up/hook/cmake_prefix_path.sh'
+[37.381s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/bin'
+[37.382s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/lib/pkgconfig/bring_up.pc'
+[37.383s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/lib/python3.8/site-packages'
+[37.384s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/bin'
+[37.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.ps1'
+[37.649s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.dsv'
+[37.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.sh'
+[37.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.bash'
+[37.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.zsh'
+[37.660s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/bring_up/share/colcon-core/packages/bring_up)
+[38.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bring_up)
+[38.431s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up' for CMake module files
+[38.435s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up' for CMake config files
+[38.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('bring_up', 'cmake_prefix_path')
+[38.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/bring_up/share/bring_up/hook/cmake_prefix_path.ps1'
+[38.739s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/bring_up/share/bring_up/hook/cmake_prefix_path.dsv'
+[38.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/bring_up/share/bring_up/hook/cmake_prefix_path.sh'
+[38.745s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/bin'
+[38.745s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/lib/pkgconfig/bring_up.pc'
+[38.747s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/lib/python3.8/site-packages'
+[38.748s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/bring_up/bin'
+[38.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.ps1'
+[38.998s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.dsv'
+[39.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.sh'
+[39.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.bash'
+[39.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/bring_up/share/bring_up/package.zsh'
+[39.008s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/bring_up/share/colcon-core/packages/bring_up)
+[56.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/linear_acceleration_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/linear_acceleration_msg -- -j6 -l6
+[56.934s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bb/ros2_ws/build/linear_acceleration_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/linear_acceleration_msg
+[57.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linear_acceleration_msg)
+[57.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bb/ros2_ws/build/linear_acceleration_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/linear_acceleration_msg
+[57.733s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg' for CMake module files
+[57.738s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg' for CMake config files
+[57.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('linear_acceleration_msg', 'cmake_prefix_path')
+[57.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/cmake_prefix_path.ps1'
+[57.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/cmake_prefix_path.dsv'
+[57.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/cmake_prefix_path.sh'
+[57.980s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/lib'
+[57.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('linear_acceleration_msg', 'ld_library_path_lib')
+[58.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/ld_library_path_lib.ps1'
+[58.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/ld_library_path_lib.dsv'
+[58.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/ld_library_path_lib.sh'
+[58.193s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/bin'
+[58.194s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/lib/pkgconfig/linear_acceleration_msg.pc'
+[58.195s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.8/site-packages'
+[58.196s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/bin'
+[58.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.ps1'
+[58.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.dsv'
+[58.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.sh'
+[58.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.bash'
+[58.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.zsh'
+[58.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/linear_acceleration_msg/share/colcon-core/packages/linear_acceleration_msg)
+[59.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linear_acceleration_msg)
+[59.341s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg' for CMake module files
+[59.345s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg' for CMake config files
+[59.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('linear_acceleration_msg', 'cmake_prefix_path')
+[59.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/cmake_prefix_path.ps1'
+[59.568s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/cmake_prefix_path.dsv'
+[59.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/cmake_prefix_path.sh'
+[59.574s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/lib'
+[59.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('linear_acceleration_msg', 'ld_library_path_lib')
+[59.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/ld_library_path_lib.ps1'
+[59.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/ld_library_path_lib.dsv'
+[59.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/hook/ld_library_path_lib.sh'
+[59.786s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/bin'
+[59.787s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/lib/pkgconfig/linear_acceleration_msg.pc'
+[59.788s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.8/site-packages'
+[59.789s] Level 1:colcon.colcon_core.environment:checking '/home/bb/ros2_ws/install/linear_acceleration_msg/bin'
+[59.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.ps1'
+[59.997s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.dsv'
+[60.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.sh'
+[60.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.bash'
+[60.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.zsh'
+[60.009s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bb/ros2_ws/install/linear_acceleration_msg/share/colcon-core/packages/linear_acceleration_msg)
+[60.011s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[60.014s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[60.015s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[60.016s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[60.272s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[60.272s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[60.273s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[60.370s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[60.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.ps1'
+[60.605s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bb/ros2_ws/install/_local_setup_util_ps1.py'
+[60.612s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.ps1'
+[60.832s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.sh'
+[60.835s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bb/ros2_ws/install/_local_setup_util_sh.py'
+[60.838s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.sh'
+[61.113s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.bash'
+[61.115s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.bash'
+[61.334s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bb/ros2_ws/install/local_setup.zsh'
+[61.337s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bb/ros2_ws/install/setup.zsh'
