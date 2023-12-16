@@ -12,7 +12,7 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(Acoustic, 'topic', 10)
+        self.publisher_ = self.create_publisher(Acoustic, 'acoustic', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
@@ -42,7 +42,7 @@ class MinimalPublisher(Node):
                     acoustics_msg.comms_bouy_output = msg_data[3]
 
                     self.publisher_.publish(acoustics_msg)
-                    self.get_logger().info("Publishing: %s" % acoustics_msg)
+                    self.get_logger().info(f"Publishing: {acoustics_msg}")
                     #self.get_logger().info("Publishing: %s" % imu_msg.header.stamp)
         """
         msg = String()

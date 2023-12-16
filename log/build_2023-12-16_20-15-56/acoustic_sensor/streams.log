@@ -1,0 +1,21 @@
+[14.324s] Invoking command in '/home/bb/ros2_ws/src/acoustic_sensor': PYTHONPATH=/home/bb/ros2_ws/build/acoustic_sensor/prefix_override:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/acoustic_sensor build --build-base /home/bb/ros2_ws/build/acoustic_sensor/build install --record /home/bb/ros2_ws/build/acoustic_sensor/install.log --single-version-externally-managed
+[15.856s] running egg_info
+[15.860s] writing ../../build/acoustic_sensor/acoustic_sensor.egg-info/PKG-INFO
+[15.861s] writing dependency_links to ../../build/acoustic_sensor/acoustic_sensor.egg-info/dependency_links.txt
+[15.862s] writing entry points to ../../build/acoustic_sensor/acoustic_sensor.egg-info/entry_points.txt
+[15.862s] writing requirements to ../../build/acoustic_sensor/acoustic_sensor.egg-info/requires.txt
+[15.863s] writing top-level names to ../../build/acoustic_sensor/acoustic_sensor.egg-info/top_level.txt
+[16.028s] reading manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'
+[16.032s] writing manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'
+[16.033s] running build
+[16.033s] running build_py
+[16.035s] running install
+[16.039s] running install_lib
+[16.047s] running install_data
+[16.050s] running install_egg_info
+[16.059s] removing '/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages/acoustic_sensor-0.0.0-py3.8.egg-info' (and everything under it)
+[16.061s] Copying ../../build/acoustic_sensor/acoustic_sensor.egg-info to /home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages/acoustic_sensor-0.0.0-py3.8.egg-info
+[16.069s] running install_scripts
+[16.163s] Installing publisher script to /home/bb/ros2_ws/install/acoustic_sensor/lib/acoustic_sensor
+[16.167s] writing list of installed files to '/home/bb/ros2_ws/build/acoustic_sensor/install.log'
+[18.147s] Invoked command in '/home/bb/ros2_ws/src/acoustic_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/acoustic_sensor/prefix_override:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/acoustic_sensor build --build-base /home/bb/ros2_ws/build/acoustic_sensor/build install --record /home/bb/ros2_ws/build/acoustic_sensor/install.log --single-version-externally-managed

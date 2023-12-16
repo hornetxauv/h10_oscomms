@@ -1,0 +1,37 @@
+[12.767s] Invoking command in '/home/bb/ros2_ws/src/imu_sensor': PYTHONPATH=/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_sensor build --build-base /home/bb/ros2_ws/build/imu_sensor/build install --record /home/bb/ros2_ws/build/imu_sensor/install.log --single-version-externally-managed
+[14.391s] running egg_info
+[14.394s] writing ../../build/imu_sensor/imu_sensor.egg-info/PKG-INFO
+[14.397s] writing dependency_links to ../../build/imu_sensor/imu_sensor.egg-info/dependency_links.txt
+[14.399s] writing entry points to ../../build/imu_sensor/imu_sensor.egg-info/entry_points.txt
+[14.401s] writing requirements to ../../build/imu_sensor/imu_sensor.egg-info/requires.txt
+[14.402s] writing top-level names to ../../build/imu_sensor/imu_sensor.egg-info/top_level.txt
+[14.635s] reading manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'
+[14.640s] writing manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'
+[14.643s] running build
+[14.644s] running build_py
+[14.645s] copying imu_sensor/publisher_accel.py -> /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor
+[14.647s] copying imu_sensor/publisher_xyz.py -> /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor
+[14.648s] copying imu_sensor/publisher_quat.py -> /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor
+[14.650s] running install
+[14.655s] running install_lib
+[14.663s] copying /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor/publisher_accel.py -> /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor
+[14.665s] copying /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor/publisher_xyz.py -> /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor
+[14.666s] copying /home/bb/ros2_ws/build/imu_sensor/build/lib/imu_sensor/publisher_quat.py -> /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor
+[14.671s] byte-compiling /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher_accel.py to publisher_accel.cpython-38.pyc
+[14.681s] byte-compiling /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher_xyz.py to publisher_xyz.cpython-38.pyc
+[14.684s]   File "/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher_xyz.py", line 67
+[14.684s]     accel_msg.z = float(temp[0] << 24 | temp[1] << 16 | temp[2] << 8 | temp[3]))
+[14.685s] byte-compiling /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher_quat.py to publisher_quat.cpython-38.pyc
+[14.685s]                                                                                ^
+[14.685s] SyntaxError: unmatched ')'
+[14.686s] 
+[14.688s] running install_data
+[14.691s] running install_egg_info
+[14.702s] removing '/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info' (and everything under it)
+[14.704s] Copying ../../build/imu_sensor/imu_sensor.egg-info to /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info
+[14.711s] running install_scripts
+[14.818s] Installing publisher_accel script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor
+[14.819s] Installing publisher_quat script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor
+[14.821s] Installing publisher_xyz script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor
+[14.823s] writing list of installed files to '/home/bb/ros2_ws/build/imu_sensor/install.log'
+[15.105s] Invoked command in '/home/bb/ros2_ws/src/imu_sensor' returned '0': PYTHONPATH=/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_sensor build --build-base /home/bb/ros2_ws/build/imu_sensor/build install --record /home/bb/ros2_ws/build/imu_sensor/install.log --single-version-externally-managed

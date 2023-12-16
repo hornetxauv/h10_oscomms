@@ -42,7 +42,7 @@ class MinimalPublisher(Node):
                     acoustics_msg.comms_bouy_output = msg_data[3]
 
                     self.publisher_.publish(acoustics_msg)
-                    self.get_logger().info("Publishing: %s" % acoustics_msg)
+                    self.get_logger().info(f"Publishing: {acoustics_msg}")
                     #self.get_logger().info("Publishing: %s" % imu_msg.header.stamp)
         """
         msg = String()

@@ -1,0 +1,142 @@
+[8.072s] Invoking command in '/home/bb/ros2_ws/build/acoustic_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/acoustic_msg -- -j6 -l6
+[8.481s] [  3%] Built target acoustic_msg__cpp
+[8.503s] [ 12%] Built target acoustic_msg__rosidl_generator_c
+[8.657s] [ 12%] Built target ament_cmake_python_copy_acoustic_msg
+[8.753s] [ 22%] Built target acoustic_msg__rosidl_typesupport_cpp
+[8.874s] [ 32%] Built target acoustic_msg__rosidl_typesupport_introspection_cpp
+[8.893s] [ 41%] Built target acoustic_msg__rosidl_typesupport_c
+[8.894s] [ 51%] Built target acoustic_msg__rosidl_typesupport_fastrtps_c
+[8.909s] [ 61%] Built target acoustic_msg__rosidl_typesupport_fastrtps_cpp
+[9.041s] [ 70%] Built target acoustic_msg__rosidl_typesupport_introspection_c
+[9.306s] [ 70%] Built target acoustic_msg
+[9.556s] [ 74%] Built target acoustic_msg__py
+[9.777s] [ 80%] Built target acoustic_msg__rosidl_generator_py
+[10.169s] [ 87%] Built target acoustic_msg__rosidl_typesupport_c__pyext
+[10.183s] [ 93%] Built target acoustic_msg__rosidl_typesupport_introspection_c__pyext
+[10.193s] [100%] Built target acoustic_msg__rosidl_typesupport_fastrtps_c__pyext
+[11.862s] running egg_info
+[11.867s] writing acoustic_msg.egg-info/PKG-INFO
+[11.869s] writing dependency_links to acoustic_msg.egg-info/dependency_links.txt
+[11.870s] writing top-level names to acoustic_msg.egg-info/top_level.txt
+[12.249s] reading manifest file 'acoustic_msg.egg-info/SOURCES.txt'
+[12.252s] writing manifest file 'acoustic_msg.egg-info/SOURCES.txt'
+[12.434s] [100%] Built target ament_cmake_python_build_acoustic_msg_egg
+[12.522s] Invoked command in '/home/bb/ros2_ws/build/acoustic_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/acoustic_msg -- -j6 -l6
+[13.062s] Invoking command in '/home/bb/ros2_ws/build/acoustic_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/acoustic_msg
+[13.123s] -- Install configuration: ""
+[13.125s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/rosidl_interfaces/acoustic_msg
+[13.126s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg
+[13.128s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg
+[13.128s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_generator_c__visibility_control.h
+[13.129s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/acoustic.h
+[13.129s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail
+[13.130s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__functions.h
+[13.131s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__functions.c
+[13.132s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__type_support.h
+[13.132s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__struct.h
+[13.133s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/library_path.sh
+[13.133s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/library_path.dsv
+[13.134s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_generator_c.so
+[13.135s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg
+[13.135s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg
+[13.136s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.136s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail
+[13.138s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_fastrtps_c.h
+[13.139s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_fastrtps_c.so
+[13.139s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg
+[13.140s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg
+[13.140s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.141s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail
+[13.141s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__type_support.c
+[13.142s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_introspection_c.h
+[13.143s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_introspection_c.so
+[13.144s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_c.so
+[13.147s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg
+[13.148s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg
+[13.149s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/acoustic.hpp
+[13.149s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail
+[13.151s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__builder.hpp
+[13.151s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__traits.hpp
+[13.152s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__struct.hpp
+[13.153s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg
+[13.154s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg
+[13.155s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.155s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail
+[13.156s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_fastrtps_cpp.hpp
+[13.156s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/dds_fastrtps
+[13.156s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_fastrtps_cpp.so
+[13.157s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg
+[13.158s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg
+[13.158s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail
+[13.158s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_introspection_cpp.hpp
+[13.159s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__type_support.cpp
+[13.160s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_introspection_cpp.so
+[13.161s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_cpp.so
+[13.164s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/pythonpath.sh
+[13.166s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/pythonpath.dsv
+[13.166s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info
+[13.168s] -- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/top_level.txt
+[13.168s] -- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/dependency_links.txt
+[13.169s] -- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/SOURCES.txt
+[13.170s] -- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/PKG-INFO
+[13.172s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg
+[13.173s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg
+[13.174s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg/_acoustic_s.c
+[13.175s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg/_acoustic.py
+[13.176s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg/__init__.py
+[13.176s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/_acoustic_msg_s.ep.rosidl_typesupport_c.c
+[13.177s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/_acoustic_msg_s.ep.rosidl_typesupport_introspection_c.c
+[13.177s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[13.178s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/_acoustic_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.178s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/libacoustic_msg__rosidl_generator_py.so
+[13.179s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[13.179s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[13.180s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/__init__.py
+[13.448s] Listing '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg'...
+[13.448s] Listing '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg'...
+[13.473s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[13.480s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[13.498s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[13.500s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_generator_py.so
+[13.506s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/msg/Acoustic.idl
+[13.508s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/msg/Acoustic.msg
+[13.509s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/package_run_dependencies/acoustic_msg
+[13.514s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/parent_prefix_path/acoustic_msg
+[13.517s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/ament_prefix_path.sh
+[13.538s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/ament_prefix_path.dsv
+[13.541s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/path.sh
+[13.544s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/path.dsv
+[13.545s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.bash
+[13.546s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.sh
+[13.547s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.zsh
+[13.560s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.dsv
+[13.565s] -- Installing: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.dsv
+[13.571s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/packages/acoustic_msg
+[13.572s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_cExport.cmake
+[13.576s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_cExport-noconfig.cmake
+[13.581s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[13.584s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.586s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cExport.cmake
+[13.590s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.593s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cExport.cmake
+[13.601s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cExport-noconfig.cmake
+[13.605s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_cppExport.cmake
+[13.608s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.628s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.629s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cppExport.cmake
+[13.630s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.636s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cppExport.cmake
+[13.639s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[13.640s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_pyExport.cmake
+[13.641s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_pyExport-noconfig.cmake
+[13.644s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/rosidl_cmake-extras.cmake
+[13.647s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.649s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[13.650s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_targets-extras.cmake
+[13.651s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.653s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.655s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.657s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msgConfig.cmake
+[13.657s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msgConfig-version.cmake
+[13.660s] -- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.xml
+[14.736s] Invoked command in '/home/bb/ros2_ws/build/acoustic_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/acoustic_msg

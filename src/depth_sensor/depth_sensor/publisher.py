@@ -44,7 +44,7 @@ class MinimalPublisher(Node):
                     depth_msg.fluid_pressure = depth
 
                     self.publisher_.publish(depth_msg)
-                    self.get_logger().info("Publishing: %s" % depth_msg)
+                    self.get_logger().info(f"Publishing: {depth_msg}")
                     #self.get_logger().info("Publishing: %s" % depth_msg.header.stamp)
         """
         msg = String()

@@ -1,0 +1,142 @@
+[5.321s] Invoking command in '/home/bb/ros2_ws/build/test_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/test_msg -- -j6 -l6
+[11.846s] [  3%] Built target test_msg__cpp
+[11.849s] [ 12%] Built target test_msg__rosidl_generator_c
+[11.852s] [ 12%] Built target ament_cmake_python_copy_test_msg
+[11.853s] [ 22%] Built target test_msg__rosidl_typesupport_introspection_cpp
+[11.853s] [ 32%] Built target test_msg__rosidl_typesupport_fastrtps_cpp
+[11.853s] [ 48%] Built target test_msg__rosidl_typesupport_fastrtps_c
+[11.854s] [ 51%] Built target test_msg__rosidl_typesupport_cpp
+[11.854s] [ 61%] Built target test_msg__rosidl_typesupport_c
+[11.855s] [ 70%] Built target test_msg__rosidl_typesupport_introspection_c
+[11.856s] [ 70%] Built target test_msg
+[11.857s] [ 74%] Built target test_msg__py
+[11.858s] [ 80%] Built target test_msg__rosidl_generator_py
+[11.860s] [ 93%] Built target test_msg__rosidl_typesupport_c__pyext
+[11.863s] [ 93%] Built target test_msg__rosidl_typesupport_fastrtps_c__pyext
+[11.867s] [100%] Built target test_msg__rosidl_typesupport_introspection_c__pyext
+[11.870s] running egg_info
+[11.888s] writing test_msg.egg-info/PKG-INFO
+[11.895s] writing dependency_links to test_msg.egg-info/dependency_links.txt
+[11.897s] writing top-level names to test_msg.egg-info/top_level.txt
+[11.902s] reading manifest file 'test_msg.egg-info/SOURCES.txt'
+[11.903s] writing manifest file 'test_msg.egg-info/SOURCES.txt'
+[11.906s] [100%] Built target ament_cmake_python_build_test_msg_egg
+[11.909s] Invoked command in '/home/bb/ros2_ws/build/test_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --build /home/bb/ros2_ws/build/test_msg -- -j6 -l6
+[12.960s] Invoking command in '/home/bb/ros2_ws/build/test_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/test_msg
+[13.068s] -- Install configuration: ""
+[13.069s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/rosidl_interfaces/test_msg
+[13.070s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg
+[13.071s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg
+[13.073s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_generator_c__visibility_control.h
+[13.073s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/num.h
+[13.080s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail
+[13.080s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__functions.c
+[13.081s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__type_support.h
+[13.081s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__functions.h
+[13.082s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__struct.h
+[13.082s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/library_path.sh
+[13.083s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/library_path.dsv
+[13.083s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_generator_c.so
+[13.084s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg
+[13.085s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg
+[13.088s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.089s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail
+[13.090s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[13.090s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_fastrtps_c.so
+[13.096s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg
+[13.097s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg
+[13.097s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail
+[13.098s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__builder.hpp
+[13.098s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__traits.hpp
+[13.098s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__struct.hpp
+[13.099s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/num.hpp
+[13.104s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg
+[13.104s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg
+[13.105s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.105s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail
+[13.106s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[13.107s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/dds_fastrtps
+[13.107s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_fastrtps_cpp.so
+[13.109s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg
+[13.112s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg
+[13.112s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.113s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail
+[13.113s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_introspection_c.h
+[13.114s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__type_support.c
+[13.119s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_introspection_c.so
+[13.120s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_c.so
+[13.127s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg
+[13.127s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg
+[13.128s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail
+[13.129s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[13.129s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__type_support.cpp
+[13.129s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_introspection_cpp.so
+[13.132s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_cpp.so
+[13.135s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/pythonpath.sh
+[13.136s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/pythonpath.dsv
+[13.137s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info
+[13.138s] -- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/top_level.txt
+[13.141s] -- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/dependency_links.txt
+[13.142s] -- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/SOURCES.txt
+[13.144s] -- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/PKG-INFO
+[13.145s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg
+[13.146s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/_test_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.147s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg
+[13.148s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg/_num_s.c
+[13.149s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg/_num.py
+[13.150s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg/__init__.py
+[13.151s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[13.153s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/libtest_msg__rosidl_generator_py.so
+[13.153s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[13.154s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[13.164s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/_test_msg_s.ep.rosidl_typesupport_c.c
+[13.164s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/__init__.py
+[13.165s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/_test_msg_s.ep.rosidl_typesupport_introspection_c.c
+[13.622s] Listing '/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg'...
+[13.623s] Listing '/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg'...
+[13.660s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[13.664s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[13.686s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[13.691s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_generator_py.so
+[13.718s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/msg/Num.idl
+[13.719s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/msg/Num.msg
+[13.720s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/package_run_dependencies/test_msg
+[13.721s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/parent_prefix_path/test_msg
+[13.721s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/ament_prefix_path.sh
+[13.722s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/ament_prefix_path.dsv
+[13.723s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/path.sh
+[13.724s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/path.dsv
+[13.724s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.bash
+[13.725s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.sh
+[13.726s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.zsh
+[13.726s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.dsv
+[13.727s] -- Installing: /home/bb/ros2_ws/install/test_msg/share/test_msg/package.dsv
+[13.760s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/packages/test_msg
+[13.763s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_cExport.cmake
+[13.764s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_cExport-noconfig.cmake
+[13.767s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[13.768s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.771s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_cppExport.cmake
+[13.788s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.790s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.793s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cExport.cmake
+[13.796s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.798s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cExport.cmake
+[13.801s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cExport-noconfig.cmake
+[13.804s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cppExport.cmake
+[13.805s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.808s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cppExport.cmake
+[13.809s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[13.812s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_pyExport.cmake
+[13.813s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_pyExport-noconfig.cmake
+[13.815s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/rosidl_cmake-extras.cmake
+[13.816s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.818s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.820s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[13.821s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_targets-extras.cmake
+[13.824s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.826s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.828s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msgConfig.cmake
+[13.829s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msgConfig-version.cmake
+[13.830s] -- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/package.xml
+[13.850s] Invoked command in '/home/bb/ros2_ws/build/test_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble /usr/bin/cmake --install /home/bb/ros2_ws/build/test_msg

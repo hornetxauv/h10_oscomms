@@ -1,0 +1,9 @@
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/install/strip.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/install/local.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/install.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/list_install_components.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/rebuild_cache.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/edit_cache.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/test.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/bring_up_uninstall.dir
+/home/bb/ros2_ws/build/bring_up/CMakeFiles/uninstall.dir

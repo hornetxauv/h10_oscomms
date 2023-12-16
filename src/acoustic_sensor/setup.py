@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'publisher = acoustic_sensor.publisher:main'
+            'publisher_acoustic = acoustic_sensor.publisher:main'
         ],
     },
 )

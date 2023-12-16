@@ -1,0 +1,1000 @@
+[0.000000] (-) TimerEvent: {}
+[0.002685] (acoustic_msg) JobQueued: {'identifier': 'acoustic_msg', 'dependencies': OrderedDict()}
+[0.003190] (acoustic_sensor) JobQueued: {'identifier': 'acoustic_sensor', 'dependencies': OrderedDict()}
+[0.003474] (depth_sensor) JobQueued: {'identifier': 'depth_sensor', 'dependencies': OrderedDict()}
+[0.003622] (imu_sensor) JobQueued: {'identifier': 'imu_sensor', 'dependencies': OrderedDict()}
+[0.003756] (linear_acceleration_msg) JobQueued: {'identifier': 'linear_acceleration_msg', 'dependencies': OrderedDict()}
+[0.003963] (test141123) JobQueued: {'identifier': 'test141123', 'dependencies': OrderedDict()}
+[0.004195] (test_msg) JobQueued: {'identifier': 'test_msg', 'dependencies': OrderedDict()}
+[0.004363] (bring_up) JobQueued: {'identifier': 'bring_up', 'dependencies': OrderedDict([('acoustic_sensor', '/home/bb/ros2_ws/install/acoustic_sensor'), ('depth_sensor', '/home/bb/ros2_ws/install/depth_sensor'), ('imu_sensor', '/home/bb/ros2_ws/install/imu_sensor')])}
+[0.004510] (sub) JobQueued: {'identifier': 'sub', 'dependencies': OrderedDict([('test_msg', '/home/bb/ros2_ws/install/test_msg')])}
+[0.004635] (test_bringup) JobQueued: {'identifier': 'test_bringup', 'dependencies': OrderedDict([('test_msg', '/home/bb/ros2_ws/install/test_msg'), ('sub', '/home/bb/ros2_ws/install/sub')])}
+[0.004793] (test_msg) JobStarted: {'identifier': 'test_msg'}
+[0.098389] (-) TimerEvent: {}
+[0.203141] (-) TimerEvent: {}
+[0.306107] (-) TimerEvent: {}
+[0.410119] (-) TimerEvent: {}
+[0.512446] (-) TimerEvent: {}
+[0.614030] (-) TimerEvent: {}
+[0.718500] (-) TimerEvent: {}
+[0.769820] (acoustic_sensor) JobStarted: {'identifier': 'acoustic_sensor'}
+[0.819412] (-) TimerEvent: {}
+[0.922382] (-) TimerEvent: {}
+[1.023434] (-) TimerEvent: {}
+[1.128312] (-) TimerEvent: {}
+[1.231299] (-) TimerEvent: {}
+[1.333203] (-) TimerEvent: {}
+[1.435618] (-) TimerEvent: {}
+[1.537004] (-) TimerEvent: {}
+[1.638546] (-) TimerEvent: {}
+[1.742238] (-) TimerEvent: {}
+[1.747437] (depth_sensor) JobStarted: {'identifier': 'depth_sensor'}
+[1.842801] (-) TimerEvent: {}
+[1.946466] (-) TimerEvent: {}
+[2.049632] (-) TimerEvent: {}
+[2.152024] (-) TimerEvent: {}
+[2.254223] (-) TimerEvent: {}
+[2.357948] (-) TimerEvent: {}
+[2.460755] (-) TimerEvent: {}
+[2.563918] (-) TimerEvent: {}
+[2.667073] (-) TimerEvent: {}
+[2.717854] (imu_sensor) JobStarted: {'identifier': 'imu_sensor'}
+[2.768373] (-) TimerEvent: {}
+[2.870705] (-) TimerEvent: {}
+[2.976007] (-) TimerEvent: {}
+[3.077723] (-) TimerEvent: {}
+[3.180215] (-) TimerEvent: {}
+[3.282124] (-) TimerEvent: {}
+[3.384292] (-) TimerEvent: {}
+[3.486524] (-) TimerEvent: {}
+[3.589681] (-) TimerEvent: {}
+[3.684890] (acoustic_msg) JobStarted: {'identifier': 'acoustic_msg'}
+[3.689913] (-) TimerEvent: {}
+[3.821291] (-) TimerEvent: {}
+[3.923186] (-) TimerEvent: {}
+[4.027448] (-) TimerEvent: {}
+[4.130121] (-) TimerEvent: {}
+[4.231972] (-) TimerEvent: {}
+[4.334211] (-) TimerEvent: {}
+[4.437723] (-) TimerEvent: {}
+[4.516464] (linear_acceleration_msg) JobStarted: {'identifier': 'linear_acceleration_msg'}
+[4.538245] (-) TimerEvent: {}
+[4.641827] (-) TimerEvent: {}
+[4.743344] (-) TimerEvent: {}
+[4.844763] (-) TimerEvent: {}
+[4.947984] (-) TimerEvent: {}
+[5.050262] (-) TimerEvent: {}
+[5.152317] (-) TimerEvent: {}
+[5.255049] (-) TimerEvent: {}
+[5.310332] (test_msg) JobProgress: {'identifier': 'test_msg', 'progress': 'cmake'}
+[5.314951] (test_msg) JobProgress: {'identifier': 'test_msg', 'progress': 'build'}
+[5.319205] (test_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bb/ros2_ws/build/test_msg', '--', '-j6', '-l6'], 'cwd': '/home/bb/ros2_ws/build/test_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/test_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[5.359022] (-) TimerEvent: {}
+[5.463337] (-) TimerEvent: {}
+[5.564698] (-) TimerEvent: {}
+[5.665942] (-) TimerEvent: {}
+[5.767065] (-) TimerEvent: {}
+[5.868265] (-) TimerEvent: {}
+[5.969421] (-) TimerEvent: {}
+[6.070636] (-) TimerEvent: {}
+[6.171785] (-) TimerEvent: {}
+[6.273152] (-) TimerEvent: {}
+[6.374565] (-) TimerEvent: {}
+[6.475784] (-) TimerEvent: {}
+[6.577151] (-) TimerEvent: {}
+[6.678385] (-) TimerEvent: {}
+[6.780334] (-) TimerEvent: {}
+[6.882206] (-) TimerEvent: {}
+[6.984380] (-) TimerEvent: {}
+[7.086007] (-) TimerEvent: {}
+[7.190455] (-) TimerEvent: {}
+[7.296953] (-) TimerEvent: {}
+[7.399736] (-) TimerEvent: {}
+[7.501994] (-) TimerEvent: {}
+[7.604922] (-) TimerEvent: {}
+[7.708105] (-) TimerEvent: {}
+[7.809457] (-) TimerEvent: {}
+[7.910728] (-) TimerEvent: {}
+[8.012056] (-) TimerEvent: {}
+[8.113231] (-) TimerEvent: {}
+[8.214604] (-) TimerEvent: {}
+[8.316389] (-) TimerEvent: {}
+[8.417545] (-) TimerEvent: {}
+[8.518770] (-) TimerEvent: {}
+[8.619953] (-) TimerEvent: {}
+[8.721129] (-) TimerEvent: {}
+[8.822280] (-) TimerEvent: {}
+[8.924261] (-) TimerEvent: {}
+[9.026787] (-) TimerEvent: {}
+[9.130259] (-) TimerEvent: {}
+[9.231985] (-) TimerEvent: {}
+[9.333935] (-) TimerEvent: {}
+[9.435311] (-) TimerEvent: {}
+[9.537318] (-) TimerEvent: {}
+[9.639698] (-) TimerEvent: {}
+[9.742630] (-) TimerEvent: {}
+[9.845526] (-) TimerEvent: {}
+[9.946692] (-) TimerEvent: {}
+[10.047997] (-) TimerEvent: {}
+[10.149132] (-) TimerEvent: {}
+[10.250262] (-) TimerEvent: {}
+[10.351391] (-) TimerEvent: {}
+[10.452713] (-) TimerEvent: {}
+[10.553928] (-) TimerEvent: {}
+[10.655208] (-) TimerEvent: {}
+[10.756476] (-) TimerEvent: {}
+[10.857723] (-) TimerEvent: {}
+[10.958884] (-) TimerEvent: {}
+[11.060553] (-) TimerEvent: {}
+[11.161878] (-) TimerEvent: {}
+[11.263712] (-) TimerEvent: {}
+[11.365592] (-) TimerEvent: {}
+[11.467007] (-) TimerEvent: {}
+[11.568906] (-) TimerEvent: {}
+[11.671517] (-) TimerEvent: {}
+[11.774191] (-) TimerEvent: {}
+[11.779127] (acoustic_msg) JobProgress: {'identifier': 'acoustic_msg', 'progress': 'cmake'}
+[11.783212] (acoustic_msg) JobProgress: {'identifier': 'acoustic_msg', 'progress': 'build'}
+[11.786554] (acoustic_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bb/ros2_ws/build/acoustic_msg', '--', '-j6', '-l6'], 'cwd': '/home/bb/ros2_ws/build/acoustic_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/acoustic_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[11.810777] (linear_acceleration_msg) JobProgress: {'identifier': 'linear_acceleration_msg', 'progress': 'cmake'}
+[11.815233] (linear_acceleration_msg) JobProgress: {'identifier': 'linear_acceleration_msg', 'progress': 'build'}
+[11.824120] (linear_acceleration_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bb/ros2_ws/build/linear_acceleration_msg', '--', '-j6', '-l6'], 'cwd': '/home/bb/ros2_ws/build/linear_acceleration_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/linear_acceleration_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[11.849915] (test_msg) StdoutLine: {'line': b'[  3%] Built target test_msg__cpp\n'}
+[11.851769] (test_msg) StdoutLine: {'line': b'[ 12%] Built target test_msg__rosidl_generator_c\n'}
+[11.855119] (test_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_test_msg\n'}
+[11.857007] (test_msg) StdoutLine: {'line': b'[ 22%] Built target test_msg__rosidl_typesupport_introspection_cpp\n'}
+[11.857612] (test_msg) StdoutLine: {'line': b'[ 32%] Built target test_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[11.858083] (test_msg) StdoutLine: {'line': b'[ 48%] Built target test_msg__rosidl_typesupport_fastrtps_c\n'}
+[11.858498] (test_msg) StdoutLine: {'line': b'[ 51%] Built target test_msg__rosidl_typesupport_cpp\n'}
+[11.858932] (test_msg) StdoutLine: {'line': b'[ 61%] Built target test_msg__rosidl_typesupport_c\n'}
+[11.859366] (test_msg) StdoutLine: {'line': b'[ 70%] Built target test_msg__rosidl_typesupport_introspection_c\n'}
+[11.859760] (test_msg) StdoutLine: {'line': b'[ 70%] Built target test_msg\n'}
+[11.861194] (test_msg) StdoutLine: {'line': b'[ 74%] Built target test_msg__py\n'}
+[11.862405] (test_msg) StdoutLine: {'line': b'[ 80%] Built target test_msg__rosidl_generator_py\n'}
+[11.863693] (test_msg) StdoutLine: {'line': b'[ 93%] Built target test_msg__rosidl_typesupport_c__pyext\n'}
+[11.865237] (test_msg) StdoutLine: {'line': b'[ 93%] Built target test_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.867918] (test_msg) StdoutLine: {'line': b'[100%] Built target test_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[11.872617] (test_msg) StdoutLine: {'line': b'running egg_info\n'}
+[11.874840] (-) TimerEvent: {}
+[11.884526] (test_msg) StdoutLine: {'line': b'writing test_msg.egg-info/PKG-INFO\n'}
+[11.895619] (test_msg) StdoutLine: {'line': b'writing dependency_links to test_msg.egg-info/dependency_links.txt\n'}
+[11.901170] (test_msg) StdoutLine: {'line': b'writing top-level names to test_msg.egg-info/top_level.txt\n'}
+[11.901818] (test_msg) StdoutLine: {'line': b"reading manifest file 'test_msg.egg-info/SOURCES.txt'\n"}
+[11.907138] (test_msg) StdoutLine: {'line': b"writing manifest file 'test_msg.egg-info/SOURCES.txt'\n"}
+[11.908024] (test_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_test_msg_egg\n'}
+[11.910961] (test_msg) CommandEnded: {'returncode': 0}
+[11.979827] (-) TimerEvent: {}
+[12.085858] (-) TimerEvent: {}
+[12.186960] (-) TimerEvent: {}
+[12.195660] (acoustic_msg) StdoutLine: {'line': b'[  3%] Built target acoustic_msg__cpp\n'}
+[12.246496] (acoustic_msg) StdoutLine: {'line': b'[ 12%] Built target acoustic_msg__rosidl_generator_c\n'}
+[12.258031] (acoustic_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_acoustic_msg\n'}
+[12.262303] (linear_acceleration_msg) StdoutLine: {'line': b'[  9%] Built target linear_acceleration_msg__rosidl_generator_c\n'}
+[12.287740] (-) TimerEvent: {}
+[12.349028] (linear_acceleration_msg) StdoutLine: {'line': b'[ 12%] Built target linear_acceleration_msg__cpp\n'}
+[12.388381] (-) TimerEvent: {}
+[12.464263] (linear_acceleration_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_linear_acceleration_msg\n'}
+[12.488599] (-) TimerEvent: {}
+[12.541576] (acoustic_msg) StdoutLine: {'line': b'[ 41%] Built target acoustic_msg__rosidl_typesupport_introspection_cpp\n'}
+[12.542370] (acoustic_msg) StdoutLine: {'line': b'[ 41%] Built target acoustic_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[12.542818] (acoustic_msg) StdoutLine: {'line': b'[ 41%] Built target acoustic_msg__rosidl_typesupport_cpp\n'}
+[12.589918] (-) TimerEvent: {}
+[12.592259] (acoustic_msg) StdoutLine: {'line': b'[ 51%] Built target acoustic_msg__rosidl_typesupport_fastrtps_c\n'}
+[12.602247] (acoustic_msg) StdoutLine: {'line': b'[ 61%] Built target acoustic_msg__rosidl_typesupport_introspection_c\n'}
+[12.613156] (linear_acceleration_msg) StdoutLine: {'line': b'[ 22%] Built target linear_acceleration_msg__rosidl_typesupport_fastrtps_c\n'}
+[12.632294] (linear_acceleration_msg) StdoutLine: {'line': b'[ 32%] Built target linear_acceleration_msg__rosidl_typesupport_c\n'}
+[12.644596] (linear_acceleration_msg) StdoutLine: {'line': b'[ 41%] Built target linear_acceleration_msg__rosidl_typesupport_introspection_c\n'}
+[12.645472] (linear_acceleration_msg) StdoutLine: {'line': b'[ 51%] Built target linear_acceleration_msg__rosidl_typesupport_introspection_cpp\n'}
+[12.665272] (acoustic_msg) StdoutLine: {'line': b'[ 70%] Built target acoustic_msg__rosidl_typesupport_c\n'}
+[12.674680] (linear_acceleration_msg) StdoutLine: {'line': b'[ 61%] Built target linear_acceleration_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[12.690143] (-) TimerEvent: {}
+[12.750592] (linear_acceleration_msg) StdoutLine: {'line': b'[ 70%] Built target linear_acceleration_msg__rosidl_typesupport_cpp\n'}
+[12.790373] (-) TimerEvent: {}
+[12.830358] (test_msg) JobProgress: {'identifier': 'test_msg', 'progress': 'install'}
+[12.874051] (acoustic_msg) StdoutLine: {'line': b'[ 70%] Built target acoustic_msg\n'}
+[12.890785] (-) TimerEvent: {}
+[12.942585] (linear_acceleration_msg) StdoutLine: {'line': b'[ 70%] Built target linear_acceleration_msg\n'}
+[12.962948] (test_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bb/ros2_ws/build/test_msg'], 'cwd': '/home/bb/ros2_ws/build/test_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/test_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[12.992561] (-) TimerEvent: {}
+[13.070889] (test_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.073651] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/rosidl_interfaces/test_msg\n'}
+[13.074381] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg\n'}
+[13.075136] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg\n'}
+[13.076034] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.077993] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/num.h\n'}
+[13.084066] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail\n'}
+[13.084812] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__functions.c\n'}
+[13.085295] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__type_support.h\n'}
+[13.085790] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__functions.h\n'}
+[13.086229] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__struct.h\n'}
+[13.086678] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/library_path.sh\n'}
+[13.087139] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/library_path.dsv\n'}
+[13.087581] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_generator_c.so\n'}
+[13.088538] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg\n'}
+[13.089130] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg\n'}
+[13.092107] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.092999] (-) TimerEvent: {}
+[13.093720] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail\n'}
+[13.094195] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[13.094608] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[13.100071] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg\n'}
+[13.101032] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg\n'}
+[13.101577] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail\n'}
+[13.102061] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__builder.hpp\n'}
+[13.102541] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__traits.hpp\n'}
+[13.102989] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__struct.hpp\n'}
+[13.103442] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/num.hpp\n'}
+[13.108116] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg\n'}
+[13.108979] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg\n'}
+[13.109518] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.110014] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail\n'}
+[13.110514] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.111333] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/dds_fastrtps\n'}
+[13.111795] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.113125] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg\n'}
+[13.116074] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg\n'}
+[13.116816] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.117316] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail\n'}
+[13.117754] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[13.118238] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__type_support.c\n'}
+[13.123319] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_introspection_c.so\n'}
+[13.124186] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_c.so\n'}
+[13.130186] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg\n'}
+[13.131986] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg\n'}
+[13.132544] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail\n'}
+[13.132991] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.133671] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/include/test_msg/test_msg/msg/detail/num__type_support.cpp\n'}
+[13.134072] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[13.135127] (acoustic_msg) StdoutLine: {'line': b'[ 74%] Built target acoustic_msg__py\n'}
+[13.136834] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_typesupport_cpp.so\n'}
+[13.139353] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/pythonpath.sh\n'}
+[13.140588] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/pythonpath.dsv\n'}
+[13.141511] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info\n'}
+[13.142436] (test_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/top_level.txt\n'}
+[13.145218] (test_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/dependency_links.txt\n'}
+[13.146578] (test_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/SOURCES.txt\n'}
+[13.148034] (test_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg-0.0.0-py3.9.egg-info/PKG-INFO\n'}
+[13.149885] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg\n'}
+[13.150771] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/_test_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.151605] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg\n'}
+[13.152677] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg/_num_s.c\n'}
+[13.153550] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg/_num.py\n'}
+[13.154389] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg/__init__.py\n'}
+[13.155251] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.157208] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/libtest_msg__rosidl_generator_py.so\n'}
+[13.157815] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.158327] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.168110] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/_test_msg_s.ep.rosidl_typesupport_c.c\n'}
+[13.168950] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/__init__.py\n'}
+[13.169400] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/_test_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.193273] (-) TimerEvent: {}
+[13.248672] (linear_acceleration_msg) StdoutLine: {'line': b'[ 74%] Built target linear_acceleration_msg__py\n'}
+[13.293548] (-) TimerEvent: {}
+[13.318629] (acoustic_msg) StdoutLine: {'line': b'[ 80%] Built target acoustic_msg__rosidl_generator_py\n'}
+[13.393849] (-) TimerEvent: {}
+[13.496645] (-) TimerEvent: {}
+[13.583145] (linear_acceleration_msg) StdoutLine: {'line': b'[ 80%] Built target linear_acceleration_msg__rosidl_generator_py\n'}
+[13.596974] (-) TimerEvent: {}
+[13.626111] (test_msg) StdoutLine: {'line': b"Listing '/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg'...\n"}
+[13.627415] (test_msg) StdoutLine: {'line': b"Listing '/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/msg'...\n"}
+[13.664136] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.668648] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.689303] (acoustic_msg) StdoutLine: {'line': b'[ 87%] Built target acoustic_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[13.690334] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages/test_msg/test_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.695710] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/lib/libtest_msg__rosidl_generator_py.so\n'}
+[13.697386] (acoustic_msg) StdoutLine: {'line': b'[ 93%] Built target acoustic_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.697996] (-) TimerEvent: {}
+[13.719732] (acoustic_msg) StdoutLine: {'line': b'[100%] Built target acoustic_msg__rosidl_typesupport_c__pyext\n'}
+[13.721910] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/msg/Num.idl\n'}
+[13.723178] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/msg/Num.msg\n'}
+[13.724072] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/package_run_dependencies/test_msg\n'}
+[13.724997] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/parent_prefix_path/test_msg\n'}
+[13.725620] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/ament_prefix_path.sh\n'}
+[13.726292] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/ament_prefix_path.dsv\n'}
+[13.726896] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/path.sh\n'}
+[13.727799] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/environment/path.dsv\n'}
+[13.728823] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.bash\n'}
+[13.729378] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.sh\n'}
+[13.729889] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.zsh\n'}
+[13.730844] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/local_setup.dsv\n'}
+[13.731322] (test_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/test_msg/share/test_msg/package.dsv\n'}
+[13.764318] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/ament_index/resource_index/packages/test_msg\n'}
+[13.766957] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_cExport.cmake\n'}
+[13.768725] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.771014] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.772809] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.775078] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_cppExport.cmake\n'}
+[13.792398] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.794388] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.796789] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.798186] (-) TimerEvent: {}
+[13.799997] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.802772] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cExport.cmake\n'}
+[13.804682] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.808251] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.809916] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.812113] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cppExport.cmake\n'}
+[13.813888] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.816125] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_pyExport.cmake\n'}
+[13.817705] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/export_test_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.819322] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[13.820896] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.822418] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.824048] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.825629] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.828105] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.830211] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.832056] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msgConfig.cmake\n'}
+[13.833330] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/cmake/test_msgConfig-version.cmake\n'}
+[13.834824] (test_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_msg/share/test_msg/package.xml\n'}
+[13.853293] (test_msg) CommandEnded: {'returncode': 0}
+[13.905035] (-) TimerEvent: {}
+[13.943525] (linear_acceleration_msg) StdoutLine: {'line': b'[ 87%] Built target linear_acceleration_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.977072] (linear_acceleration_msg) StdoutLine: {'line': b'[ 93%] Built target linear_acceleration_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[14.005343] (-) TimerEvent: {}
+[14.011535] (linear_acceleration_msg) StdoutLine: {'line': b'[100%] Built target linear_acceleration_msg__rosidl_typesupport_c__pyext\n'}
+[14.105601] (-) TimerEvent: {}
+[14.211343] (-) TimerEvent: {}
+[14.314480] (-) TimerEvent: {}
+[14.417712] (-) TimerEvent: {}
+[14.529588] (-) TimerEvent: {}
+[14.634366] (-) TimerEvent: {}
+[14.736666] (-) TimerEvent: {}
+[14.837674] (-) TimerEvent: {}
+[14.942724] (-) TimerEvent: {}
+[15.044673] (-) TimerEvent: {}
+[15.145796] (-) TimerEvent: {}
+[15.247625] (-) TimerEvent: {}
+[15.349788] (-) TimerEvent: {}
+[15.352596] (acoustic_msg) StdoutLine: {'line': b'running egg_info\n'}
+[15.356338] (acoustic_msg) StdoutLine: {'line': b'writing acoustic_msg.egg-info/PKG-INFO\n'}
+[15.358692] (acoustic_msg) StdoutLine: {'line': b'writing dependency_links to acoustic_msg.egg-info/dependency_links.txt\n'}
+[15.359723] (acoustic_msg) StdoutLine: {'line': b'writing top-level names to acoustic_msg.egg-info/top_level.txt\n'}
+[15.426763] (acoustic_sensor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/acoustic_sensor', 'build', '--build-base', '/home/bb/ros2_ws/build/acoustic_sensor/build', 'install', '--record', '/home/bb/ros2_ws/build/acoustic_sensor/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/acoustic_sensor', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2172', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb/ros2_ws/src/bring_up', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1698', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:48743', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588', 'INVOCATION_ID': '1872a8d726ed4c7cba43a249153ea6c3', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/acoustic_sensor', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/acoustic_sensor/prefix_override:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/bb/ros2_ws/install/acoustic_msg'}, 'shell': False}
+[15.458081] (imu_sensor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_sensor', 'build', '--build-base', '/home/bb/ros2_ws/build/imu_sensor/build', 'install', '--record', '/home/bb/ros2_ws/build/imu_sensor/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/imu_sensor', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2172', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb/ros2_ws/src/bring_up', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1698', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:48743', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588', 'INVOCATION_ID': '1872a8d726ed4c7cba43a249153ea6c3', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/imu_sensor', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/imu_sensor/prefix_override:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/bb/ros2_ws/install/acoustic_msg'}, 'shell': False}
+[15.470930] (-) TimerEvent: {}
+[15.489737] (depth_sensor) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/depth_sensor', 'build', '--build-base', '/home/bb/ros2_ws/build/depth_sensor/build', 'install', '--record', '/home/bb/ros2_ws/build/depth_sensor/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/depth_sensor', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2172', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb/ros2_ws/src/bring_up', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1698', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:48743', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588', 'INVOCATION_ID': '1872a8d726ed4c7cba43a249153ea6c3', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/depth_sensor', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/depth_sensor/prefix_override:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/bb/ros2_ws/install/acoustic_msg'}, 'shell': False}
+[15.530141] (linear_acceleration_msg) StdoutLine: {'line': b'running egg_info\n'}
+[15.533443] (linear_acceleration_msg) StdoutLine: {'line': b'writing linear_acceleration_msg.egg-info/PKG-INFO\n'}
+[15.535810] (linear_acceleration_msg) StdoutLine: {'line': b'writing dependency_links to linear_acceleration_msg.egg-info/dependency_links.txt\n'}
+[15.537422] (linear_acceleration_msg) StdoutLine: {'line': b'writing top-level names to linear_acceleration_msg.egg-info/top_level.txt\n'}
+[15.571180] (-) TimerEvent: {}
+[15.673663] (-) TimerEvent: {}
+[15.686449] (acoustic_msg) StdoutLine: {'line': b"reading manifest file 'acoustic_msg.egg-info/SOURCES.txt'\n"}
+[15.691031] (acoustic_msg) StdoutLine: {'line': b"writing manifest file 'acoustic_msg.egg-info/SOURCES.txt'\n"}
+[15.773952] (-) TimerEvent: {}
+[15.868514] (acoustic_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_acoustic_msg_egg\n'}
+[15.874295] (-) TimerEvent: {}
+[15.875389] (linear_acceleration_msg) StdoutLine: {'line': b"reading manifest file 'linear_acceleration_msg.egg-info/SOURCES.txt'\n"}
+[15.880405] (linear_acceleration_msg) StdoutLine: {'line': b"writing manifest file 'linear_acceleration_msg.egg-info/SOURCES.txt'\n"}
+[15.949483] (acoustic_msg) CommandEnded: {'returncode': 0}
+[15.975578] (-) TimerEvent: {}
+[16.063181] (linear_acceleration_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_linear_acceleration_msg_egg\n'}
+[16.075423] (-) TimerEvent: {}
+[16.180588] (-) TimerEvent: {}
+[16.282592] (-) TimerEvent: {}
+[16.492527] (-) TimerEvent: {}
+[16.596930] (-) TimerEvent: {}
+[16.702165] (-) TimerEvent: {}
+[16.806453] (-) TimerEvent: {}
+[16.910293] (-) TimerEvent: {}
+[17.013926] (-) TimerEvent: {}
+[17.082018] (imu_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[17.084193] (imu_sensor) StdoutLine: {'line': b'writing ../../build/imu_sensor/imu_sensor.egg-info/PKG-INFO\n'}
+[17.086222] (imu_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_sensor/imu_sensor.egg-info/dependency_links.txt\n'}
+[17.087301] (imu_sensor) StdoutLine: {'line': b'writing entry points to ../../build/imu_sensor/imu_sensor.egg-info/entry_points.txt\n'}
+[17.088695] (imu_sensor) StdoutLine: {'line': b'writing requirements to ../../build/imu_sensor/imu_sensor.egg-info/requires.txt\n'}
+[17.090420] (imu_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/imu_sensor/imu_sensor.egg-info/top_level.txt\n'}
+[17.115290] (-) TimerEvent: {}
+[17.216741] (-) TimerEvent: {}
+[17.300513] (depth_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[17.302005] (imu_sensor) StdoutLine: {'line': b"reading manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'\n"}
+[17.304332] (depth_sensor) StdoutLine: {'line': b'writing ../../build/depth_sensor/depth_sensor.egg-info/PKG-INFO\n'}
+[17.307398] (depth_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/depth_sensor/depth_sensor.egg-info/dependency_links.txt\n'}
+[17.308217] (imu_sensor) StdoutLine: {'line': b"writing manifest file '../../build/imu_sensor/imu_sensor.egg-info/SOURCES.txt'\n"}
+[17.310122] (depth_sensor) StdoutLine: {'line': b'writing entry points to ../../build/depth_sensor/depth_sensor.egg-info/entry_points.txt\n'}
+[17.310661] (imu_sensor) StdoutLine: {'line': b'running build\n'}
+[17.311107] (imu_sensor) StdoutLine: {'line': b'running build_py\n'}
+[17.311586] (depth_sensor) StdoutLine: {'line': b'writing requirements to ../../build/depth_sensor/depth_sensor.egg-info/requires.txt\n'}
+[17.312194] (depth_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/depth_sensor/depth_sensor.egg-info/top_level.txt\n'}
+[17.313116] (imu_sensor) StdoutLine: {'line': b'running install\n'}
+[17.317434] (-) TimerEvent: {}
+[17.318918] (imu_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[17.332798] (imu_sensor) StdoutLine: {'line': b'running install_data\n'}
+[17.333652] (imu_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.342744] (imu_sensor) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[17.345821] (imu_sensor) StdoutLine: {'line': b'Copying ../../build/imu_sensor/imu_sensor.egg-info to /home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor-0.0.0-py3.8.egg-info\n'}
+[17.348098] (acoustic_sensor) StdoutLine: {'line': b'running egg_info\n'}
+[17.350935] (acoustic_sensor) StdoutLine: {'line': b'writing ../../build/acoustic_sensor/acoustic_sensor.egg-info/PKG-INFO\n'}
+[17.352962] (acoustic_sensor) StdoutLine: {'line': b'writing dependency_links to ../../build/acoustic_sensor/acoustic_sensor.egg-info/dependency_links.txt\n'}
+[17.358168] (imu_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[17.363623] (acoustic_sensor) StdoutLine: {'line': b'writing entry points to ../../build/acoustic_sensor/acoustic_sensor.egg-info/entry_points.txt\n'}
+[17.364512] (acoustic_sensor) StdoutLine: {'line': b'writing requirements to ../../build/acoustic_sensor/acoustic_sensor.egg-info/requires.txt\n'}
+[17.365032] (acoustic_sensor) StdoutLine: {'line': b'writing top-level names to ../../build/acoustic_sensor/acoustic_sensor.egg-info/top_level.txt\n'}
+[17.417948] (-) TimerEvent: {}
+[17.456238] (imu_sensor) StdoutLine: {'line': b'Installing publisher_accel script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor\n'}
+[17.461171] (imu_sensor) StdoutLine: {'line': b'Installing publisher_quat script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor\n'}
+[17.462483] (imu_sensor) StdoutLine: {'line': b'Installing publisher_xyz script to /home/bb/ros2_ws/install/imu_sensor/lib/imu_sensor\n'}
+[17.465087] (imu_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/imu_sensor/install.log'\n"}
+[17.519167] (-) TimerEvent: {}
+[17.524915] (depth_sensor) StdoutLine: {'line': b"reading manifest file '../../build/depth_sensor/depth_sensor.egg-info/SOURCES.txt'\n"}
+[17.535451] (depth_sensor) StdoutLine: {'line': b"writing manifest file '../../build/depth_sensor/depth_sensor.egg-info/SOURCES.txt'\n"}
+[17.537630] (depth_sensor) StdoutLine: {'line': b'running build\n'}
+[17.538624] (depth_sensor) StdoutLine: {'line': b'running build_py\n'}
+[17.539277] (depth_sensor) StdoutLine: {'line': b'running install\n'}
+[17.540351] (depth_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[17.548246] (depth_sensor) StdoutLine: {'line': b'running install_data\n'}
+[17.566620] (depth_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.567488] (depth_sensor) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages/depth_sensor-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[17.568302] (depth_sensor) StdoutLine: {'line': b'Copying ../../build/depth_sensor/depth_sensor.egg-info to /home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages/depth_sensor-0.0.0-py3.8.egg-info\n'}
+[17.572095] (depth_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[17.578092] (acoustic_sensor) StdoutLine: {'line': b"reading manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'\n"}
+[17.581645] (acoustic_sensor) StdoutLine: {'line': b"writing manifest file '../../build/acoustic_sensor/acoustic_sensor.egg-info/SOURCES.txt'\n"}
+[17.591035] (acoustic_sensor) StdoutLine: {'line': b'running build\n'}
+[17.592336] (acoustic_sensor) StdoutLine: {'line': b'running build_py\n'}
+[17.594790] (acoustic_sensor) StdoutLine: {'line': b'running install\n'}
+[17.597994] (acoustic_sensor) StdoutLine: {'line': b'running install_lib\n'}
+[17.599970] (acoustic_sensor) StdoutLine: {'line': b'running install_data\n'}
+[17.602324] (acoustic_sensor) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.610409] (acoustic_sensor) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages/acoustic_sensor-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[17.613497] (acoustic_sensor) StdoutLine: {'line': b'Copying ../../build/acoustic_sensor/acoustic_sensor.egg-info to /home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages/acoustic_sensor-0.0.0-py3.8.egg-info\n'}
+[17.619185] (acoustic_sensor) StdoutLine: {'line': b'running install_scripts\n'}
+[17.621074] (-) TimerEvent: {}
+[17.665028] (depth_sensor) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/depth_sensor/lib/depth_sensor\n'}
+[17.667155] (depth_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/depth_sensor/install.log'\n"}
+[17.713351] (test_msg) JobEnded: {'identifier': 'test_msg', 'rc': 0}
+[17.721043] (sub) JobStarted: {'identifier': 'sub'}
+[17.723244] (-) TimerEvent: {}
+[17.738366] (acoustic_sensor) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/acoustic_sensor/lib/acoustic_sensor\n'}
+[17.743491] (acoustic_sensor) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/acoustic_sensor/install.log'\n"}
+[17.824691] (-) TimerEvent: {}
+[17.929644] (-) TimerEvent: {}
+[18.032508] (-) TimerEvent: {}
+[18.134500] (-) TimerEvent: {}
+[18.237213] (-) TimerEvent: {}
+[18.340705] (-) TimerEvent: {}
+[18.443295] (-) TimerEvent: {}
+[18.544602] (-) TimerEvent: {}
+[18.647795] (-) TimerEvent: {}
+[18.756496] (-) TimerEvent: {}
+[18.775551] (imu_sensor) CommandEnded: {'returncode': 0}
+[18.856501] (-) TimerEvent: {}
+[18.959032] (-) TimerEvent: {}
+[19.061311] (-) TimerEvent: {}
+[19.164119] (-) TimerEvent: {}
+[19.267502] (-) TimerEvent: {}
+[19.371173] (-) TimerEvent: {}
+[19.472644] (-) TimerEvent: {}
+[19.475249] (imu_sensor) JobEnded: {'identifier': 'imu_sensor', 'rc': 0}
+[19.490313] (linear_acceleration_msg) CommandEnded: {'returncode': 0}
+[19.512374] (acoustic_msg) JobProgress: {'identifier': 'acoustic_msg', 'progress': 'install'}
+[19.516165] (acoustic_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bb/ros2_ws/build/acoustic_msg'], 'cwd': '/home/bb/ros2_ws/build/acoustic_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/acoustic_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[19.542517] (test141123) JobStarted: {'identifier': 'test141123'}
+[19.573374] (-) TimerEvent: {}
+[19.675140] (-) TimerEvent: {}
+[19.776414] (-) TimerEvent: {}
+[19.881354] (-) TimerEvent: {}
+[19.984715] (-) TimerEvent: {}
+[20.087197] (-) TimerEvent: {}
+[20.188951] (-) TimerEvent: {}
+[20.291821] (-) TimerEvent: {}
+[20.395013] (-) TimerEvent: {}
+[20.500330] (-) TimerEvent: {}
+[20.602727] (-) TimerEvent: {}
+[20.683763] (acoustic_sensor) CommandEnded: {'returncode': 0}
+[20.703180] (-) TimerEvent: {}
+[20.805385] (-) TimerEvent: {}
+[20.907329] (-) TimerEvent: {}
+[21.008651] (-) TimerEvent: {}
+[21.109818] (-) TimerEvent: {}
+[21.211659] (-) TimerEvent: {}
+[21.310147] (acoustic_sensor) JobEnded: {'identifier': 'acoustic_sensor', 'rc': 0}
+[21.313035] (-) TimerEvent: {}
+[21.313774] (depth_sensor) CommandEnded: {'returncode': 0}
+[21.413457] (-) TimerEvent: {}
+[21.515458] (-) TimerEvent: {}
+[21.617143] (-) TimerEvent: {}
+[21.719935] (-) TimerEvent: {}
+[21.821308] (-) TimerEvent: {}
+[21.923112] (-) TimerEvent: {}
+[21.934409] (depth_sensor) JobEnded: {'identifier': 'depth_sensor', 'rc': 0}
+[21.946283] (acoustic_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.948776] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/rosidl_interfaces/acoustic_msg\n'}
+[21.949521] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg\n'}
+[21.950186] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg\n'}
+[21.951252] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.951771] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/acoustic.h\n'}
+[21.952419] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail\n'}
+[21.952915] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__functions.h\n'}
+[21.953401] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__functions.c\n'}
+[21.954209] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__type_support.h\n'}
+[21.954847] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__struct.h\n'}
+[21.955437] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/library_path.sh\n'}
+[21.955992] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/library_path.dsv\n'}
+[21.956542] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_generator_c.so\n'}
+[21.957318] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg\n'}
+[21.957819] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg\n'}
+[21.958263] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.958702] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail\n'}
+[21.959290] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_fastrtps_c.h\n'}
+[21.959792] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[21.960703] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg\n'}
+[21.961128] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg\n'}
+[21.961593] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.962062] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail\n'}
+[21.962514] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__type_support.c\n'}
+[21.963008] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_introspection_c.h\n'}
+[21.963655] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_introspection_c.so\n'}
+[21.964397] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_c.so\n'}
+[21.965195] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg\n'}
+[21.965705] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg\n'}
+[21.966717] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/acoustic.hpp\n'}
+[21.967403] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail\n'}
+[21.968282] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__builder.hpp\n'}
+[21.973935] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__traits.hpp\n'}
+[21.974986] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__struct.hpp\n'}
+[21.976575] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg\n'}
+[21.977431] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg\n'}
+[21.978814] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[21.979823] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail\n'}
+[21.981282] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.982450] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/dds_fastrtps\n'}
+[21.982899] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[21.983293] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg\n'}
+[21.983662] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg\n'}
+[21.984156] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail\n'}
+[21.984785] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.985207] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/include/acoustic_msg/acoustic_msg/msg/detail/acoustic__type_support.cpp\n'}
+[21.986699] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[21.988228] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_typesupport_cpp.so\n'}
+[21.989482] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/pythonpath.sh\n'}
+[21.990102] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/pythonpath.dsv\n'}
+[21.990664] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info\n'}
+[21.991679] (acoustic_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/top_level.txt\n'}
+[21.992671] (acoustic_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/dependency_links.txt\n'}
+[21.993888] (acoustic_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/SOURCES.txt\n'}
+[21.995556] (acoustic_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg-0.0.0-py3.9.egg-info/PKG-INFO\n'}
+[21.997425] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg\n'}
+[21.999090] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg\n'}
+[21.999773] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg/_acoustic_s.c\n'}
+[22.001446] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg/_acoustic.py\n'}
+[22.002604] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg/__init__.py\n'}
+[22.004554] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/_acoustic_msg_s.ep.rosidl_typesupport_c.c\n'}
+[22.005855] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/_acoustic_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[22.007053] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[22.009139] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/_acoustic_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[22.012354] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/libacoustic_msg__rosidl_generator_py.so\n'}
+[22.014058] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[22.015983] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[22.017728] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/__init__.py\n'}
+[22.018976] (acoustic_msg) StdoutLine: {'line': b"Listing '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg'...\n"}
+[22.020985] (acoustic_msg) StdoutLine: {'line': b"Listing '/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/msg'...\n"}
+[22.024393] (-) TimerEvent: {}
+[22.025218] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[22.027641] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[22.029197] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages/acoustic_msg/acoustic_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[22.031025] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/lib/libacoustic_msg__rosidl_generator_py.so\n'}
+[22.031639] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/msg/Acoustic.idl\n'}
+[22.033339] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/msg/Acoustic.msg\n'}
+[22.034642] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/package_run_dependencies/acoustic_msg\n'}
+[22.037840] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/parent_prefix_path/acoustic_msg\n'}
+[22.040909] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/ament_prefix_path.sh\n'}
+[22.042650] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/ament_prefix_path.dsv\n'}
+[22.045468] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/path.sh\n'}
+[22.047149] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/environment/path.dsv\n'}
+[22.047769] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.bash\n'}
+[22.048307] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.sh\n'}
+[22.051103] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.zsh\n'}
+[22.055726] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/local_setup.dsv\n'}
+[22.057620] (acoustic_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.dsv\n'}
+[22.058667] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/ament_index/resource_index/packages/acoustic_msg\n'}
+[22.060967] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_cExport.cmake\n'}
+[22.062508] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[22.063986] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[22.064823] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[22.066386] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[22.068228] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[22.069793] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cExport.cmake\n'}
+[22.071498] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[22.073728] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_cppExport.cmake\n'}
+[22.075591] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[22.077193] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[22.077843] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[22.078369] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[22.079642] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cppExport.cmake\n'}
+[22.080223] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[22.080710] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_pyExport.cmake\n'}
+[22.081411] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/export_acoustic_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[22.081835] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[22.082401] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.085141] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.086612] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.087230] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[22.087714] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.089464] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[22.090757] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msgConfig.cmake\n'}
+[22.092206] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/cmake/acoustic_msgConfig-version.cmake\n'}
+[22.094328] (acoustic_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/acoustic_msg/share/acoustic_msg/package.xml\n'}
+[22.094938] (bring_up) JobStarted: {'identifier': 'bring_up'}
+[22.124734] (-) TimerEvent: {}
+[22.226653] (-) TimerEvent: {}
+[22.328397] (-) TimerEvent: {}
+[22.431979] (-) TimerEvent: {}
+[22.533469] (-) TimerEvent: {}
+[22.636832] (-) TimerEvent: {}
+[22.739452] (-) TimerEvent: {}
+[22.829955] (acoustic_msg) CommandEnded: {'returncode': 0}
+[22.843285] (-) TimerEvent: {}
+[22.947152] (-) TimerEvent: {}
+[23.048612] (-) TimerEvent: {}
+[23.150207] (-) TimerEvent: {}
+[23.251502] (-) TimerEvent: {}
+[23.353362] (-) TimerEvent: {}
+[23.457040] (-) TimerEvent: {}
+[23.558978] (-) TimerEvent: {}
+[23.660573] (-) TimerEvent: {}
+[23.763160] (-) TimerEvent: {}
+[23.866504] (-) TimerEvent: {}
+[23.967701] (-) TimerEvent: {}
+[24.068906] (-) TimerEvent: {}
+[24.170087] (-) TimerEvent: {}
+[24.271170] (-) TimerEvent: {}
+[24.372397] (-) TimerEvent: {}
+[24.473527] (-) TimerEvent: {}
+[24.574597] (-) TimerEvent: {}
+[24.675681] (-) TimerEvent: {}
+[24.777506] (-) TimerEvent: {}
+[24.882659] (-) TimerEvent: {}
+[24.983908] (-) TimerEvent: {}
+[25.085303] (-) TimerEvent: {}
+[25.187477] (-) TimerEvent: {}
+[25.290379] (-) TimerEvent: {}
+[25.393355] (-) TimerEvent: {}
+[25.495136] (-) TimerEvent: {}
+[25.598325] (-) TimerEvent: {}
+[25.700752] (-) TimerEvent: {}
+[25.788826] (linear_acceleration_msg) JobProgress: {'identifier': 'linear_acceleration_msg', 'progress': 'install'}
+[25.792992] (linear_acceleration_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bb/ros2_ws/build/linear_acceleration_msg'], 'cwd': '/home/bb/ros2_ws/build/linear_acceleration_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/linear_acceleration_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[25.809448] (-) TimerEvent: {}
+[25.914513] (-) TimerEvent: {}
+[26.017809] (-) TimerEvent: {}
+[26.119103] (-) TimerEvent: {}
+[26.220251] (-) TimerEvent: {}
+[26.321275] (-) TimerEvent: {}
+[26.422267] (-) TimerEvent: {}
+[26.523220] (-) TimerEvent: {}
+[26.624292] (-) TimerEvent: {}
+[26.725331] (-) TimerEvent: {}
+[26.826325] (-) TimerEvent: {}
+[26.927265] (-) TimerEvent: {}
+[27.028264] (-) TimerEvent: {}
+[27.129335] (-) TimerEvent: {}
+[27.230850] (-) TimerEvent: {}
+[27.333552] (-) TimerEvent: {}
+[27.435349] (-) TimerEvent: {}
+[27.544813] (-) TimerEvent: {}
+[27.647496] (-) TimerEvent: {}
+[27.751623] (-) TimerEvent: {}
+[27.853851] (-) TimerEvent: {}
+[27.925785] (linear_acceleration_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.932193] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/ament_index/resource_index/rosidl_interfaces/linear_acceleration_msg\n'}
+[27.937662] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg\n'}
+[27.940341] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg\n'}
+[27.941907] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[27.943079] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/acceleration.h\n'}
+[27.943739] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail\n'}
+[27.944613] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__functions.c\n'}
+[27.945078] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__type_support.h\n'}
+[27.946190] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__struct.h\n'}
+[27.956950] (-) TimerEvent: {}
+[27.962187] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__functions.h\n'}
+[27.966224] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/library_path.sh\n'}
+[27.970666] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/library_path.dsv\n'}
+[27.971178] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_generator_c.so\n'}
+[27.971651] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg\n'}
+[27.972307] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg\n'}
+[27.973190] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[27.973870] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail\n'}
+[27.974626] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__rosidl_typesupport_fastrtps_c.h\n'}
+[27.975467] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[27.976599] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg\n'}
+[27.977254] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg\n'}
+[27.977818] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/acceleration.hpp\n'}
+[27.978458] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail\n'}
+[27.978844] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__struct.hpp\n'}
+[27.979236] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__builder.hpp\n'}
+[27.980051] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__traits.hpp\n'}
+[27.980743] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg\n'}
+[27.981629] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg\n'}
+[27.982545] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[27.983391] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail\n'}
+[27.989148] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.990905] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/dds_fastrtps\n'}
+[27.993693] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[27.994646] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg\n'}
+[27.996094] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg\n'}
+[27.997020] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[27.998285] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail\n'}
+[27.999523] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__type_support.c\n'}
+[28.000807] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__rosidl_typesupport_introspection_c.h\n'}
+[28.001709] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_typesupport_introspection_c.so\n'}
+[28.002744] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_typesupport_c.so\n'}
+[28.003239] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg\n'}
+[28.003810] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg\n'}
+[28.004557] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail\n'}
+[28.005937] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__type_support.cpp\n'}
+[28.007548] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/include/linear_acceleration_msg/linear_acceleration_msg/msg/detail/acceleration__rosidl_typesupport_introspection_cpp.hpp\n'}
+[28.009247] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[28.011020] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_typesupport_cpp.so\n'}
+[28.014573] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/pythonpath.sh\n'}
+[28.016304] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/pythonpath.dsv\n'}
+[28.018341] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg-0.0.0-py3.9.egg-info\n'}
+[28.020023] (linear_acceleration_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg-0.0.0-py3.9.egg-info/top_level.txt\n'}
+[28.021921] (linear_acceleration_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg-0.0.0-py3.9.egg-info/dependency_links.txt\n'}
+[28.023351] (linear_acceleration_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg-0.0.0-py3.9.egg-info/SOURCES.txt\n'}
+[28.023962] (linear_acceleration_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg-0.0.0-py3.9.egg-info/PKG-INFO\n'}
+[28.025677] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg\n'}
+[28.027404] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/msg\n'}
+[28.029119] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/msg/_acceleration.py\n'}
+[28.029679] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/msg/_acceleration_s.c\n'}
+[28.031718] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/msg/__init__.py\n'}
+[28.034097] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/_linear_acceleration_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[28.036810] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/_linear_acceleration_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[28.037837] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/liblinear_acceleration_msg__rosidl_generator_py.so\n'}
+[28.039386] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/linear_acceleration_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[28.040641] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/_linear_acceleration_msg_s.ep.rosidl_typesupport_c.c\n'}
+[28.042109] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/linear_acceleration_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[28.043355] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/linear_acceleration_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[28.045314] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/__init__.py\n'}
+[28.047056] (linear_acceleration_msg) StdoutLine: {'line': b"Listing '/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg'...\n"}
+[28.048562] (linear_acceleration_msg) StdoutLine: {'line': b"Listing '/home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/msg'...\n"}
+[28.049101] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/linear_acceleration_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[28.050374] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/linear_acceleration_msg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[28.052120] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/python3.9/site-packages/linear_acceleration_msg/linear_acceleration_msg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[28.054412] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/lib/liblinear_acceleration_msg__rosidl_generator_py.so\n'}
+[28.055673] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/msg/Acceleration.idl\n'}
+[28.056948] (-) TimerEvent: {}
+[28.058153] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/msg/Acceleration.msg\n'}
+[28.058788] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/ament_index/resource_index/package_run_dependencies/linear_acceleration_msg\n'}
+[28.060427] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/ament_index/resource_index/parent_prefix_path/linear_acceleration_msg\n'}
+[28.062906] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/ament_prefix_path.sh\n'}
+[28.064622] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/ament_prefix_path.dsv\n'}
+[28.065958] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/path.sh\n'}
+[28.067185] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/environment/path.dsv\n'}
+[28.068543] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/local_setup.bash\n'}
+[28.069803] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/local_setup.sh\n'}
+[28.071235] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/local_setup.zsh\n'}
+[28.072515] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/local_setup.dsv\n'}
+[28.074159] (linear_acceleration_msg) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.dsv\n'}
+[28.076183] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/ament_index/resource_index/packages/linear_acceleration_msg\n'}
+[28.077449] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_generator_cExport.cmake\n'}
+[28.079365] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[28.080672] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[28.081849] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[28.083064] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_generator_cppExport.cmake\n'}
+[28.084430] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[28.085760] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[28.086960] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[28.088965] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[28.089955] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_cExport.cmake\n'}
+[28.092712] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[28.094875] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[28.096011] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[28.097500] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_cppExport.cmake\n'}
+[28.098793] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[28.100283] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_generator_pyExport.cmake\n'}
+[28.101611] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/export_linear_acceleration_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[28.102995] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[28.104379] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[28.106736] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[28.107386] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[28.109199] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[28.111028] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[28.112698] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[28.113279] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msgConfig.cmake\n'}
+[28.114611] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/cmake/linear_acceleration_msgConfig-version.cmake\n'}
+[28.116451] (linear_acceleration_msg) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/linear_acceleration_msg/share/linear_acceleration_msg/package.xml\n'}
+[28.117103] (bring_up) JobProgress: {'identifier': 'bring_up', 'progress': 'cmake'}
+[28.117763] (bring_up) JobProgress: {'identifier': 'bring_up', 'progress': 'build'}
+[28.118136] (bring_up) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bb/ros2_ws/build/bring_up', '--', '-j6', '-l6'], 'cwd': '/home/bb/ros2_ws/build/bring_up', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/bring_up'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[28.158667] (-) TimerEvent: {}
+[28.260426] (-) TimerEvent: {}
+[28.364768] (-) TimerEvent: {}
+[28.468684] (-) TimerEvent: {}
+[28.571519] (-) TimerEvent: {}
+[28.674377] (-) TimerEvent: {}
+[28.777713] (-) TimerEvent: {}
+[28.881925] (-) TimerEvent: {}
+[28.983572] (-) TimerEvent: {}
+[28.989083] (acoustic_msg) JobEnded: {'identifier': 'acoustic_msg', 'rc': 0}
+[29.019700] (linear_acceleration_msg) CommandEnded: {'returncode': 0}
+[29.084580] (-) TimerEvent: {}
+[29.186580] (-) TimerEvent: {}
+[29.288246] (-) TimerEvent: {}
+[29.391307] (-) TimerEvent: {}
+[29.493630] (-) TimerEvent: {}
+[29.594840] (-) TimerEvent: {}
+[29.696151] (-) TimerEvent: {}
+[29.800597] (-) TimerEvent: {}
+[29.866922] (bring_up) CommandEnded: {'returncode': 0}
+[29.901381] (-) TimerEvent: {}
+[30.004659] (bring_up) JobProgress: {'identifier': 'bring_up', 'progress': 'install'}
+[30.005019] (-) TimerEvent: {}
+[30.009013] (bring_up) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bb/ros2_ws/build/bring_up'], 'cwd': '/home/bb/ros2_ws/build/bring_up', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/bring_up'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[30.064419] (bring_up) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.067348] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/launch\n'}
+[30.068347] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/launch/comms_nodes.launch.py\n'}
+[30.069047] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/ament_index/resource_index/package_run_dependencies/bring_up\n'}
+[30.070727] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/ament_index/resource_index/parent_prefix_path/bring_up\n'}
+[30.071438] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/ament_prefix_path.sh\n'}
+[30.072593] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/ament_prefix_path.dsv\n'}
+[30.073288] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/path.sh\n'}
+[30.073847] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/environment/path.dsv\n'}
+[30.075125] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.bash\n'}
+[30.075638] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.sh\n'}
+[30.076362] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.zsh\n'}
+[30.076849] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/local_setup.dsv\n'}
+[30.077275] (bring_up) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/bring_up/share/bring_up/package.dsv\n'}
+[30.077721] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/ament_index/resource_index/packages/bring_up\n'}
+[30.078209] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/cmake/bring_upConfig.cmake\n'}
+[30.082302] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/cmake/bring_upConfig-version.cmake\n'}
+[30.082830] (bring_up) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/bring_up/share/bring_up/package.xml\n'}
+[30.087013] (bring_up) CommandEnded: {'returncode': 0}
+[30.105585] (-) TimerEvent: {}
+[30.209277] (-) TimerEvent: {}
+[30.310989] (-) TimerEvent: {}
+[30.412508] (-) TimerEvent: {}
+[30.513799] (-) TimerEvent: {}
+[30.617565] (-) TimerEvent: {}
+[30.719286] (-) TimerEvent: {}
+[30.821555] (-) TimerEvent: {}
+[30.925017] (-) TimerEvent: {}
+[31.029198] (-) TimerEvent: {}
+[31.132195] (-) TimerEvent: {}
+[31.234160] (-) TimerEvent: {}
+[31.337706] (-) TimerEvent: {}
+[31.440839] (-) TimerEvent: {}
+[31.543226] (-) TimerEvent: {}
+[31.645209] (-) TimerEvent: {}
+[31.748251] (-) TimerEvent: {}
+[31.790906] (linear_acceleration_msg) JobEnded: {'identifier': 'linear_acceleration_msg', 'rc': 0}
+[31.848780] (-) TimerEvent: {}
+[31.951751] (-) TimerEvent: {}
+[32.066674] (-) TimerEvent: {}
+[32.169195] (-) TimerEvent: {}
+[32.271692] (-) TimerEvent: {}
+[32.373891] (-) TimerEvent: {}
+[32.476708] (-) TimerEvent: {}
+[32.578309] (-) TimerEvent: {}
+[32.621062] (bring_up) JobEnded: {'identifier': 'bring_up', 'rc': 0}
+[32.625828] (sub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/sub', 'build', '--build-base', '/home/bb/ros2_ws/build/sub/build', 'install', '--record', '/home/bb/ros2_ws/build/sub/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/ros2_test_ws/src/sub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2172', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bb/ros2_ws/install/test_msg/lib:/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb/ros2_ws/src/bring_up', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1698', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:48743', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588', 'INVOCATION_ID': '1872a8d726ed4c7cba43a249153ea6c3', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/sub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/sub/prefix_override:/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/acoustic_msg'}, 'shell': False}
+[32.663498] (test141123) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/test141123', 'build', '--build-base', '/home/bb/ros2_ws/build/test141123/build', 'install', '--record', '/home/bb/ros2_ws/build/test141123/install.log', '--single-version-externally-managed'], 'cwd': '/home/bb/ros2_ws/src/test141123', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bb', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '2172', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/bb', 'OLDPWD': '/home/bb/ros2_ws/src/bring_up', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '1698', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/bb/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'bb', 'JOURNAL_STREAM': '8:48743', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bb', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588', 'INVOCATION_ID': '1872a8d726ed4c7cba43a249153ea6c3', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bb/ros2_ws/build/test141123', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bb/ros2_ws/build/test141123/prefix_override:/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/bb/ros2_ws/install/acoustic_msg'}, 'shell': False}
+[32.686659] (-) TimerEvent: {}
+[32.788090] (-) TimerEvent: {}
+[32.889194] (-) TimerEvent: {}
+[32.990208] (-) TimerEvent: {}
+[33.091247] (-) TimerEvent: {}
+[33.192396] (-) TimerEvent: {}
+[33.293742] (-) TimerEvent: {}
+[33.394736] (-) TimerEvent: {}
+[33.495743] (-) TimerEvent: {}
+[33.596982] (-) TimerEvent: {}
+[33.697974] (-) TimerEvent: {}
+[33.798974] (-) TimerEvent: {}
+[33.900042] (-) TimerEvent: {}
+[33.974004] (sub) StdoutLine: {'line': b'running egg_info\n'}
+[33.976767] (sub) StdoutLine: {'line': b'writing ../../../build/sub/sub.egg-info/PKG-INFO\n'}
+[33.978051] (sub) StdoutLine: {'line': b'writing dependency_links to ../../../build/sub/sub.egg-info/dependency_links.txt\n'}
+[33.979020] (sub) StdoutLine: {'line': b'writing entry points to ../../../build/sub/sub.egg-info/entry_points.txt\n'}
+[33.979742] (sub) StdoutLine: {'line': b'writing requirements to ../../../build/sub/sub.egg-info/requires.txt\n'}
+[33.981018] (sub) StdoutLine: {'line': b'writing top-level names to ../../../build/sub/sub.egg-info/top_level.txt\n'}
+[34.000248] (-) TimerEvent: {}
+[34.003050] (test141123) StdoutLine: {'line': b'running egg_info\n'}
+[34.006070] (test141123) StdoutLine: {'line': b'writing ../../build/test141123/test141123.egg-info/PKG-INFO\n'}
+[34.007528] (test141123) StdoutLine: {'line': b'writing dependency_links to ../../build/test141123/test141123.egg-info/dependency_links.txt\n'}
+[34.008713] (test141123) StdoutLine: {'line': b'writing entry points to ../../build/test141123/test141123.egg-info/entry_points.txt\n'}
+[34.009631] (test141123) StdoutLine: {'line': b'writing requirements to ../../build/test141123/test141123.egg-info/requires.txt\n'}
+[34.010433] (test141123) StdoutLine: {'line': b'writing top-level names to ../../build/test141123/test141123.egg-info/top_level.txt\n'}
+[34.100536] (-) TimerEvent: {}
+[34.152111] (sub) StdoutLine: {'line': b"reading manifest file '../../../build/sub/sub.egg-info/SOURCES.txt'\n"}
+[34.156468] (sub) StdoutLine: {'line': b"writing manifest file '../../../build/sub/sub.egg-info/SOURCES.txt'\n"}
+[34.157404] (sub) StdoutLine: {'line': b'running build\n'}
+[34.157927] (sub) StdoutLine: {'line': b'running build_py\n'}
+[34.159931] (sub) StdoutLine: {'line': b'running install\n'}
+[34.164077] (sub) StdoutLine: {'line': b'running install_lib\n'}
+[34.173042] (sub) StdoutLine: {'line': b'running install_data\n'}
+[34.175401] (sub) StdoutLine: {'line': b'running install_egg_info\n'}
+[34.183537] (sub) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages/sub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[34.184745] (test141123) StdoutLine: {'line': b"reading manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'\n"}
+[34.185518] (sub) StdoutLine: {'line': b'Copying ../../../build/sub/sub.egg-info to /home/bb/ros2_ws/install/sub/lib/python3.8/site-packages/sub-0.0.0-py3.8.egg-info\n'}
+[34.189278] (test141123) StdoutLine: {'line': b"writing manifest file '../../build/test141123/test141123.egg-info/SOURCES.txt'\n"}
+[34.190133] (test141123) StdoutLine: {'line': b'running build\n'}
+[34.190609] (test141123) StdoutLine: {'line': b'running build_py\n'}
+[34.191661] (sub) StdoutLine: {'line': b'running install_scripts\n'}
+[34.192438] (test141123) StdoutLine: {'line': b'running install\n'}
+[34.196331] (test141123) StdoutLine: {'line': b'running install_lib\n'}
+[34.200688] (-) TimerEvent: {}
+[34.204984] (test141123) StdoutLine: {'line': b'running install_data\n'}
+[34.207436] (test141123) StdoutLine: {'line': b'running install_egg_info\n'}
+[34.215644] (test141123) StdoutLine: {'line': b"removing '/home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[34.217712] (test141123) StdoutLine: {'line': b'Copying ../../build/test141123/test141123.egg-info to /home/bb/ros2_ws/install/test141123/lib/python3.8/site-packages/test141123-0.0.0-py3.8.egg-info\n'}
+[34.223519] (test141123) StdoutLine: {'line': b'running install_scripts\n'}
+[34.276448] (sub) StdoutLine: {'line': b'Installing check script to /home/bb/ros2_ws/install/sub/lib/sub\n'}
+[34.278464] (sub) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/sub/lib/sub\n'}
+[34.279320] (sub) StdoutLine: {'line': b'Installing test_pub script to /home/bb/ros2_ws/install/sub/lib/sub\n'}
+[34.280106] (sub) StdoutLine: {'line': b'Installing test_subscriber script to /home/bb/ros2_ws/install/sub/lib/sub\n'}
+[34.282040] (sub) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/sub/install.log'\n"}
+[34.300929] (-) TimerEvent: {}
+[34.310936] (test141123) StdoutLine: {'line': b'Installing publisher script to /home/bb/ros2_ws/install/test141123/lib/test141123\n'}
+[34.313292] (test141123) StdoutLine: {'line': b"writing list of installed files to '/home/bb/ros2_ws/build/test141123/install.log'\n"}
+[34.392198] (sub) CommandEnded: {'returncode': 0}
+[34.401553] (-) TimerEvent: {}
+[34.505264] (-) TimerEvent: {}
+[34.608026] (-) TimerEvent: {}
+[34.710844] (-) TimerEvent: {}
+[34.814255] (-) TimerEvent: {}
+[34.916346] (-) TimerEvent: {}
+[34.994519] (sub) JobEnded: {'identifier': 'sub', 'rc': 0}
+[35.002422] (test_bringup) JobStarted: {'identifier': 'test_bringup'}
+[35.016567] (-) TimerEvent: {}
+[35.117820] (-) TimerEvent: {}
+[35.219902] (-) TimerEvent: {}
+[35.321426] (-) TimerEvent: {}
+[35.424672] (-) TimerEvent: {}
+[35.528182] (-) TimerEvent: {}
+[35.631575] (-) TimerEvent: {}
+[35.732956] (-) TimerEvent: {}
+[35.801732] (test141123) CommandEnded: {'returncode': 0}
+[35.834688] (-) TimerEvent: {}
+[35.937033] (-) TimerEvent: {}
+[36.038998] (-) TimerEvent: {}
+[36.140240] (-) TimerEvent: {}
+[36.241558] (-) TimerEvent: {}
+[36.344019] (-) TimerEvent: {}
+[36.421042] (test141123) JobEnded: {'identifier': 'test141123', 'rc': 0}
+[36.430198] (test_bringup) JobProgress: {'identifier': 'test_bringup', 'progress': 'cmake'}
+[36.432988] (test_bringup) JobProgress: {'identifier': 'test_bringup', 'progress': 'build'}
+[36.435228] (test_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bb/ros2_ws/build/test_bringup', '--', '-j6', '-l6'], 'cwd': '/home/bb/ros2_ws/build/test_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/test_msg/lib:/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/test_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[36.460340] (-) TimerEvent: {}
+[36.561700] (-) TimerEvent: {}
+[36.657017] (test_bringup) CommandEnded: {'returncode': 0}
+[36.667623] (-) TimerEvent: {}
+[36.771990] (-) TimerEvent: {}
+[36.777163] (test_bringup) JobProgress: {'identifier': 'test_bringup', 'progress': 'install'}
+[36.780831] (test_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bb/ros2_ws/build/test_bringup'], 'cwd': '/home/bb/ros2_ws/build/test_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bb'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '2172'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bb/ros2_ws/install/test_msg/lib:/home/bb/ros2_ws/install/acoustic_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bb'), ('OLDPWD', '/home/bb/ros2_ws/src/bring_up'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/bb/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bb'), ('JOURNAL_STREAM', '8:48743'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bb'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/bb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/bb-desktop:@/tmp/.ICE-unix/2588,unix/bb-desktop:/tmp/.ICE-unix/2588'), ('INVOCATION_ID', '1872a8d726ed4c7cba43a249153ea6c3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b6557601_03d9_4235_b352_dac97d3237c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.161'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bb/ros2_ws/install/sub:/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bb/ros2_ws/build/test_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bb/ros2_ws/install/sub/lib/python3.8/site-packages:/home/bb/ros2_ws/install/test_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/test141123/lib/python3.10/site-packages:/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/depth_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_sensor/lib/python3.8/site-packages:/home/bb/ros2_ws/install/acoustic_msg/lib/python3.9/site-packages:/home/bb/ros2_ws/install/IMU_sensor/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/bb/ros2_ws/install/test_msg:/home/bb/ros2_ws/install/acoustic_msg:/home/bb/ros2_ws/install/test141123:/home/bb/ros2_ws/install/imu_sensor:/home/bb/ros2_ws/install/depth_sensor:/home/bb/ros2_ws/install/acoustic_sensor:/home/bb/ros2_ws/install/IMU_sensor:/opt/ros/humble')]), 'shell': False}
+[36.833709] (test_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[36.835178] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/launch\n'}
+[36.835932] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/launch/test.launch.py\n'}
+[36.836702] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/ament_index/resource_index/package_run_dependencies/test_bringup\n'}
+[36.837400] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/ament_index/resource_index/parent_prefix_path/test_bringup\n'}
+[36.837919] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/ament_prefix_path.sh\n'}
+[36.838578] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/ament_prefix_path.dsv\n'}
+[36.839025] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/path.sh\n'}
+[36.839575] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/environment/path.dsv\n'}
+[36.840034] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.bash\n'}
+[36.840578] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.sh\n'}
+[36.841121] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.zsh\n'}
+[36.841825] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/local_setup.dsv\n'}
+[36.842252] (test_bringup) StdoutLine: {'line': b'-- Installing: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/package.dsv\n'}
+[36.842623] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/ament_index/resource_index/packages/test_bringup\n'}
+[36.843001] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/cmake/test_bringupConfig.cmake\n'}
+[36.843356] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/cmake/test_bringupConfig-version.cmake\n'}
+[36.843786] (test_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/bb/ros2_ws/install/test_bringup/share/test_bringup/package.xml\n'}
+[36.850899] (test_bringup) CommandEnded: {'returncode': 0}
+[36.872492] (-) TimerEvent: {}
+[36.975976] (-) TimerEvent: {}
+[37.080131] (-) TimerEvent: {}
+[37.182517] (-) TimerEvent: {}
+[37.284526] (-) TimerEvent: {}
+[37.386409] (-) TimerEvent: {}
+[37.489057] (-) TimerEvent: {}
+[37.592183] (-) TimerEvent: {}
+[37.693200] (-) TimerEvent: {}
+[37.798013] (-) TimerEvent: {}
+[37.901116] (-) TimerEvent: {}
+[38.004744] (-) TimerEvent: {}
+[38.108164] (-) TimerEvent: {}
+[38.211332] (-) TimerEvent: {}
+[38.312497] (-) TimerEvent: {}
+[38.317546] (test_bringup) JobEnded: {'identifier': 'test_bringup', 'rc': 0}
+[38.323496] (-) EventReactorShutdown: {}
