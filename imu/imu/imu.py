@@ -72,9 +72,9 @@ class MinimalPublisher(Node):
                     
                     IMU_DICT['a_z'] = float(temp[0] << 24 | temp[1] << 16 | temp[2] << 8 | temp[3])
                 
-                #processing
+                #if any None values, continue reading from canbus
                 if None in IMU_DICT.values():
-                    return
+                    continue
 
                 imu_msg = Imu()
                 # Fill in the header
