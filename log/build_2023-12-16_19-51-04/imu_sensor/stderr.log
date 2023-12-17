@@ -1,5 +1,0 @@
-  File "/home/bb/ros2_ws/install/imu_sensor/lib/python3.8/site-packages/imu_sensor/publisher_xyz.py", line 67
-    accel_msg.z = float(temp[0] << 24 | temp[1] << 16 | temp[2] << 8 | temp[3]))
-                                                                               ^
-SyntaxError: unmatched ')'
-

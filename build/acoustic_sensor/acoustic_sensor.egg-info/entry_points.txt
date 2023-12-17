@@ -1,3 +1,0 @@
-[console_scripts]
-publisher_acoustic = acoustic_sensor.publisher:main
-

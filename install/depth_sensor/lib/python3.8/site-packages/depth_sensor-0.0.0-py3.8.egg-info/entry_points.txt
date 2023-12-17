@@ -1,3 +1,0 @@
-[console_scripts]
-publisher_depth = depth_sensor.publisher:main
-

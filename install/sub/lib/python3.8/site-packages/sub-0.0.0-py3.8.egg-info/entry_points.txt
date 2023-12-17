@@ -1,6 +1,0 @@
-[console_scripts]
-check = sub.sub2:main
-publisher = sub.pub:main
-test_pub = sub.test_pub:main
-test_subscriber = sub.sub:main
-

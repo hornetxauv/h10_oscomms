@@ -1,4 +1,0 @@
-source;share/acoustic_msg/environment/ament_prefix_path.sh
-source;share/acoustic_msg/environment/library_path.sh
-source;share/acoustic_msg/environment/path.sh
-source;share/acoustic_msg/environment/pythonpath.sh

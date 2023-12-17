@@ -1,3 +1,0 @@
-[console_scripts]
-publisher = IMU_sensor.publisher:main
-

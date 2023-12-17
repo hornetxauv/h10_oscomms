@@ -1,6 +1,0 @@
-{
-  "package_name": "acoustic_msg",
-  "non_idl_tuples": [
-    "/home/bb/ros2_ws/src/acoustic_msg:msg/Acoustic.msg"
-  ]
-}

@@ -1,6 +1,0 @@
-{
-  "package_name": "test_msg",
-  "non_idl_tuples": [
-    "/home/bb/ros2_ws/ros2_test_ws/src/test_msg:msg/Num.msg"
-  ]
-}

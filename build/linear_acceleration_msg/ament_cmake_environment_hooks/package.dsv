@@ -1,4 +1,0 @@
-source;share/linear_acceleration_msg/local_setup.bash
-source;share/linear_acceleration_msg/local_setup.dsv
-source;share/linear_acceleration_msg/local_setup.sh
-source;share/linear_acceleration_msg/local_setup.zsh

@@ -1,8 +1,0 @@
-setup.py
-linear_acceleration_msg/__init__.py
-linear_acceleration_msg.egg-info/PKG-INFO
-linear_acceleration_msg.egg-info/SOURCES.txt
-linear_acceleration_msg.egg-info/dependency_links.txt
-linear_acceleration_msg.egg-info/top_level.txt
-linear_acceleration_msg/msg/__init__.py
-linear_acceleration_msg/msg/_acceleration.py
