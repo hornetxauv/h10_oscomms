@@ -12,6 +12,7 @@
   <exec_depend>acoustic_sensor</exec_depend>
   <exec_depend>depth_sensor</exec_depend>
   <exec_depend>imu_sensor</exec_depend>
+  <exec_depend>imu</exec_depend>
   <!--add pkg dependencies here follow the top-->  
 
   <test_depend>ament_lint_auto</test_depend>
