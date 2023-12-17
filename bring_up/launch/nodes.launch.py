@@ -34,6 +34,12 @@ def generate_launch_description():
         executable="publisher_accel",
         name="final_accel"
     )
+    imu = Node(
+        package="imu"
+        executable="imu",
+        name="imu"
+    )
+
     # add the other nodes here then build all at once    
     ld.add_action(quat)
     ld.add_action(accel_xy)
@@ -41,5 +47,6 @@ def generate_launch_description():
     ld.add_action(final_accel)
     ld.add_action(acoustic)
     ld.add_action(depth)
+    ld.add_action(imu)
     
     return ld
