@@ -35,7 +35,7 @@ def generate_launch_description():
         name="final_accel"
     )
     imu = Node(
-        package="imu"
+        package="imu",
         executable="imu",
         name="imu"
     )
