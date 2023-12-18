@@ -21,7 +21,7 @@ class MinimalPublisher(Node):
     def __init__(self):
         super().__init__('imu')
         self.publisher_ = self.create_publisher(Imu, '/sensors/imu', 10)
-        timer_period = 0.5  # seconds
+        timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
         self.bus = can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000)
@@ -101,15 +101,15 @@ class MinimalPublisher(Node):
                 self.get_logger().info(f"orientation published: {imu_msg.orientation}")
 
                 #reset imu values
-                IMU_DICT = {
-                    'a_x': None,
-                    'a_y': None,
-                    'a_z': None,
-                    'q_x': None,
-                    'q_y': None,
-                    'q_z': None,
-                    'q_w': None
-                }
+                # IMU_DICT = {
+                #     'a_x': None,
+                #     'a_y': None,
+                #     'a_z': None,
+                #     'q_x': None,
+                #     'q_y': None,
+                #     'q_z': None,
+                #     'q_w': None
+                # }
 
 def main(args=None):
     rclpy.init(args=args)
