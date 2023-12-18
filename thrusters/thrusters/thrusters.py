@@ -1,8 +1,5 @@
 import can
 
-bus = can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000)
-
-
 class ThrusterControl:
     def __init__(self):
         self.thrustValues = [127, 127, 127, 127, 127, 127]
@@ -14,12 +11,16 @@ class ThrusterControl:
     def waitTillSend(self):
         while True:
             try:
-                t_msg = can.Message(
-                    arbitration_id=0, data=self.thrustValues, is_extended_id=False
-                )
-                bus.send(t_msg)
-                print(f"Sent thrust values: {self.thrustValues} to CAN.")
-                break
+                # With statement needed to ensure that bus is closed properly
+                # https://stackoverflow.com/questions/73386339/close-bus-in-python-can
+                with can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000) as bus:
+                    t_msg = can.Message(
+                        arbitration_id=0, data=self.thrustValues, is_extended_id=False
+                    )
+                    bus.send(t_msg)
+                    print(f"Sent thrust values: {self.thrustValues} to CAN.")
+
+                    break
 
             except can.CanError as error:
                 print(error)
