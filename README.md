@@ -33,3 +33,15 @@ sudo ip link set can0 up type can bitrate 500000 dbitrate 1000000 berr-reporting
 ```
 sudo ip -s -d link show can0
 ```
+
+# Start Job
+## Start/Stop
+```
+sudo systemctl start h9
+sudo systemctl stop h9
+```
+## Disable/Enable
+```
+sudo systemctl disable h9
+sudo systemctl enable h9
+```
