@@ -4,7 +4,7 @@ from geometry_msgs.msg import Quaternion, Vector3
 from rclpy.node import Node
 from sensor_msgs.msg import Imu
 from std_msgs.msg import Header
-from tasks.utilities import quat_to_list
+from controls_core.utilities import quat_to_list
 from tf_transformations import euler_from_quaternion
 
 IMU_DICT = {
