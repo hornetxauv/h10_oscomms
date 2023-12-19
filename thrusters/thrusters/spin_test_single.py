@@ -4,12 +4,13 @@ from thrusters import ThrusterControl
 
 thrusterControl = ThrusterControl()
 thrustMag = 170
+duration = 5
 
 # Spin forward one by one.
 currIdx = 0
 while currIdx < 6:
     thrusterControl.spinSingle(currIdx, thrustMag)
-    time.sleep(2)
+    time.sleep(duration)
     currIdx += 1
     thrusterControl.killThrusters()
     time.sleep(0.5)
@@ -18,7 +19,7 @@ while currIdx < 6:
 currIdx = 0
 while currIdx < 6:
     thrusterControl.spinSingle(currIdx, 255 - thrustMag)
-    time.sleep(2)
+    time.sleep(duration)
     currIdx += 1
     thrusterControl.killThrusters()
     time.sleep(0.5)
