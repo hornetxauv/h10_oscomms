@@ -1,13 +1,22 @@
 import rclpy
+from acoustic_msg.msg import Acoustic
 from geometry_msgs.msg import Quaternion, Vector3
 from rclpy.node import Node
-from sensor_msgs.msg import Imu
-from acoustic_msg.msg import Acoustic
+from sensor_msgs.msg import FluidPressure, Imu
 from std_msgs.msg import Header
 from tf_transformations import euler_from_quaternion
-from sensor_msgs.msg import FluidPressure
 
 quat_to_list = lambda quat: [quat.x, quat.y, quat.z, quat.w]
+IMU_DICT = {
+    "a_x": None,
+    "a_y": None,
+    "a_z": None,
+    "q_x": None,
+    "q_y": None,
+    "q_z": None,
+    "q_w": None,
+}
+
 
 def imu_callback(publisher, bus):
     global IMU_DICT
@@ -73,20 +82,21 @@ def imu_callback(publisher, bus):
             print(imu_msg)
             publisher.publish(imu_msg)
 
+
 def acoustic_callback(publisher, bus):
     with bus as bus:
         for msg in bus:
-            #filter for canbus id
+            # filter for canbus id
             msg_id = msg.arbitration_id
             print("message id: ", msg_id)
-            if (msg_id == 10):
-                #print(msg.data)
-                temp = list(msg.data) #msg.data is byte array, entries are in hex.
+            if msg_id == 10:
+                # print(msg.data)
+                temp = list(msg.data)  # msg.data is byte array, entries are in hex.
                 msg_data = []
-                for i in range(0 ,len(temp), 2):
-                    #left shift, or operations
+                for i in range(0, len(temp), 2):
+                    # left shift, or operations
                     msg_data.append(float((temp[i] << 8 | temp[i + 1])))
-        
+
                 # Create an Imu message
                 acoustics_msg = Acoustic()
                 acoustics_msg.x = msg_data[0]
@@ -96,28 +106,29 @@ def acoustic_callback(publisher, bus):
                 print(acoustics_msg)
                 publisher.publish(acoustics_msg)
 
+
 def depth_callback(publisher, bus):
     with bus as bus:
         for msg in bus:
-            #print(msg.data)
+            # print(msg.data)
             # chnage the condition after testing
             msg_id = msg.arbitration_id
-            if (msg_id == 4):
+            if msg_id == 4:
                 print("message id:", msg_id)
                 temp = list(msg.data)
-                depth = (float((temp[0] << 8 | temp[1])))
-        
+                depth = float((temp[0] << 8 | temp[1]))
+
                 print(depth, type(depth))
-                
+
                 # Create an Depth message
                 depth_msg = FluidPressure()
 
                 # Fill in the header
                 depth_msg.header = Header()
-                #depth_msg.header.stamp = 123.0 error, need type Time
+                # depth_msg.header.stamp = 123.0 error, need type Time
                 depth_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
-                
-                #NEED TEST if this works
+
+                # NEED TEST if this works
                 depth_msg.fluid_pressure = depth
                 print(depth_msg)
                 publisher.publish(depth_msg)
