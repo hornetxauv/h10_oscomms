@@ -8,6 +8,15 @@ from tf_transformations import euler_from_quaternion
 from sensor_msgs.msg import FluidPressure
 
 quat_to_list = lambda quat: [quat.x, quat.y, quat.z, quat.w]
+IMU_DICT = {
+    "a_x": None,
+    "a_y": None,
+    "a_z": None,
+    "q_x": None,
+    "q_y": None,
+    "q_z": None,
+    "q_w": None,
+}
 
 def imu_callback(publisher, bus):
     global IMU_DICT
