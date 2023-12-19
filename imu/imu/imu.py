@@ -82,18 +82,18 @@ class MinimalPublisher(Node):
 
                 # acceleration
                 imu_msg.linear_acceleration = Vector3()
-                imu_msg.linear_acceleration.y = IMU_DICT["a_y"]
-                imu_msg.linear_acceleration.x = IMU_DICT["a_x"]
-                imu_msg.linear_acceleration.z = IMU_DICT["a_z"]
+                imu_msg.linear_acceleration.y = IMU_DICT["a_y"] / 1000
+                imu_msg.linear_acceleration.x = IMU_DICT["a_x"] / 1000
+                imu_msg.linear_acceleration.z = IMU_DICT["a_z"] / 1000
 
                 # Quaternion
                 # Fill in the orientation (quaternion)
                 # imu_msg.orientation = Quaternion(0.0, 0.0, 0.0, 1.0)  # Adjust the values accordingly
                 imu_msg.orientation = Quaternion()  # Adjust the values accordingly
-                imu_msg.orientation.x = IMU_DICT["q_x"]
-                imu_msg.orientation.y = IMU_DICT["q_y"]
-                imu_msg.orientation.z = IMU_DICT["q_z"]
-                imu_msg.orientation.w = IMU_DICT["q_w"]
+                imu_msg.orientation.x = IMU_DICT["q_x"] / 1000
+                imu_msg.orientation.y = IMU_DICT["q_y"] / 1000
+                imu_msg.orientation.z = IMU_DICT["q_z"] / 1000
+                imu_msg.orientation.w = IMU_DICT["q_w"] / 1000
 
                 self.publisher_.publish(imu_msg)
                 self.get_logger().info(
