@@ -1,10 +1,10 @@
 import can
-import numpy as np
 import rclpy
 from geometry_msgs.msg import Quaternion, Vector3
 from rclpy.node import Node
 from sensor_msgs.msg import Imu
 from std_msgs.msg import Header
+from tasks.utilities import quat_to_list
 from tf_transformations import euler_from_quaternion
 
 IMU_DICT = {
@@ -16,8 +16,6 @@ IMU_DICT = {
     "q_z": None,
     "q_w": None,
 }
-
-quat_to_list = lambda quat: [quat.x, quat.y, quat.z, quat.w]
 
 
 class MinimalPublisher(Node):
