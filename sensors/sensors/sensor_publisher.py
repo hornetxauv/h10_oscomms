@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 import can
-from sensor_callbacks import imu_callback, acoustic_callback, depth_callback
+from sensors.sensor_callbacks import imu_callback, acoustic_callback, depth_callback
 
 from sensor_msgs.msg import Imu
 from acoustic_msg.msg import Acoustic
