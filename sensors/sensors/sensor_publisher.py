@@ -1,16 +1,13 @@
-import rclpy
-from rclpy.node import Node
 import can
-from sensors.sensor_callbacks import imu_callback, acoustic_callback, depth_callback
-
-from sensor_msgs.msg import Imu
+import rclpy
 from acoustic_msg.msg import Acoustic
-from sensor_msgs.msg import FluidPressure
+from rclpy.node import Node
+from sensor_msgs.msg import FluidPressure, Imu
+from sensors.sensor_callbacks import acoustic_callback, depth_callback, imu_callback
 from std_msgs.msg import Header
 
-bus = can.interface.Bus(
-    interface="socketcan", channel="can0", bitrate=500000
-)
+bus = can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000)
+
 
 class SensorDataPublisher(Node):
     def __init__(self, sensor_type, sensor_topic, name, callback_func):
@@ -23,23 +20,22 @@ class SensorDataPublisher(Node):
     def callback(self):
         return self.callback_func(self.publisher_, bus)
 
-def main(publisher):
+
+def sensor(sensor_type, sensor_topic, name, callback_func):
     rclpy.init()
+    publisher = SensorDataPublisher(sensor_type, sensor_topic, name, callback_func)
     rclpy.spin(publisher)
     publisher.destroy_node()
     rclpy.shutdown()
+
 
 def imu_publisher():
-    rclpy.init()
-    publisher = SensorDataPublisher(Imu, "/sensors/imu", "imu", imu_callback)
-    rclpy.spin(publisher)
-    publisher.destroy_node()
-    rclpy.shutdown()
-    
+    sensor(Imu, "sensors/imu", "imu", imu_callback)
+
+
 def acoustic_publisher():
-    publisher = SensorDataPublisher(Acoustic, "/sensors/acoustic", "acoustic", acoustic_callback)
-    main(publisher)
+    sensor(Acoustic, "sensors/acoustic", "acoustic", acoustic_callback)
+
 
 def depth_publisher():
-    publisher = SensorDataPublisher(Imu, "/sensors/depth", "depth", depth_callback)
-    main(publisher)
+    sensor(FluidPressure, "sensors/depth", "depth", depth_callback)
