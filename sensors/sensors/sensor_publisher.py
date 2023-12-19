@@ -8,7 +8,6 @@ from acoustic_msg.msg import Acoustic
 from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
 
-
 bus = can.interface.Bus(
     interface="socketcan", channel="can0", bitrate=500000
 )
@@ -31,8 +30,11 @@ def main(publisher):
     rclpy.shutdown()
 
 def imu_publisher():
+    rclpy.init()
     publisher = SensorDataPublisher(Imu, "/sensors/imu", "imu", imu_callback)
-    main(publisher)
+    rclpy.spin(publisher)
+    publisher.destroy_node()
+    rclpy.shutdown()
     
 def acoustic_publisher():
     publisher = SensorDataPublisher(Acoustic, "/sensors/acoustic", "acoustic", acoustic_callback)
