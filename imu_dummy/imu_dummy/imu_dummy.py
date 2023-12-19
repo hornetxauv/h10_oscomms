@@ -1,7 +1,6 @@
 # import can
 import rclpy
 from geometry_msgs.msg import Quaternion, Vector3
-from linear_acceleration_msg.msg import AccelerationXY, AccelerationZ
 from rclpy.node import Node
 from sensor_msgs.msg import Imu
 from std_msgs.msg import Header

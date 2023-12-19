@@ -1,10 +1,11 @@
 import can
+import numpy as np
 import rclpy
 from geometry_msgs.msg import Quaternion, Vector3
-from linear_acceleration_msg.msg import AccelerationXY, AccelerationZ
 from rclpy.node import Node
 from sensor_msgs.msg import Imu
 from std_msgs.msg import Header
+from tf_transformations import euler_from_quaternion
 
 IMU_DICT = {
     "a_x": None,
@@ -15,6 +16,8 @@ IMU_DICT = {
     "q_z": None,
     "q_w": None,
 }
+
+quat_to_list = lambda quat: [quat.x, quat.y, quat.z, quat.w]
 
 
 class MinimalPublisher(Node):
@@ -34,11 +37,10 @@ class MinimalPublisher(Node):
             for msg in bus:
                 # filter for canbus id
                 msg_id = msg.arbitration_id
+                # print("message id: ", msg_id)
 
                 # Quaternion
                 if msg_id == 1:
-                    print("message id: ", msg_id)
-
                     IMU_DICT["q_x"] = float(
                         int.from_bytes(msg.data[:2], "big", signed=True)
                     )
@@ -54,22 +56,18 @@ class MinimalPublisher(Node):
 
                 # Acceleration xy
                 elif msg_id == 2:
-                    print("message id: ", msg_id)
                     IMU_DICT["a_x"] = float(
                         int.from_bytes(msg.data[:4], "big", signed=True)
                     )
                     IMU_DICT["a_y"] = float(
                         int.from_bytes(msg.data[4:], "big", signed=True)
                     )
-                    print(IMU_DICT["a_x"], IMU_DICT["a_y"])
 
                 # Acceleration z
                 elif msg_id == 3:
-                    print("message id: ", msg_id)
                     IMU_DICT["a_z"] = float(
                         int.from_bytes(msg.data[:4], "big", signed=True)
                     )
-                    print(IMU_DICT["a_z"])
 
                 # if any None values, continue reading from canbus
                 if None in IMU_DICT.values():
@@ -97,9 +95,12 @@ class MinimalPublisher(Node):
 
                 self.publisher_.publish(imu_msg)
                 self.get_logger().info(
-                    f"linear acceleration published: {imu_msg.linear_acceleration}"
+                    f"Linear acceleration published: {imu_msg.linear_acceleration}"
                 )
-                self.get_logger().info(f"orientation published: {imu_msg.orientation}")
+                self.get_logger().info(f"Orientation published: {imu_msg.orientation}")
+                self.get_logger().info(
+                    f"Roll Pitch Yaw: {euler_from_quaternion(quat_to_list(imu_msg.orientation))}"
+                )
 
 
 def main(args=None):
