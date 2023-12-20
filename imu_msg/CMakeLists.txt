@@ -15,7 +15,9 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Imu.msg"
- )
+  DEPENDENCIES geometry_msgs
+  DEPENDENCIES std_msgs
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

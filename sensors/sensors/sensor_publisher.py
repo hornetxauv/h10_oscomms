@@ -1,8 +1,9 @@
 import can
 import rclpy
 from acoustic_msg.msg import Acoustic
+from imu_msg.msg import Imu
 from rclpy.node import Node
-from sensor_msgs.msg import FluidPressure, Imu
+from sensor_msgs.msg import FluidPressure
 from sensors.sensor_callbacks import acoustic_callback, depth_callback, imu_callback
 
 
