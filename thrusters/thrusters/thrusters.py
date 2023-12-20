@@ -1,8 +1,53 @@
 import can
+import numpy as np
+
+# fmt: off
+# Pin numbers of each thruster
+thruster_idxs = {
+    "FL": 1,
+    "FR": 3,
+    "ML": 5,
+    "MR": 2,
+    "RL": 4,
+    "RR": 0
+}
+
+# -1 means thruster is reversed.
+thruster_reverse = {
+    "FL": -1,
+    "FR": 1,
+    "ML": 1,
+    "MR": -1,
+    "RL": 1,
+    "RR": -1
+}
+# fmt: on
+
 
 class ThrusterControl:
     def __init__(self):
         self.thrustValues = [127, 127, 127, 127, 127, 127]
+
+    def correctPWMS(self):
+        """
+        thrustValues are in the FL-FR-ML-MR-RL-RR order. Set:
+            > 127 to move in principal directions.
+            < 127 to move in opposite to principal directions.
+
+        correctedPWMs account for different pin orderings and
+        reversed thrusters.
+        """
+        correctedPWMs = [127, 127, 127, 127, 127, 127]
+        for (thruster, thrusterPin), thrustValue in zip(
+            thruster_idxs.items(), self.thrustValues
+        ):
+            # If thruster is not reversed,
+            if thruster_reverse[thruster] > 0:
+                correctedPWMs[thrusterPin] = thrustValue
+            else:
+                correctedPWMs[thrusterPin] = 255 - thrustValue
+
+        return correctedPWMs
 
     def setThrusters(self, thrustValues):
         self.thrustValues = thrustValues
@@ -13,12 +58,15 @@ class ThrusterControl:
             try:
                 # With statement needed to ensure that bus is closed properly
                 # https://stackoverflow.com/questions/73386339/close-bus-in-python-can
-                with can.interface.Bus(interface="socketcan", channel="can0", bitrate=500000) as bus:
+                with can.interface.Bus(
+                    interface="socketcan", channel="can0", bitrate=500000
+                ) as bus:
+                    correctedPWMs = self.correctPWMS()
                     t_msg = can.Message(
-                        arbitration_id=0, data=self.thrustValues, is_extended_id=False
+                        arbitration_id=0, data=correctedPWMs, is_extended_id=False
                     )
                     bus.send(t_msg)
-                    print(f"Sent thrust values: {self.thrustValues} to CAN.")
+                    print(f"Sent PWMs: {correctedPWMs} to CAN.")
 
                     break
 
