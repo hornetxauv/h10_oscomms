@@ -1,9 +1,10 @@
-from acoustic_msg.msg import Acoustic
-from geometry_msgs.msg import Quaternion, Vector3
-from sensor_msgs.msg import FluidPressure, Imu
+from geometry_msgs.msg import Vector3
+from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
-from controls_core.utilities import quat_to_list
 from tf_transformations import euler_from_quaternion
+
+from acoustic_msg.msg import Acoustic
+from imu_msg.msg import Imu
 
 IMU_DICT = {
     "a_x": None,
@@ -72,17 +73,27 @@ def imu_callback(publisher, bus):
             # Quaternion
             # Fill in the orientation (quaternion)
             # imu_msg.orientation = Quaternion(0.0, 0.0, 0.0, 1.0)  # Adjust the values accordingly
-            imu_msg.orientation = Quaternion()  # Adjust the values accordingly
-            imu_msg.orientation.x = IMU_DICT["q_x"] / 1000
-            imu_msg.orientation.y = IMU_DICT["q_y"] / 1000
-            imu_msg.orientation.z = IMU_DICT["q_z"] / 1000
-            imu_msg.orientation.w = IMU_DICT["q_w"] / 1000
+            rpy_list = euler_from_quaternion(
+                [
+                    IMU_DICT["q_x"] / 1000,
+                    IMU_DICT["q_y"] / 1000,
+                    IMU_DICT["q_z"] / 1000,
+                    IMU_DICT["q_w"] / 1000,
+                ]
+            )
+
+            # roll_pitch_yaw
+            imu_msg.roll_pitch_yaw = Vector3()
+            # flip roll pitch roll negative
+            imu_msg.roll_pitch_yaw.y = -rpy_list[0]
+            imu_msg.roll_pitch_yaw.x = rpy_list[1]
+            imu_msg.roll_pitch_yaw.z = rpy_list[2]
 
             print(f"Linear acceleration published: {imu_msg.linear_acceleration}")
-            print(f"Orientation published: {imu_msg.orientation}")
-            print(
-                f"Roll Pitch Yaw: {euler_from_quaternion(quat_to_list(imu_msg.orientation))}"
-            )
+            print(f"Orientation published: {imu_msg.roll_pitch_yaw}")
+            # print(
+            #    f"Roll Pitch Yaw: {euler_from_quaternion(quat_to_list(imu_msg.orientation))}"
+            # )
 
             publisher.publish(imu_msg)
 
