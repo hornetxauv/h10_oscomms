@@ -2,8 +2,10 @@
 import rclpy
 from geometry_msgs.msg import Quaternion, Vector3
 from rclpy.node import Node
-from sensor_msgs.msg import Imu
+from imu_msg.msg import Imu
 from std_msgs.msg import Header
+from tf_transformations import euler_from_quaternion
+
 
 IMU_DICT = {
     "a_x": None,
@@ -104,35 +106,36 @@ class MinimalPublisher(Node):
 
         # acceleration
         imu_msg.linear_acceleration = Vector3()
-        imu_msg.linear_acceleration.x = IMU_DICT["a_x"]
-        imu_msg.linear_acceleration.y = IMU_DICT["a_y"]
-        imu_msg.linear_acceleration.z = IMU_DICT["a_z"]
+        imu_msg.linear_acceleration.y = IMU_DICT["a_y"] / 1000
+        imu_msg.linear_acceleration.x = IMU_DICT["a_x"] / 1000
+        imu_msg.linear_acceleration.z = IMU_DICT["a_z"] / 1000
 
         # Quaternion
         # Fill in the orientation (quaternion)
         # imu_msg.orientation = Quaternion(0.0, 0.0, 0.0, 1.0)  # Adjust the values accordingly
-        imu_msg.orientation = Quaternion()  # Adjust the values accordingly
-        imu_msg.orientation.x = IMU_DICT["q_x"]
-        imu_msg.orientation.y = IMU_DICT["q_y"]
-        imu_msg.orientation.z = IMU_DICT["q_z"]
-        imu_msg.orientation.w = IMU_DICT["q_w"]
+        rpy_list = euler_from_quaternion(
+            [
+                IMU_DICT["q_x"] / 1000,
+                IMU_DICT["q_y"] / 1000,
+                IMU_DICT["q_z"] / 1000,
+                IMU_DICT["q_w"] / 1000,
+            ]
+        )
+
+        # roll_pitch_yaw
+        imu_msg.roll_pitch_yaw = Vector3()
+        # flip roll pitch roll negative
+        imu_msg.roll_pitch_yaw.y = -rpy_list[0]
+        imu_msg.roll_pitch_yaw.x = rpy_list[1]
+        imu_msg.roll_pitch_yaw.z = rpy_list[2]
+
+        print(f"Linear acceleration published: {imu_msg.linear_acceleration}")
+        print(f"Orientation published: {imu_msg.roll_pitch_yaw}")
+        # print(
+        #    f"Roll Pitch Yaw: {euler_from_quaternion(quat_to_list(imu_msg.orientation))}"
+        # )
 
         self.publisher_.publish(imu_msg)
-        self.get_logger().info(
-            f"linear acceleration published: {imu_msg.linear_acceleration}"
-        )
-        self.get_logger().info(f"orientation published: {imu_msg.orientation}")
-
-        # reset imu values
-        IMU_DICT = {
-            "a_x": None,
-            "a_y": None,
-            "a_z": None,
-            "q_x": None,
-            "q_y": None,
-            "q_z": None,
-            "q_w": None,
-        }
 
 
 def main(args=None):
