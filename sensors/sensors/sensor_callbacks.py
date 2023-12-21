@@ -1,15 +1,14 @@
+from acoustic_msg.msg import Acoustic
 from geometry_msgs.msg import Vector3
+from imu_msg.msg import Imu
 from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
 from tf_transformations import euler_from_quaternion
 
-from acoustic_msg.msg import Acoustic
-from imu_msg.msg import Imu
-
 IMU_DICT = {
-    "a_x": None,
-    "a_y": None,
-    "a_z": None,
+    "a_x": 0,
+    "a_y": 0,
+    "a_z": 0,
     "q_x": None,
     "q_y": None,
     "q_z": None,
