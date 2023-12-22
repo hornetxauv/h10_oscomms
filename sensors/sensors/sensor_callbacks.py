@@ -1,10 +1,9 @@
+from acoustic_msg.msg import Acoustic
 from geometry_msgs.msg import Vector3
+from imu_msg.msg import Imu
 from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
 from tf_transformations import euler_from_quaternion
-
-from acoustic_msg.msg import Acoustic
-from imu_msg.msg import Imu
 
 IMU_DICT = {
     "a_x": None,
@@ -85,8 +84,8 @@ def imu_callback(publisher, bus):
             # roll_pitch_yaw
             imu_msg.roll_pitch_yaw = Vector3()
             # flip roll pitch roll negative
-            imu_msg.roll_pitch_yaw.y = -rpy_list[0]
-            imu_msg.roll_pitch_yaw.x = rpy_list[1]
+            imu_msg.roll_pitch_yaw.x = -rpy_list[0]
+            imu_msg.roll_pitch_yaw.y = rpy_list[1]
             imu_msg.roll_pitch_yaw.z = rpy_list[2]
 
             print(f"Linear acceleration published: {imu_msg.linear_acceleration}")
