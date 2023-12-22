@@ -18,14 +18,22 @@ duration = 30
 # thrusterValues = [ZERO, ZERO, ZERO, ZERO, 172, 170]
 # thrusterValues = [ZERO, ZERO, 153, 150, ZERO, ZERO]
 thrusterValues = [170, 172, 101, 104, 172, 170]
-# Spin all forward.
-thrusterControl.setThrusters(thrusterValues)
-time.sleep(duration)
-thrusterControl.killThrusters()
-time.sleep(0.5)
 
-# # Spin all backward.
-# thrusterControl.setThrusters([255 - thrustMag] * 6)
-# time.sleep(duration)
-# thrusterControl.killThrusters()
-# time.sleep(0.5)
+try:
+    # Spin all forward.
+    thrusterControl.setThrusters(thrusterValues)
+    time.sleep(duration)
+    thrusterControl.killThrusters()
+    time.sleep(0.5)
+
+    # # Spin all backward.
+    # thrusterControl.setThrusters([255 - thrustMag] * 6)
+    # time.sleep(duration)
+    # thrusterControl.killThrusters()
+    # time.sleep(0.5)
+
+except KeyboardInterrupt:
+    thrusterControl.killThrusters()
+
+finally:
+    thrusterControl.killThrusters()

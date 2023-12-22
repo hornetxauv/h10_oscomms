@@ -75,7 +75,9 @@ class ThrusterControl:
                 print("Message not sent.")
 
     def killThrusters(self):
+        print("Killing thrusters...")
         self.setThrusters([127, 127, 127, 127, 127, 127])
+        print("Killed thrusters.")
 
     def spinSingle(self, idx, value):
         self.thrustValues[idx] = value
