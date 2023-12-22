@@ -6,9 +6,9 @@ from std_msgs.msg import Header
 from tf_transformations import euler_from_quaternion
 
 IMU_DICT = {
-    "a_x": None,
-    "a_y": None,
-    "a_z": None,
+    "a_x": 0,
+    "a_y": 0,
+    "a_z": 0,
     "q_x": None,
     "q_y": None,
     "q_z": None,
