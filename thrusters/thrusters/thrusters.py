@@ -1,5 +1,6 @@
+import time
+
 import can
-import numpy as np
 
 # fmt: off
 # Pin numbers of each thruster
@@ -27,6 +28,9 @@ thruster_reverse = {
 class ThrusterControl:
     def __init__(self):
         self.thrustValues = [127, 127, 127, 127, 127, 127]
+        self.bus = can.interface.Bus(
+            interface="socketcan", channel="can0", bitrate=500000
+        )
 
     def correctPWMS(self):
         """
@@ -58,17 +62,13 @@ class ThrusterControl:
             try:
                 # With statement needed to ensure that bus is closed properly
                 # https://stackoverflow.com/questions/73386339/close-bus-in-python-can
-                with can.interface.Bus(
-                    interface="socketcan", channel="can0", bitrate=500000
-                ) as bus:
-                    correctedPWMs = self.correctPWMS()
-                    t_msg = can.Message(
-                        arbitration_id=0, data=correctedPWMs, is_extended_id=False
-                    )
-                    bus.send(t_msg)
-                    print(f"Sent PWMs: {correctedPWMs} to CAN.")
-
-                    break
+                correctedPWMs = self.correctPWMS()
+                t_msg = can.Message(
+                    arbitration_id=0, data=correctedPWMs, is_extended_id=False
+                )
+                self.bus.send(t_msg)
+                print(f"Sent PWMs: {correctedPWMs} to CAN.")
+                break
 
             except can.CanError as error:
                 print(error)

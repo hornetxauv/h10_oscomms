@@ -15,7 +15,7 @@ class SensorDataPublisher(Node):
         )
         self.callback_func = callback_func
         self.publisher_ = self.create_publisher(sensor_type, sensor_topic, 10)
-        timer_period = 0.1  # seconds
+        timer_period = 0.05  # seconds
         self.timer = self.create_timer(timer_period, self.callback)
 
     def callback(self):
