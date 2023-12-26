@@ -1,4 +1,4 @@
-import time
+import subprocess
 
 import can
 
@@ -31,6 +31,10 @@ class ThrusterControl:
         self.bus = can.interface.Bus(
             interface="socketcan", channel="can0", bitrate=500000
         )
+
+        ## See flush_buffer().
+        # self.buffer = can.BufferedReader()
+        # self.notifier = can.Notifier(self.bus, [_get_message, self.buffer])
 
     def correctPWMS(self):
         """
@@ -73,6 +77,8 @@ class ThrusterControl:
             except can.CanError as error:
                 print(error)
                 print("Message not sent.")
+                self.flush_buffer()
+                print("Flushed buffer.")
 
     def killThrusters(self):
         print("Killing thrusters...")
@@ -82,3 +88,37 @@ class ThrusterControl:
     def spinSingle(self, idx, value):
         self.thrustValues[idx] = value
         self.waitTillSend()
+
+    def flush_buffer(self):
+        ##########################################
+        #    DANGER: Please change this soon.    #
+        ##########################################
+
+        subprocess.call("./restartCan.sh", shell=True)
+        self.bus = can.interface.Bus(
+            interface="socketcan", channel="can0", bitrate=500000
+        )
+
+        ###################################
+        #    The following don't work.    #
+        ###################################
+
+        ## Flush CAN bus.
+        # self.bus.flush_tx_buffer()
+
+        ## Shutdown and create new bus instance.
+        # self.bus.shutdown()
+        # self.bus = can.interface.Bus(
+        #     interface="socketcan", channel="can0", bitrate=500000
+        # )
+
+        ## Read all the messages.
+        # with self.bus as bus:
+        #     for msg in bus:
+        #         continue
+
+        ## Create a BufferedReader.
+        ## Need to do set Notifier and create BufferedReader in __init__
+        # msg = self.buffer.get_message()
+        # while msg is not None:
+        #     msg = self.buffer.get_message()

@@ -28,6 +28,14 @@ class IMU_SHM(IMU_Generator):
         return self.roll_pitch_yaw
 
 
+class IMU_Constant(IMU_Generator):
+    def __init__(self, roll_pitch_yaw) -> None:
+        self.roll_pitch_yaw = roll_pitch_yaw
+
+    def update(self):
+        return self.roll_pitch_yaw
+
+
 class FakeIMUPublisher(Node):
     def __init__(self, name, imu_generator: IMU_Generator, timer_period: int) -> None:
         super().__init__(name)
@@ -61,10 +69,11 @@ class FakeIMUPublisher(Node):
 
 
 def imu_publisher():
-    imu_shm = IMU_SHM()
+    # imu_pub = IMU_SHM()
+    imu_pub = IMU_Constant(roll_pitch_yaw=[0.0, 0.0, -np.pi])
 
     rclpy.init()
-    publisher = FakeIMUPublisher("fake_imu_publisher_node", imu_shm, 0.1)
+    publisher = FakeIMUPublisher("fake_imu_publisher_node", imu_pub, 0.1)
     rclpy.spin(publisher)
     publisher.destroy_node()
     rclpy.shutdown()
