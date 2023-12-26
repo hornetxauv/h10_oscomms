@@ -22,6 +22,7 @@ setup(
             "imu = sensors.sensor_publisher:imu_publisher",
             "depth = sensors.sensor_publisher:depth_publisher",
             "acoustic = sensors.sensor_publisher:acoustic_publisher",
+            "fake_imu = sensors.fake_sensors:imu_publisher",
         ],
     },
 )
