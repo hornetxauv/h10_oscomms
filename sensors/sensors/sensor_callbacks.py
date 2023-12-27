@@ -4,6 +4,7 @@ from imu_msg.msg import Imu
 from sensor_msgs.msg import FluidPressure
 from std_msgs.msg import Header
 from tf_transformations import euler_from_quaternion
+from std_msgs.msg import Float32
 
 IMU_DICT = {
     "a_x": 0,
@@ -13,7 +14,7 @@ IMU_DICT = {
     "q_y": None,
     "q_z": None,
     "q_w": None,
-}
+} 
 
 
 def imu_callback(publisher, bus):
@@ -131,16 +132,17 @@ def depth_callback(publisher, bus):
             if msg_id == 4:
                 print("message id:", msg_id)
                 # Create an Depth message
-                depth_msg = FluidPressure()
+                depth_msg = Float32()
 
                 # Fill in the header
-                depth_msg.header = Header()
+                # depth_msg.header = Header()
                 # depth_msg.header.stamp = 123.0 error, need type Time
-                depth_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
+                # depth_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
 
                 # NEED TEST if this works
-                depth_msg.fluid_pressure = float(
-                    int.from_bytes(msg.data[:2], "big", signed=True)
+                # this is now in centimeters (same as milibars)
+                depth_msg.data = float(
+                    -(int.from_bytes(msg.data[:2], "big", signed=True) - 1000)
                 )
                 print(f"Publishing depth: {depth_msg}")
                 publisher.publish(depth_msg)

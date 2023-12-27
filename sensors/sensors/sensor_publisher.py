@@ -5,6 +5,7 @@ from imu_msg.msg import Imu
 from rclpy.node import Node
 from sensor_msgs.msg import FluidPressure
 from sensors.sensor_callbacks import acoustic_callback, depth_callback, imu_callback
+from std_msgs.msg import Float32
 
 
 class SensorDataPublisher(Node):
@@ -39,4 +40,4 @@ def acoustic_publisher():
 
 
 def depth_publisher():
-    sensor(FluidPressure, "/sensors/depth", "depth", depth_callback)
+    sensor(Float32, "/sensors/depth", "depth", depth_callback)
