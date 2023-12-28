@@ -138,6 +138,10 @@ def depth_callback(publisher, bus):
                 # depth_msg.header.stamp = 123.0 error, need type Time
                 depth_msg.header.frame_id = str(msg.arbitration_id)  # Set your frame_id
 
+                # print("raw depth: ", msg.data)
+                # print("msg.data[:2]: ", msg.data[:2])
+                # print("int.from_bytes:", int.from_bytes(msg.data[:2], "big", signed=True))
+
                 # NEED TEST if this works
                 depth_msg.fluid_pressure = float(
                     int.from_bytes(msg.data[:2], "big", signed=True)

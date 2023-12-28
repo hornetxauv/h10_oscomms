@@ -3,8 +3,8 @@ import time
 from thrusters import ThrusterControl
 
 thrusterControl = ThrusterControl()
-thrustMag = 170
-duration = 4
+thrustMag = 140
+duration = 3
 
 try:
     # Spin forward one by one.
