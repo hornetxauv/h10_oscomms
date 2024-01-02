@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = "sensors"
+package_name = "can_handler"
 
 setup(
     name=package_name,
@@ -12,14 +12,14 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="wesley",
-    maintainer_email="wesleywong08@gmail.com",
+    maintainer="todo",
+    maintainer_email="todo@gmail.com",
     description="TODO: Package description",
     license="TODO: License declaration",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            "fake_imu = sensors.fake_sensors:imu_publisher",
+            "can_handler = can_handler.can_handler:main",
         ],
     },
 )

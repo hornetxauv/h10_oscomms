@@ -32,10 +32,6 @@ class ThrusterControl:
             interface="socketcan", channel="can0", bitrate=500000
         )
 
-        ## See flush_buffer().
-        # self.buffer = can.BufferedReader()
-        # self.notifier = can.Notifier(self.bus, [_get_message, self.buffer])
-
     def correctPWMS(self):
         """
         thrustValues are in the FL-FR-ML-MR-RL-RR order. Set:
@@ -116,9 +112,3 @@ class ThrusterControl:
         # with self.bus as bus:
         #     for msg in bus:
         #         continue
-
-        ## Create a BufferedReader.
-        ## Need to do set Notifier and create BufferedReader in __init__
-        # msg = self.buffer.get_message()
-        # while msg is not None:
-        #     msg = self.buffer.get_message()

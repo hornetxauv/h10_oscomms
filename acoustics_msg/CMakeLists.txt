@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(acoustic_msg)
+project(acoustics_msg)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -11,7 +11,7 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
-    "msg/Acoustic.msg"
+    "msg/Acoustics.msg"
 )
 # find_package(<dependency> REQUIRED)
 
