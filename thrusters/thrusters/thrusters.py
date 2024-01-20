@@ -73,8 +73,9 @@ class ThrusterControl:
             except can.CanError as error:
                 print(error)
                 print("Message not sent.")
-                self.flush_buffer()
-                print("Flushed buffer.")
+                # Commented out flush buffer to check overload
+                # self.flush_buffer()
+                # print("Flushed buffer.")
 
     def killThrusters(self):
         print("Killing thrusters...")

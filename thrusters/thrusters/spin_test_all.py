@@ -4,16 +4,26 @@ from thrusters import ThrusterControl
 
 thrusterControl = ThrusterControl()
 
-
-thrustMag = 170
+# 140 is minimum or close to it to test
+forwardThrustMag = 15
+upthrustMag = 15
 ZERO = 127
-duration = 10
+duration = 30
+
 # thrusterValues = [170, 172, ZERO, ZERO, ZERO, ZERO]
 # thrusterValues = [ZERO, ZERO, ZERO, ZERO, 172, 170]
 # thrusterValues = [ZERO, ZERO, 153, 150, ZERO, ZERO]
 # thrusterValues = [170, 172, 101, 104, 172, 170]
-thrusterValues = [thrustMag, thrustMag, thrustMag, thrustMag, thrustMag, thrustMag]
+thrusterValues = [
+    ZERO - forwardThrustMag,
+    ZERO - forwardThrustMag,
+    ZERO + upthrustMag,
+    ZERO + upthrustMag,
+    ZERO + forwardThrustMag,
+    ZERO + forwardThrustMag,
+]
 
+print("start")
 try:
     # Spin all forward.
     thrusterControl.setThrusters(thrusterValues)

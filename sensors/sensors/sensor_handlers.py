@@ -169,6 +169,8 @@ class DepthHandler(SensorHandler):
         decoded_data = decode(data, num_bytes=2)[0]
         # In centimeters, downwards negative
         self.depth_msg.data = 1000 - decoded_data
+        # In metres
+        self.depth_msg.data /= 100
 
     def get_message(self):
         string_repr = f"Depth published: {self.depth_msg.data}"
