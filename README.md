@@ -6,7 +6,7 @@ cansend can0 000#7F7F7F7F7F7F7F7F
 ```
 Alternatively, use the alias.
 ```
-kill_thrusters
+kill-thrusters
 ```
 ## Set All Thrusters to 145
 ```
