@@ -5,29 +5,32 @@ import can
 # fmt: off
 # Pin numbers of each thruster
 thruster_idxs = {
-    "FL": 1,
-    "FR": 3,
-    "ML": 5,
-    "MR": 2,
-    "RL": 4,
-    "RR": 0
+    "FL": 0,
+    "FR": 2,
+    "RL": 5,
+    "RR": 1,
+    "ML": 4,
+    "MR": 3,
+    "MM": 6,
+
 }
 
 # -1 means thruster is reversed.
 thruster_reverse = {
     "FL": -1,
     "FR": 1,
-    "ML": 1,
-    "MR": -1,
     "RL": 1,
-    "RR": -1
+    "RR": -1,
+    "ML": -1,
+    "MR": 1,
+    "MM": 1,
 }
 # fmt: on
 
 
 class ThrusterControl:
     def __init__(self):
-        self.thrustValues = [127, 127, 127, 127, 127, 127]
+        self.thrustValues = [127, 127, 127, 127, 127, 127, 127]
         self.bus = can.interface.Bus(
             interface="socketcan", channel="can0", bitrate=500000
         )
@@ -41,7 +44,7 @@ class ThrusterControl:
         correctedPWMs account for different pin orderings and
         reversed thrusters.
         """
-        correctedPWMs = [127, 127, 127, 127, 127, 127]
+        correctedPWMs = [127, 127, 127, 127, 127, 127, 127]
         for (thruster, thrusterPin), thrustValue in zip(
             thruster_idxs.items(), self.thrustValues
         ):
@@ -79,7 +82,7 @@ class ThrusterControl:
 
     def killThrusters(self):
         print("Killing thrusters...")
-        self.setThrusters([127, 127, 127, 127, 127, 127])
+        self.setThrusters([127, 127, 127, 127, 127, 127, 127])
         print("Killed thrusters.")
 
     def spinSingle(self, idx, value):
