@@ -21,9 +21,9 @@ thruster_reverse = {
     "FR": 1,
     "RL": 1,
     "RR": -1,
-    "ML": -1,
-    "MR": 1,
-    "MM": 1,
+    "ML": 1,
+    "MR": -1,
+    "MM": -1,
 }
 # fmt: on
 

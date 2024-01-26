@@ -5,22 +5,23 @@ from thrusters import ThrusterControl
 thrusterControl = ThrusterControl()
 
 # 140 is minimum or close to it to test
-forwardThrustMag = 15
-upthrustMag = 15
+forwardThrustMag = 20
+upthrustMag = 20
 ZERO = 127
-duration = 30
+duration = 600
 
 # thrusterValues = [170, 172, ZERO, ZERO, ZERO, ZERO]
 # thrusterValues = [ZERO, ZERO, ZERO, ZERO, 172, 170]
 # thrusterValues = [ZERO, ZERO, 153, 150, ZERO, ZERO]
 # thrusterValues = [170, 172, 101, 104, 172, 170]
 thrusterValues = [
-    ZERO - forwardThrustMag,
-    ZERO - forwardThrustMag,
-    ZERO + upthrustMag,
-    ZERO + upthrustMag,
     ZERO + forwardThrustMag,
     ZERO + forwardThrustMag,
+    ZERO + forwardThrustMag,
+    ZERO + forwardThrustMag,
+    ZERO + upthrustMag,
+    ZERO + upthrustMag,
+    ZERO + upthrustMag,
 ]
 
 print("start")
