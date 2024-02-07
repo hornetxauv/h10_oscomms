@@ -3,7 +3,7 @@ from threading import Thread
 import rclpy
 from can import BufferedReader, Notifier, ThreadSafeBus
 from rclpy.node import Node
-from sensors.sensor_handlers import AcousticsHandler, DepthHandler, IMUHandler
+from sensors.sensor_handlers import AcousticsHandler, DepthHandler, IMUHandler, IMUCorrectedHandler
 
 
 class CanReaderNode(Node):
@@ -15,6 +15,7 @@ class CanReaderNode(Node):
         notifier = Notifier(bus=bus, listeners=[self.buffered_reader])
 
         self.imu_handler = IMUHandler(self, log=True)
+        self.imu_corrected_handler = IMUCorrectedHandler(self, log=True)
         self.acoustics_handler = AcousticsHandler(self, log=False)
         self.depth_handler = DepthHandler(self, log=False)
 
@@ -30,6 +31,7 @@ class CanReaderNode(Node):
 
             if 1 <= msg_id <= 3:
                 self.imu_handler.process_data(msg.data, msg_id)
+                self.imu_corrected_handler.process_data(msg.data, msg_id)
 
             elif msg_id == 4:
                 self.depth_handler.process_data(msg.data, msg_id)
@@ -39,6 +41,7 @@ class CanReaderNode(Node):
 
     def publish_sensors(self):
         self.imu_handler.publish()
+        self.imu_corrected_handler.publish()
         self.acoustics_handler.publish()
         self.depth_handler.publish()
 

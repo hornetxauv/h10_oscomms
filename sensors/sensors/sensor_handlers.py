@@ -1,3 +1,5 @@
+import numpy as np
+
 from abc import ABC, abstractmethod
 from typing import Union
 
@@ -8,6 +10,7 @@ from rclpy.node import Node
 from rclpy.publisher import Publisher
 from std_msgs.msg import Float32, Header
 from tf_transformations import euler_from_quaternion
+from controls_core.params import IMU_ZERO
 
 
 def decode(data, num_bytes):
@@ -127,6 +130,108 @@ class IMUHandler(SensorHandler):
 
         return imu_msg, string_repr
 
+
+class IMUCorrectedHandler(SensorHandler):
+    def __init__(self, node: Node, log: bool):
+        super().__init__(node, log)
+        self.imu_dict = {
+            "a_x": 0,
+            "a_y": 0,
+            "a_z": 0,
+            "q_x": None,
+            "q_y": None,
+            "q_z": None,
+            "q_w": None,
+        }
+        self.counter = 0
+        self._publisher = self.node.create_publisher(Imu, "/sensors/imu/corrected", 10)
+
+    @property
+    def publisher(self) -> Union[Publisher, None]:
+        return self._publisher
+
+    def boundAngle(self, angle):
+        """
+        Bound angle to [-pi, pi]
+        """
+        angle = angle % (2 * np.pi)
+        if angle < -np.pi:
+            return 2 * np.pi + angle
+        elif angle > np.pi:
+            return angle - 2 * np.pi
+        else:
+            return angle
+
+    def correctIMU(self, currAtt):
+        """
+        Correct IMU by subtracting imuZero.
+        """
+        corrAtt = []
+        for att, zero in zip(currAtt, IMU_ZERO):
+            corrAtt.append(self.boundAngle(att - zero))
+
+        return corrAtt
+
+    def process_data(self, data, msg_id):
+        # Quaternion
+        if msg_id == 1:
+            (
+                self.imu_dict["q_x"],
+                self.imu_dict["q_y"],
+                self.imu_dict["q_z"],
+                self.imu_dict["q_w"],
+            ) = decode(data, num_bytes=2)
+
+        # Acceleration xy
+        elif msg_id == 2:
+            self.imu_dict["a_x"], self.imu_dict["a_y"] = decode(data, num_bytes=4)
+
+        # Acceleration z
+        elif msg_id == 3:
+            self.imu_dict["a_z"], _ = decode(data, num_bytes=4)
+
+    def get_message(self):
+        # If any None values, continue reading from canbus
+        if None in self.imu_dict.values():
+            return None, ""
+
+        imu_msg = Imu()
+
+        # Fill in the header
+        imu_msg.header = Header()
+        imu_msg.header.frame_id = str(self.counter)
+        self.counter += 1
+
+        # Acceleration
+        imu_msg.linear_acceleration = Vector3()
+        imu_msg.linear_acceleration.x = self.imu_dict["a_x"] / 1000
+        imu_msg.linear_acceleration.y = self.imu_dict["a_y"] / 1000
+        imu_msg.linear_acceleration.z = self.imu_dict["a_z"] / 1000
+
+        # Quaternion
+        rpy_list = euler_from_quaternion(
+            [
+                self.imu_dict["q_x"] / 1000,
+                self.imu_dict["q_y"] / 1000,
+                self.imu_dict["q_z"] / 1000,
+                self.imu_dict["q_w"] / 1000,
+            ]
+        )
+
+        # roll_pitch_yaw
+        imu_msg.roll_pitch_yaw = Vector3()
+
+        rpy_list = self.correctIMU([-rpy_list[0], rpy_list[1], rpy_list[2]])
+
+        # Roll negative
+        imu_msg.roll_pitch_yaw.x = rpy_list[0]
+        imu_msg.roll_pitch_yaw.y = rpy_list[1]
+        imu_msg.roll_pitch_yaw.z = rpy_list[2]
+
+        string_repr = f"""Linear acceleration published: {imu_msg.linear_acceleration})
+        Orientation published: {imu_msg.roll_pitch_yaw}"""
+
+        return imu_msg, string_repr
 
 class AcousticsHandler(SensorHandler):
     def __init__(self, node: Node, log: bool):
