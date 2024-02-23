@@ -5,12 +5,12 @@ import can
 # fmt: off
 # Pin numbers of each thruster
 thruster_idxs = {
-    "FL": 0,
-    "FR": 2,
-    "RL": 5,
-    "RR": 1,
-    "ML": 4,
-    "MR": 3,
+    "FL": 3,
+    "FR": 1,
+    "RL": 4,
+    "RR": 0,
+    "ML": 5,
+    "MR": 2,
     "MM": 6,
 
 }
