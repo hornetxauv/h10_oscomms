@@ -5,10 +5,10 @@ from thrusters import ThrusterControl
 thrusterControl = ThrusterControl()
 
 # 140 is minimum or close to it to test
-forwardThrustMag = 20
-upthrustMag = 20
+forwardThrustMag = 30
+upthrustMag = 30
 ZERO = 127
-duration = 600
+duration = 10
 
 # thrusterValues = [170, 172, ZERO, ZERO, ZERO, ZERO]
 # thrusterValues = [ZERO, ZERO, ZERO, ZERO, 172, 170]
@@ -26,11 +26,16 @@ thrusterValues = [
 
 print("start")
 try:
-    # Spin all forward.
-    thrusterControl.setThrusters(thrusterValues)
-    time.sleep(duration)
-    thrusterControl.killThrusters()
-    time.sleep(0.5)
+    # Spin all forward while spamming CAN.
+    while True:
+        thrusterControl.setThrusters(thrusterValues)
+        time.sleep(1.5)
+
+    # # Spin all forward.
+    # thrusterControl.setThrusters(thrusterValues)
+    # time.sleep(duration)
+    # thrusterControl.killThrusters()
+    # time.sleep(0.5)
 
     # # Spin all backward.
     # thrusterControl.setThrusters([255 - thrustMag] * 6)
