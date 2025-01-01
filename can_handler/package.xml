@@ -4,7 +4,7 @@
   <name>can_handler</name>
   <version>0.0.0</version>
   <description>CAN bus handler for SBC to receive and send messages from microcontrollers</description>
-  <maintainer email="xelisce@gmail.com">Celeste</maintainer>
+  <maintainer email="root@todo.todo">root</maintainer>
   <license>Apache-2.0</license>
 
   <exec_depend>rclpy</exec_depend>

@@ -3,7 +3,6 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 
-
 class TestCanSubscriber(Node):
 
     def __init__(self):
@@ -21,13 +20,10 @@ class TestCanSubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
     test_can_subscriber = TestCanSubscriber()
-
     rclpy.spin(test_can_subscriber)
     test_can_subscriber.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
