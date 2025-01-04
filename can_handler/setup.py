@@ -20,8 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                'can_reader = can_handler.can_reader:main',
+                'can_handler = can_handler.can_handler:main',
                 'test_can_subscriber = can_handler.test_can_subscriber:main',
+                "fake_imu = can_handler.fake_sensors:imu_publisher"
         ],
     },
 )
