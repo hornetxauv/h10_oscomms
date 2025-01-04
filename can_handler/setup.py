@@ -21,7 +21,6 @@ setup(
     entry_points={
         'console_scripts': [
                 'can_handler = can_handler.can_handler:main',
-                'test_can_subscriber = can_handler.test_can_subscriber:main',
                 "fake_imu = can_handler.fake_sensors:imu_publisher"
         ],
     },
