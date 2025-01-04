@@ -54,14 +54,13 @@ class FakeIMUPublisher(Node):
         self.publisher.publish(self.imu_msg)
 
         self.get_logger().info(
-            f"Linear acceleration published: {self.imu_msg.linear_acceleration}"
-        )
-        self.get_logger().info(f"Orientation published: {self.imu_msg.roll_pitch_yaw}")
+            f"""IMU data published: (R-P-Y) [{self.imu_msg.roll}, {self.imu_msg.pitch}, {self.imu_msg.yaw}]"""
+            )
 
 
 def imu_publisher():
-    # imu_pub = IMU_SHM()
-    imu_pub = IMU_Constant(roll_pitch_yaw=[0.0, 0.0, -np.pi])
+    imu_pub = IMU_SHM()
+    # imu_pub = IMU_Constant(roll_pitch_yaw=[0.0, 0.0, -np.pi])
 
     rclpy.init()
     publisher = FakeIMUPublisher("fake_imu_publisher_node", imu_pub, 0.1)
