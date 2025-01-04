@@ -43,14 +43,6 @@ class CanReaderNode(Node):
             else:
                 print("Error: Can reader arbitration ID of unknown value")
 
-    # def test_publish(self):
-    #     #TODO publish to the ros topic
-    #     msg = String()
-    #     msg.data = 'Hello World: %d' % self.i
-    #     self.publisher_.publish(msg)
-    #     self.get_logger().info('Publishing: "%s"' % msg.data)
-    #     self.i += 1
-
     def publish_all(self):
         self.imu_handler.publish()
         self.depth_handler.publish()
