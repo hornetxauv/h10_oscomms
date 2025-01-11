@@ -18,7 +18,7 @@ try:
         print(f"Spinning {thruster_name}...\n")
         time.sleep(duration)
         thrusterControl.killThrusters()
-        time.sleep(0.5
+        time.sleep(0.5)
 
     # Spin backward one by one.
     for i, thruster_name in enumerate(thruster_idxs.keys()):
