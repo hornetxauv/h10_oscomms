@@ -8,8 +8,8 @@ from can_handler.sensor_handlers import DepthHandler, IMUHandler, decode
 class CanReaderNode(Node):
     def __init__(self, bus: can.ThreadSafeBus, timer_period: float):
         super().__init__('can_reader')
-        self.imu_handler = IMUHandler(self, log=True)
-        self.depth_handler = DepthHandler(self, log=True)
+        self.imu_handler = IMUHandler(self, log=False)
+        self.depth_handler = DepthHandler(self, log=False)
         
         self.buffered_reader = can.BufferedReader()
         _ = can.Notifier(bus=bus, listeners=[self.buffered_reader])
@@ -17,17 +17,22 @@ class CanReaderNode(Node):
 
     def read_buffer(self):
         while True:
+            print("here")
             msg = self.buffered_reader.get_message()
+            print("Message: ", msg)
             if msg is None: #? check to see what the error is for the sake of it if it triggers here
                 continue
 
+            print("ID: ", msg.arbitration_id)
             if msg.arbitration_id == 19:
                 decoded_data = decode(msg.data, num_bytes=4)
-                IMUHandler.process_data(decoded_data, msg.arbitration_id)
+                print("Decoded:", decoded_data)
+                self.imu_handler.process_data(decoded_data, msg.arbitration_id)
             elif msg.arbitration_id == 20:
                 decoded_data = decode(msg.data, num_bytes=4)
-                IMUHandler.process_data(decoded_data[0], msg.arbitration_id)
-                DepthHandler.process_data(decoded_data[1], msg.arbitration_id)
+                print("Decoded:", decoded_data)
+                self.imu_handler.process_data(decoded_data[0], msg.arbitration_id)
+                self.depth_handler.process_data(decoded_data[1], msg.arbitration_id)
             elif msg.arbitration_id == 22:
                 #TODO temperature and pht sensor
                 pass
@@ -50,7 +55,7 @@ class CanReaderNode(Node):
 
 def main(args=None):
 
-    can_bus = can.ThreadSafeBus(interface='socketcan', channel='vcan', bitrate=500000) #? thread safe bus vs normal bus
+    can_bus = can.ThreadSafeBus(interface='socketcan', channel='can0', bitrate=500000) #? thread safe bus vs normal bus
 
     rclpy.init(args=args)
 

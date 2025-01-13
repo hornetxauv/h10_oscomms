@@ -46,11 +46,12 @@ class SensorHandler(ABC):
         return self._publisher
     
     def publish(self):
-        msg = self.message
+        msg = self.message()
+        print(msg)
         if msg is not None:
             self.publisher.publish(msg)
             if self.log:
-                self.node.get_logger().info(self.log_info)
+                self.node.get_logger().info(self.log_info())
 
 
 class IMUHandler(SensorHandler):
@@ -60,7 +61,8 @@ class IMUHandler(SensorHandler):
         self.counter = 0
         self._publisher = self.node.create_publisher(IMU, "/sensors/imu", 10)
 
-    def process_data(self, data: Union[int, tuple[int, int]], msg_id=0):
+    # def process_data(self, data: Union[int, tuple[int, int]], msg_id=0):
+    def process_data(self, data, msg_id=0):
         # Pitch & Roll
         if msg_id == 19:
             self.imu_msg.pitch, self.imu_msg.roll = data
