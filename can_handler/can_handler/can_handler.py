@@ -23,7 +23,7 @@ class CanReaderNode(Node):
             if msg is None: #? check to see what the error is for the sake of it if it triggers here
                 continue
 
-            print("ID: ", msg.arbitration_id)
+            # print("ID: ", msg.arbitration_id)
             if msg.arbitration_id == 19:
                 decoded_data = decode(msg.data, num_bytes=4)
                 print("Decoded:", decoded_data)

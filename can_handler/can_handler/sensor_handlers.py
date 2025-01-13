@@ -9,16 +9,26 @@ from msg_types.msg import IMU
 from rclpy.node import Node
 from rclpy.publisher import Publisher
 
+import struct
+import binascii
+
 def decode(data, num_bytes):
     """
     data: bytearray
     num_bytes: Number of bytes for each value
     """
+    # decoded_data = []
+    # for i in range(0, len(data), num_bytes):
+    #     packet = data[i : i + num_bytes]
+    #     decoded_packet = float(int.from_bytes(packet, "little", signed=True))
+    #     decoded_data.append(decoded_packet)
+    # return decoded_data
+    # print("DATA:", data)
+
     decoded_data = []
-    for i in range(0, len(data), num_bytes):
-        packet = data[i : i + num_bytes]
-        decoded_packet = float(int.from_bytes(packet, "little", signed=True))
-        decoded_data.append(decoded_packet)
+    for i in range(0, 8, num_bytes):
+        packet = struct.unpack_from("<f", data, i)
+        decoded_data.append(packet[0])
     return decoded_data
 
 
@@ -90,7 +100,7 @@ class DepthHandler(SensorHandler):
 
     def process_data(self, data, msg_id=0):
         decoded_data = data
-        self.depth_msg.data = decoded_data
+        self.depth_msg.data = -(decoded_data-0.14) #! recalib
         # Old code: 
         # # Pressure in millibars
         # decoded_data = decode(data, num_bytes=2)[0]
