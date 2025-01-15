@@ -32,13 +32,22 @@ thruster_idxs = {
 
 # -1 means thruster is reversed.
 thruster_reverse = {
+    # "FL": -1,
+    # "FR": 1,
+    # "RL": 1,
+    # "RR": -1,
+    # "ML": 1,
+    # "MR": -1,
+    # "MM": -1,
+    
     "FL": -1,
-    "FR": 1,
+    "FR": -1,
     "RL": 1,
     "RR": -1,
     "ML": 1,
     "MR": -1,
     "MM": -1,
+
 }
 # fmt: on
 
