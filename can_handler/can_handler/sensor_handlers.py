@@ -12,6 +12,14 @@ from rclpy.publisher import Publisher
 import struct
 import binascii
 
+from control_panel.control_panel import create_control_panel, ControlPanelItem as CPI #this is a package in PL repo
+
+values = {
+    'depth offset': CPI(value=0.14, maximum=5.0, minimum=0.01, multiplier=100),
+}
+# can't seem to use simultaneously with thruster biases control panel... sometimes. idk.
+create_control_panel("sensor handler", values)
+
 def decode(data, num_bytes):
     """
     data: bytearray
@@ -78,7 +86,8 @@ class IMUHandler(SensorHandler):
             self.imu_msg.pitch, self.imu_msg.roll = data
         # Yaw
         elif msg_id == 20:
-            self.imu_msg.yaw = data
+            # self.imu_msg.yaw = data
+            self.imu_msg.yaw = -(data-values["depth offset"].value) #! recalib
     
     def message(self) -> IMU:
         # Fill in the header
@@ -100,7 +109,9 @@ class DepthHandler(SensorHandler):
 
     def process_data(self, data, msg_id=0):
         decoded_data = data
-        self.depth_msg.data = -(decoded_data-0.14) #! recalib
+        # self.depth_msg.data = -decoded_data
+        # self.depth_msg.data = -(decoded_data-0.14) #! recalib
+        self.depth_msg.data = -(decoded_data-values["depth offset"].value) #! recalib
         # Old code: 
         # # Pressure in millibars
         # decoded_data = decode(data, num_bytes=2)[0]

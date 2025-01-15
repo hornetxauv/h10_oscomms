@@ -5,13 +5,29 @@ import can
 # fmt: off
 # Pin numbers of each thruster
 thruster_idxs = {
-    "FL": 3,
-    "FR": 1,
-    "RL": 4,
+    # "FL": 3,
+    # "FR": 1,
+    # "RL": 4,
+    # "RR": 0,
+    # "ML": 5,
+    # "MR": 2,
+    # "MM": 6,
+    # 15/01/24
+    # "FL": 6,
+    # "FR": 4,
+    # "RL": 5,
+    # "RR": 3,
+    # "ML": 1,
+    # "MR": 0,
+    # "MM": 2,
+    # 15/01/24 2nd attempt
+    "FL": 6,
+    "FR": 5,
+    "RL": 2,
     "RR": 0,
-    "ML": 5,
-    "MR": 2,
-    "MM": 6,
+    "ML": 4,
+    "MR": 3,
+    "MM": 1,
 }
 
 # -1 means thruster is reversed.
