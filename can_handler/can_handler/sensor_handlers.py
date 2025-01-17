@@ -18,7 +18,7 @@ values = {
     'depth offset': CPI(value=0.14, maximum=5.0, minimum=0.01, multiplier=100),
 }
 # can't seem to use simultaneously with thruster biases control panel... sometimes. idk.
-create_control_panel("sensor handler", values)
+# create_control_panel("sensor handler", values)
 
 def decode(data, num_bytes):
     """
@@ -65,9 +65,10 @@ class SensorHandler(ABC):
     
     def publish(self):
         msg = self.message()
-        print(msg)
-        if msg is not None:
+        print(self.log_info())
+        if msg is not None and self.new:
             self.publisher.publish(msg)
+            self.new = False
             if self.log:
                 self.node.get_logger().info(self.log_info())
 
@@ -78,27 +79,41 @@ class IMUHandler(SensorHandler):
         self.imu_msg = IMU()
         self.counter = 0
         self._publisher = self.node.create_publisher(IMU, "/sensors/imu", 10)
+        self.new = False
+        self.new_rp = False
+        self.new_y = False
 
     # def process_data(self, data: Union[int, tuple[int, int]], msg_id=0):
     def process_data(self, data, msg_id=0):
         # Pitch & Roll
         if msg_id == 19:
-            self.imu_msg.pitch, self.imu_msg.roll = data
+            new_pitch, new_roll = data
+            if (self.imu_msg.pitch != new_pitch or new_roll != self.imu_msg.roll):
+                self.imu_msg.pitch, self.imu_msg.roll = new_pitch, new_roll
+                self.new_rp = True
         # Yaw
         elif msg_id == 20:
-            # self.imu_msg.yaw = data
-            self.imu_msg.yaw = -(data-values["depth offset"].value) #! recalib
+            new_yaw = data
+            if (self.imu_msg.yaw != new_yaw):
+                self.imu_msg.yaw = new_yaw
+                self.new_y = True
+            # self.imu_msg.yaw = -(data-values["depth offset"].value) #! recalib
+
+        if self.new_rp and self.new_y:
+            self.new = True
+
     
     def message(self) -> IMU:
         # Fill in the header
         self.imu_msg.header = Header()
         self.imu_msg.header.frame_id = str(self.counter)
         self.counter += 1
+        self.new_rp = False
+        self.new_y = False
         return self.imu_msg
 
     def log_info(self) -> str:
-        return f"""IMU data published: (R-P-Y) 
-        [{self.imu_msg.roll}, {self.imu_msg.pitch}, {self.imu_msg.yaw}]"""
+        return f"""IMU data published: [Roll: {round(self.imu_msg.roll,5)}, Pitch: {round(self.imu_msg.pitch,5)}, Yaw: {round(self.imu_msg.yaw, 5)}]"""
 
 
 class DepthHandler(SensorHandler):
@@ -106,12 +121,15 @@ class DepthHandler(SensorHandler):
         super().__init__(node, log)
         self.depth_msg = Float32()
         self._publisher = self.node.create_publisher(Float32, "/sensors/depth", 10)
+        self.new = True
 
     def process_data(self, data, msg_id=0):
         decoded_data = data
         # self.depth_msg.data = -decoded_data
         # self.depth_msg.data = -(decoded_data-0.14) #! recalib
-        self.depth_msg.data = -(decoded_data-values["depth offset"].value) #! recalib
+        if decoded_data != self.depth_msg.data:
+            self.depth_msg.data = -(decoded_data-values["depth offset"].value) #! recalib
+            self.new = True
         # Old code: 
         # # Pressure in millibars
         # decoded_data = decode(data, num_bytes=2)[0]
