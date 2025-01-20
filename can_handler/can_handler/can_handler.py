@@ -22,20 +22,23 @@ class CanReaderNode(Node):
             # print("here")
             msg = self.buffered_reader.get_message()
             # print("Message: ", msg)
+            # self.get_logger().info(f"Message: {msg}")
             if msg is None: #? check to see what the error is for the sake of it if it triggers here
                 continue
 
             # print("ID: ", msg.arbitration_id)
-            decoded_data = decode(msg.data, num_bytes=4)
             if msg.arbitration_id == 19:
+                decoded_data = decode(msg.data, num_bytes=4)
                 # print("Decoded 19:", decoded_data)
                 self.depth_imu_handler.process_data(decoded_data, msg.arbitration_id)
             elif msg.arbitration_id == 20:
+                decoded_data = decode(msg.data, num_bytes=4)
                 # print("Decoded 20:", decoded_data)
                 # self.imu_handler.process_data(decoded_data[0], msg.arbitration_id)
                 # self.depth_handler.process_data(decoded_data[1], msg.arbitration_id)
                 self.depth_imu_handler.process_data(decoded_data, msg.arbitration_id)
             elif msg.arbitration_id == 22:
+                decoded_data = decode(msg.data, num_bytes=4)
                 self.voltage_handler.process_data(decoded_data)
             elif msg.arbitration_id == 23:
                 #TODO ultrasonic sensor

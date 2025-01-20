@@ -65,12 +65,12 @@ class DepthIMUHandler(SensorHandler):
         self.depth_imu_msg = DepthIMU()
         self.counter = 0
         self._publisher = self.node.create_publisher(DepthIMU, "/sensors/depth_imu", 10)
-        self._update_timer = {
-            "depth": time.time(),
-            "roll": time.time(),
-            "pitch": time.time(),
-            "yaw": time.time(),
-            } # d, r, p, y
+        # self._update_timer = {
+        #     "depth": time.time(),
+        #     "roll": time.time(),
+        #     "pitch": time.time(),
+        #     "yaw": time.time(),
+        #     } # d, r, p, y
         self.new = False
         self.new_rp = False
         self.new_dy = False
@@ -78,49 +78,50 @@ class DepthIMUHandler(SensorHandler):
     # def process_data(self, data: Union[int, tuple[int, int]], msg_id=0):
     def process_data(self, data, msg_id=0):
         # Pitch & Roll
+        print(data)
         if msg_id == 19:
             new_pitch, new_roll = data
             if (self.depth_imu_msg.pitch != new_pitch):
                 self.depth_imu_msg.pitch = new_pitch
                 self.new_rp = True
-                self._update_timer["pitch"] = time.time()
+                # self._update_timer["pitch"] = time.time()
             if (new_roll != self.depth_imu_msg.roll):
                 self.depth_imu_msg.roll = new_roll
                 self.new_rp = True
-                self._update_timer["roll"] = time.time()
+                # self._update_timer["roll"] = time.time()
         # Yaw
         elif msg_id == 20:
             new_yaw, new_depth = data
             if (self.depth_imu_msg.yaw != new_yaw):
                 self.depth_imu_msg.yaw = new_yaw
                 self.new_dy = True
-                self._update_timer["yaw"] = time.time()
+                # self._update_timer["yaw"] = time.time()
             if (self.depth_imu_msg.depth != new_depth):
-                self.depth_imu_msg.yaw = new_yaw
+                self.depth_imu_msg.depth = new_depth + 0.5
                 self.new_dy = True
-                self._update_timer["depth"] = time.time()
+                # self._update_timer["depth"] = time.time()
 
-        curr_time = time.time()
-        for timestamp in self.depth_imu_msg.values():
-            if ((curr_time - timestamp) > 5): # reset sensor board if any one of the values remain the same for more than 5 seconds
-                self.reset_sensors()
+        # curr_time = time.time()
+        # for timestamp in self.depth_imu_msg.values():
+        #     if ((curr_time - timestamp) > 5): # reset sensor board if any one of the values remain the same for more than 5 seconds
+        #         self.reset_sensors()
 
-    def reset_sensors(self):
-        pass #TODO
+    # def reset_sensors(self):
+    #     pass #TODO
     
     def message(self) -> DepthIMU:
         # Fill in the header
         self.depth_imu_msg.header = Header()
         self.depth_imu_msg.header.frame_id = str(self.counter)
         self.counter += 1
-        self.new = self.new_rp and self.new_y # only publish if yaw roll and pitch values are all new
+        self.new = self.new_rp and self.new_dy # only publish if yaw roll and pitch values are all new
         self.new_rp = False
         self.new_y = False
 
         return self.depth_imu_msg
 
     def log_info(self) -> str:
-        return f"""Depth published: {round(self.depth_imu_msg.pitch,5)} & IMU data published: [Roll: {round(self.depth_imu_msg.roll,5)}, Pitch: {round(self.depth_imu_msg.pitch,5)}, Yaw: {round(self.depth_imu_msg.yaw, 5)}]"""
+        return f"""Depth published: {round(self.depth_imu_msg.depth,5)} & IMU data published: [Roll: {round(self.depth_imu_msg.roll,5)}, Pitch: {round(self.depth_imu_msg.pitch,5)}, Yaw: {round(self.depth_imu_msg.yaw, 5)}]"""
 
 class BatteryHandler(SensorHandler):
     def __init__(self, node: Node, log: bool):

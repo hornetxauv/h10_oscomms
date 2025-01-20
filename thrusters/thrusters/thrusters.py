@@ -21,6 +21,14 @@ thruster_idxs = {
     # "MR": 0,
     # "MM": 2,
     # 15/01/24 2nd attempt
+    # "FL": 6,
+    # "FR": 5,
+    # "RL": 2,
+    # "RR": 0,
+    # "ML": 4,
+    # "MR": 3,
+    # "MM": 1,
+    # 20/01/24 1st attempt
     "FL": 6,
     "FR": 5,
     "RL": 2,
@@ -40,13 +48,21 @@ thruster_reverse = {
     # "MR": -1,
     # "MM": -1,
     # 150125 pooltest
-    "FL": -1,
-    "FR": -1,
-    "RL": 1,
-    "RR": -1,
-    "ML": 1,
-    "MR": -1,
-    "MM": -1,
+    # "FL": -1,
+    # "FR": -1,
+    # "RL": 1,
+    # "RR": -1,
+    # "ML": 1,
+    # "MR": -1,
+    # "MM": -1,
+    # 200125 pooltest
+    "FL": 1,
+    "FR": 1,
+    "RL": -1,
+    "RR": 1,
+    "ML": -1,
+    "MR": 1,
+    "MM": 1,
 
 }
 # fmt: on
