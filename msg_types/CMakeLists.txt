@@ -16,6 +16,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DepthIMU.msg"
   "msg/Battery.msg"
+  "msg/Controls.msg"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
 )

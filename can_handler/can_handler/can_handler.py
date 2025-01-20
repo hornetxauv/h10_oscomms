@@ -3,7 +3,7 @@ import rclpy
 import can
 from rclpy.node import Node
 
-from can_handler.sensor_handlers import DepthIMUHandler, VoltageHandler, decode
+from can_handler.sensor_handlers import DepthIMUHandler, BatteryHandler, decode
 
 class CanReaderNode(Node):
     def __init__(self, bus: can.ThreadSafeBus, timer_period: float):
@@ -11,7 +11,7 @@ class CanReaderNode(Node):
         # self.imu_handler = IMUHandler(self, log=True)
         # self.depth_handler = DepthHandler(self, log=True)
         self.depth_imu_handler = DepthIMUHandler(self, log=True)
-        self.voltage_handler = VoltageHandler(self, log=True)
+        self.voltage_handler = BatteryHandler(self, log=True)
         
         self.buffered_reader = can.BufferedReader()
         _ = can.Notifier(bus=bus, listeners=[self.buffered_reader])
