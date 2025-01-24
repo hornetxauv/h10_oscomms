@@ -1,4 +1,8 @@
 import subprocess
+from control_panel.control_panel import create_control_panel, ControlPanelItem as CPI #this is a package in PL repo\
+import numpy as np
+import pandas as pd
+
 
 import can
 
@@ -65,6 +69,25 @@ thruster_reverse = {
     "MM": 1,
 
 }
+
+values = {
+    'FL': CPI(value=10, maximum=100),
+    'FR': CPI(value=10, maximum=100),
+    'RL': CPI(value=10, maximum=100),
+    'RR': CPI(value=10, maximum=100),
+    'ML': CPI(value=8, maximum=100),
+    'MR': CPI(value=10, maximum=100),
+    'MM': CPI(value=10, maximum=100),
+}
+#create_control_panel("thruster biases", values)
+
+thruster_biases = {'FL':values['FL'].value/100,   # Front Left
+                    'FR': values['FR'].value/100,    # Front Right
+                    'RL': values['RL'].value/100,    # Rear Left
+                    'RR': values['RR'].value/100,   # Rear Right
+                    'ML': values['ML'].value/100,    # Middle Left
+                    'MR': values['MR'].value/100,    # Middle Right
+                    'MM': values['MM'].value/100,}  # Middle Middle
 # fmt: on
 
 
@@ -85,14 +108,16 @@ class ThrusterControl:
         reversed thrusters.
         """
         correctedPWMs = [127, 127, 127, 127, 127, 127, 127]
-        for (thruster, thrusterPin), thrustValue in zip(
-            thruster_idxs.items(), self.thrustValues
+        for (thruster, thrusterPin), thrustValue, bias in zip(
+            thruster_idxs.items(), self.thrustValues, thruster_biases
         ):
             # If thruster is not reversed,
             if thruster_reverse[thruster] > 0:
                 correctedPWMs[thrusterPin] = thrustValue
             else:
                 correctedPWMs[thrusterPin] = 255 - thrustValue
+            #correctedPWMs[thrusterPin] = round(max(min(     (127 + (thruster_biases[thruster] * (thrustValue-127)  ))  , 255), 0))
+
 
         return correctedPWMs
 
