@@ -18,6 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Battery.msg"
   "msg/Controls.msg"
   "msg/PWMs.msg"
+  "msg/Movement.msg"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
 )
