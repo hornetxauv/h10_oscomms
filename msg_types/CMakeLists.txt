@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Controls.msg"
   "msg/PWMs.msg"
   "msg/Movement.msg"
+  "msg/PIDoutputs.msg"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
 )

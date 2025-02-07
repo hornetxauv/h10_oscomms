@@ -1,0 +1,12 @@
+float32 roll_sum
+float32 roll_prop
+float32 roll_deri
+float32 roll_inte
+float32 pitch_sum
+float32 pitch_prop
+float32 pitch_deri
+float32 pitch_inte
+float32 depth_sum
+float32 depth_prop
+float32 depth_deri
+float32 depth_inte

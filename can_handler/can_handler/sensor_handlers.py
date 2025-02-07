@@ -92,7 +92,7 @@ class DepthIMUHandler(SensorHandler):
         # Yaw
         elif msg_id == 20:
             new_yaw, new_depth = data
-            new_depth = -max(min((new_depth), 2.0), 0.0)
+            new_depth = -max(min((new_depth+0.75), 2.0), 0.0)
             if (self.depth_imu_msg.yaw != new_yaw):
                 self.depth_imu_msg.yaw = new_yaw
                 self.new_dy = True
