@@ -81,6 +81,8 @@ class DepthIMUHandler(SensorHandler):
         print(data)
         if msg_id == 19:
             new_pitch, new_roll = data
+            new_pitch = -new_pitch
+            new_roll = -new_roll
             if (self.depth_imu_msg.pitch != new_pitch):
                 self.depth_imu_msg.pitch = new_pitch
                 self.new_rp = True
@@ -92,7 +94,7 @@ class DepthIMUHandler(SensorHandler):
         # Yaw
         elif msg_id == 20:
             new_yaw, new_depth = data
-            new_depth = -max(min((new_depth+0.75), 2.0), 0.0)
+            new_depth = -max(min((new_depth+0.45), 2.0), 0.0)
             if (self.depth_imu_msg.yaw != new_yaw):
                 self.depth_imu_msg.yaw = new_yaw
                 self.new_dy = True
