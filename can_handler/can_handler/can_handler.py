@@ -10,7 +10,7 @@ class CanReaderNode(Node):
         super().__init__('can_reader')
         # self.imu_handler = IMUHandler(self, log=True)
         # self.depth_handler = DepthHandler(self, log=True)
-        self.depth_imu_handler = DepthIMUHandler(self, log=True)
+        self.depth_imu_handler = DepthIMUHandler(self, log=False)
         self.voltage_handler = BatteryHandler(self, log=True)
         
         self.buffered_reader = can.BufferedReader()

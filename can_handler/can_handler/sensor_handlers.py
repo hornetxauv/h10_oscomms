@@ -9,6 +9,9 @@ from msg_types.msg import DepthIMU, Battery
 from rclpy.node import Node
 from rclpy.publisher import Publisher
 
+from collections import deque
+import statistics
+
 import struct
 import time
 import binascii
@@ -74,6 +77,10 @@ class DepthIMUHandler(SensorHandler):
         self.new = False
         self.new_rp = False
         self.new_dy = False
+        self.last_yaw = 0
+
+        # rolling median
+        self.yaw_buffer = deque(maxlen=5)
 
     # def process_data(self, data: Union[int, tuple[int, int]], msg_id=0):
     def process_data(self, data, msg_id=0):
@@ -81,7 +88,7 @@ class DepthIMUHandler(SensorHandler):
         print(data)
         if msg_id == 19:
             new_pitch, new_roll = data
-            new_pitch = -new_pitch
+            new_pitch = -new_pitch # correct direction for rpy
             new_roll = -new_roll
             if (self.depth_imu_msg.pitch != new_pitch):
                 self.depth_imu_msg.pitch = new_pitch
@@ -94,15 +101,29 @@ class DepthIMUHandler(SensorHandler):
         # Yaw
         elif msg_id == 20:
             new_yaw, new_depth = data
+            new_yaw = -new_yaw
+            real_yaw_diff = new_yaw - self.last_yaw
+            if (real_yaw_diff < -180): # wrap around case turning right. values go from positive to negative
+                real_yaw_diff += 360
+            elif (real_yaw_diff > 180): # wrap around case turning left. values fgo from negative to positive
+                real_yaw_diff -= 360
+            self.last_yaw = new_yaw
+            # Add the new yaw difference to the rolling buffer
+            self.yaw_buffer.append(self.depth_imu_msg.yaw + real_yaw_diff)
+            # Compute the rolling median
+            rolling_median_yaw = statistics.median(self.yaw_buffer)
+            print(f"Last yaw:{self.last_yaw}, New yaw: {new_yaw}, Real yaw diff: {real_yaw_diff}")
             new_depth = -max(min((new_depth+0.45), 2.0), 0.0)
-            if (self.depth_imu_msg.yaw != new_yaw):
-                self.depth_imu_msg.yaw = new_yaw
+            if (real_yaw_diff != 0):
+                self.depth_imu_msg.yaw = rolling_median_yaw
                 self.new_dy = True
                 # self._update_timer["yaw"] = time.time()
             if (self.depth_imu_msg.depth != new_depth):
                 self.depth_imu_msg.depth = new_depth
                 self.new_dy = True
                 # self._update_timer["depth"] = time.time()
+
+            
 
         # curr_time = time.time()
         # for timestamp in self.depth_imu_msg.values():
