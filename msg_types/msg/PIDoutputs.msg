@@ -10,3 +10,7 @@ float32 depth_sum
 float32 depth_prop
 float32 depth_deri
 float32 depth_inte
+float32 yaw_sum
+float32 yaw_prop
+float32 yaw_deri
+float32 yaw_inte
