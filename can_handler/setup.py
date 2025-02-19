@@ -17,7 +17,7 @@ setup(
     maintainer_email='root@todo.todo',
     description='CAN bus handler for SBC to receive and send messages from microcontrollers',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    # tests_require=['pytest'],
     entry_points={
         'console_scripts': [
                 'can_handler = can_handler.can_handler:main',
