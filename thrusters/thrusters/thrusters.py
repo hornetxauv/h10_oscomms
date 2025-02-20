@@ -166,7 +166,15 @@ class ThrusterControl(Node):
 
     def killThrusters(self):
         print("Killing thrusters...")
-        self.setThrusters([127, 127, 127, 127, 127, 127, 127])
+        pwms = PWMs()
+        pwms.one = 127
+        pwms.two = 127
+        pwms.three = 127
+        pwms.four = 127
+        pwms.five = 127
+        pwms.six = 127
+        pwms.seven = 127
+        self.setThrusters(pwms)
         print("Killed thrusters.")
 
     def spinSingle(self, idx, value):
