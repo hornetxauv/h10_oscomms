@@ -2,6 +2,8 @@ import subprocess
 from control_panel.control_panel import create_control_panel, ControlPanelItem as CPI #this is a package in PL repo\
 import numpy as np
 import pandas as pd
+from rclpy.node import Node
+from msg_types.msg import PWMs
 
 
 import can
@@ -91,11 +93,20 @@ thruster_biases = {'FL':values['FL'].value/100,   # Front Left
 # fmt: on
 
 
-class ThrusterControl:
+class ThrusterControl(Node):
     def __init__(self):
+        super().__init__('thruster_control_node')
+
         self.thrustValues = [127, 127, 127, 127, 127, 127, 127]
         self.bus = can.interface.Bus(
             interface="socketcan", channel="can0", bitrate=500000
+        )
+
+        self.subscription_goal = self.create_subscription(
+            PWMs,
+            '/controls/PWMs',
+            self.setThrusters,
+            10
         )
 
     def correctPWMS(self):
@@ -118,14 +129,13 @@ class ThrusterControl:
                 correctedPWMs[thrusterPin] = 255 - thrustValue
             #correctedPWMs[thrusterPin] = round(max(min(     (127 + (thruster_biases[thruster] * (thrustValue-127)  ))  , 255), 0))
 
-
         return correctedPWMs
 
-    def setThrusters(self, thrustValues, logger):
-        self.thrustValues = thrustValues
-        self.waitTillSend(logger)
+    def setThrusters(self, msg):
+        self.thrustValues = [msg.one, msg.two, msg.three, msg.four, msg.five, msg.six, msg.seven]
+        self.waitTillSend(self.thrustValues)
 
-    def waitTillSend(self, logger):
+    def waitTillSend(self):
         max_tries = 50
         tries = 0
         while tries < max_tries:
@@ -138,19 +148,21 @@ class ThrusterControl:
                 )
                 self.bus.send(t_msg)
                 print(f"Sent PWMs: {correctedPWMs} to CAN.")
-                break
+                return
 
             except can.CanError as error:
                 tries += 1
                 print(error)
                 print("Message not sent.")
-                if logger:
-                    logger.error(f"ThrusterControl: Message not sent: {error}")
+                # if logger:
+                #     logger.error(f"ThrusterControl: Message not sent: {error}")
                 # Commented out flush buffer to check overload
                 # self.flush_buffer()
                 # print("Flushed buffer.")
-        if logger: 
-            logger.error(f"ThrusterControl: {max_tries} reached, abort sending message.")
+        # if logger: 
+        #     logger.error(f"ThrusterControl: {max_tries} reached, abort sending message.")
+        self.get_logger().info(f"ThrusterControl: {max_tries} reached, abort sending message.")
+
 
     def killThrusters(self):
         print("Killing thrusters...")
@@ -188,3 +200,17 @@ class ThrusterControl:
         # with self.bus as bus:
         #     for msg in bus:
         #         continue
+
+def main(args=None):
+    rclpy.init(args=args)
+    thruster_control_node = ThrusterControl()
+    try:
+        while True:
+            rclpy.spin(thruster_control_node)
+    finally:
+        thruster_control_node.killThrusters()
+        thruster_control_node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
