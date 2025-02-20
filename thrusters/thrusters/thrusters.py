@@ -121,12 +121,14 @@ class ThrusterControl:
 
         return correctedPWMs
 
-    def setThrusters(self, thrustValues):
+    def setThrusters(self, thrustValues, logger):
         self.thrustValues = thrustValues
-        self.waitTillSend()
+        self.waitTillSend(logger)
 
-    def waitTillSend(self):
-        while True:
+    def waitTillSend(self, logger):
+        max_tries = 50
+        tries = 0
+        while tries < max_tries:
             try:
                 # With statement needed to ensure that bus is closed properly
                 # https://stackoverflow.com/questions/73386339/close-bus-in-python-can
@@ -139,11 +141,16 @@ class ThrusterControl:
                 break
 
             except can.CanError as error:
+                tries += 1
                 print(error)
                 print("Message not sent.")
+                if logger:
+                    logger.error(f"ThrusterControl: Message not sent: {error}")
                 # Commented out flush buffer to check overload
                 # self.flush_buffer()
                 # print("Flushed buffer.")
+        if logger: 
+            logger.error(f"ThrusterControl: {max_tries} reached, abort sending message.")
 
     def killThrusters(self):
         print("Killing thrusters...")
