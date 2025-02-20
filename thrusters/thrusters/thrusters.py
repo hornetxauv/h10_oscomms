@@ -125,8 +125,8 @@ class ThrusterControl:
         self.thrustValues = thrustValues
         self.waitTillSend(logger)
 
-    def waitTillSend(self, logger):
-        max_tries = 50
+    def waitTillSend(self, logger=None):
+        max_tries = 5
         tries = 0
         while tries < max_tries:
             try:
