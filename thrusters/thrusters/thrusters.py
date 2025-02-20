@@ -64,8 +64,8 @@ thruster_reverse = {
     # 100225 pooltest
     "FL": -1,
     "FR": 1,
-    "RL": -1,
-    "RR": 1,
+    "RL": 1,
+    "RR": -1,
     "ML": -1,
     "MR": 1,
     "MM": 1,
