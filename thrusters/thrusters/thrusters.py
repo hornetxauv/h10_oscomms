@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from rclpy.node import Node
 from msg_types.msg import PWMs
-
+import rclpy
 
 import can
 
@@ -133,7 +133,7 @@ class ThrusterControl(Node):
 
     def setThrusters(self, msg):
         self.thrustValues = [msg.one, msg.two, msg.three, msg.four, msg.five, msg.six, msg.seven]
-        self.waitTillSend(self.thrustValues)
+        self.waitTillSend()
 
     def waitTillSend(self):
         max_tries = 5
