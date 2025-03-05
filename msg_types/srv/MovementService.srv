@@ -1,0 +1,4 @@
+msg_types/Movement movement
+float32 duration
+---
+bool success

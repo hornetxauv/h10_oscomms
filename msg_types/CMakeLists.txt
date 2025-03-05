@@ -19,8 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Controls.msg"
   "msg/PWMs.msg"
   "msg/Movement.msg"
-  "msg/PIDoutputs.msg"
-  "msg/YawInfo.msg"
+  "srv/MovementService.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
 )
@@ -36,5 +35,7 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
