@@ -66,7 +66,7 @@ def main(args=None):
 
     rclpy.init(args=args)
 
-    can_reader_node = CanReaderNode(can_bus, timer_period=0.05)
+    can_reader_node = CanReaderNode(can_bus, timer_period=0.01667)
 
     can_reader_thread = Thread(target=can_reader_node.read_buffer, daemon=True)
     can_reader_thread.start()
