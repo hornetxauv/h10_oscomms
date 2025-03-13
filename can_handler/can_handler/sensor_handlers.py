@@ -3,7 +3,7 @@ import numpy as np
 from abc import ABC, abstractmethod
 from typing import List, Union
 
-from std_msgs.msg import Float32, Header
+from std_msgs.msg import Float32, Header, Bool
 from geometry_msgs.msg import Vector3
 from msg_types.msg import DepthIMU, Battery
 from rclpy.node import Node
@@ -170,6 +170,26 @@ class BatteryHandler(SensorHandler):
     
     def log_info(self) -> str:
         return f"Voltage published: {self.battery_msg.voltage}, Current published: {self.battery_msg.current}"
+    
+class StartSwitchHandler(SensorHandler):
+    def __init__(self, node: Node, log: bool):
+        super().__init__(node, log)
+        self.start_msg = Bool()
+        self._publisher = self.node.create_publisher(Bool, "/command/start", 10)
+        self.new = False
+        self.start = False
+
+    def process_data(self):
+        self.new = True
+        self.start = not self.start
+        self.start_msg.data = self.start
+        #TODO Cutoff programs
+        
+    def message(self) -> Battery:
+        return self.start_msg
+    
+    def log_info(self) -> str:
+        return f"Start: {self.start_msg.data}"
 
 # class DepthHandler(SensorHandler):
 #     def __init__(self, node: Node, log: bool):

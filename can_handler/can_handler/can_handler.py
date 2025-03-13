@@ -3,7 +3,7 @@ import rclpy
 import can
 from rclpy.node import Node
 
-from can_handler.sensor_handlers import DepthIMUHandler, BatteryHandler, decode
+from can_handler.sensor_handlers import DepthIMUHandler, BatteryHandler, StartSwitchHandler, decode
 
 class CanReaderNode(Node):
     def __init__(self, bus: can.ThreadSafeBus, timer_period: float):
@@ -12,7 +12,7 @@ class CanReaderNode(Node):
         # self.depth_handler = DepthHandler(self, log=True)
         self.depth_imu_handler = DepthIMUHandler(self, log=False)
         self.voltage_handler = BatteryHandler(self, log=True)
-        # self.start_switch_handler = StartSwitchHandler(self, log=True)
+        self.start_switch_handler = StartSwitchHandler(self, log=True)
         
         self.buffered_reader = can.BufferedReader()
         _ = can.Notifier(bus=bus, listeners=[self.buffered_reader])
@@ -45,8 +45,7 @@ class CanReaderNode(Node):
                 self.depth_imu_handler.process_data(decoded_data, msg.arbitration_id)
             elif msg.arbitration_id == 22:
                 decoded_data = decode(msg.data, num_bytes=4)
-                print("Decoded 22:", decoded_data)
-                self.start = True
+                self.start_switch_handler.process_data()
             elif msg.arbitration_id == 23:
                 #TODO ultrasonic sensor
                 pass
@@ -63,7 +62,7 @@ class CanReaderNode(Node):
         # self.imu_handler.publish()
         # self.depth_handler.publish()
         self.depth_imu_handler.publish()
-        # self.start_switch_handler.publish()
+        self.start_switch_handler.publish()
 
     def publish_voltage(self):
         self.voltage_handler.publish()
