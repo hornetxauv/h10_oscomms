@@ -12,10 +12,12 @@ class CanReaderNode(Node):
         # self.depth_handler = DepthHandler(self, log=True)
         self.depth_imu_handler = DepthIMUHandler(self, log=False)
         self.voltage_handler = BatteryHandler(self, log=True)
+        # self.start_switch_handler = StartSwitchHandler(self, log=True)
         
         self.buffered_reader = can.BufferedReader()
         _ = can.Notifier(bus=bus, listeners=[self.buffered_reader])
         self.timer = self.create_timer(timer_period, self.publish_all)
+        self.start = False
 
     def read_buffer(self):
         while True:
@@ -27,19 +29,24 @@ class CanReaderNode(Node):
                 continue
 
             print("ID: ", msg.arbitration_id)
+            # self.get_logger().info(f"Start: {self.start}")
+            
+            # if (self.start): self.start_switch_handler.process_data()
+
             if msg.arbitration_id == 19:
                 decoded_data = decode(msg.data, num_bytes=4)
-                print("Decoded 19:", decoded_data)
+                # print("Decoded 19:", decoded_data )
                 self.depth_imu_handler.process_data(decoded_data, msg.arbitration_id)
             elif msg.arbitration_id == 20:
                 decoded_data = decode(msg.data, num_bytes=4)
-                print("Decoded 20:", decoded_data)
+                # print("Decoded 20:", decoded_data)
                 # self.imu_handler.process_data(decoded_data[0], msg.arbitration_id)
                 # self.depth_handler.process_data(decoded_data[1], msg.arbitration_id)
                 self.depth_imu_handler.process_data(decoded_data, msg.arbitration_id)
             elif msg.arbitration_id == 22:
                 decoded_data = decode(msg.data, num_bytes=4)
-                self.voltage_handler.process_data(decoded_data)
+                print("Decoded 22:", decoded_data)
+                self.start = True
             elif msg.arbitration_id == 23:
                 #TODO ultrasonic sensor
                 pass
@@ -56,6 +63,7 @@ class CanReaderNode(Node):
         # self.imu_handler.publish()
         # self.depth_handler.publish()
         self.depth_imu_handler.publish()
+        # self.start_switch_handler.publish()
 
     def publish_voltage(self):
         self.voltage_handler.publish()
@@ -66,7 +74,7 @@ def main(args=None):
 
     rclpy.init(args=args)
 
-    can_reader_node = CanReaderNode(can_bus, timer_period=0.01667)
+    can_reader_node = CanReaderNode(can_bus, timer_period=0.03333)
 
     can_reader_thread = Thread(target=can_reader_node.read_buffer, daemon=True)
     can_reader_thread.start()
