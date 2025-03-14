@@ -15,8 +15,12 @@ import statistics
 import struct
 import time
 import binascii
+import json
 
 # from control_panel.control_panel import create_control_panel, ControlPanelItem as CPI #this is a package in PL repo
+
+with open("/home/aa/h10_workspace/src/oscomms/can_handler/can_handler/imu_zero.json", "r") as f:
+    IMU_ZERO = json.load(f)
 
 def decode(data, num_bytes):
     """
@@ -139,6 +143,29 @@ class DepthIMUHandler(SensorHandler):
 
     # def reset_sensors(self):
     #     pass #TODO
+
+    def boundAngle(self, angle):
+        """
+        Bound angle to [-pi, pi]
+        """
+        angle = angle % (2 * np.pi)
+        if angle < -np.pi:
+            return 2 * np.pi + angle
+        elif angle > np.pi:
+            return angle - 2 * np.pi
+        else:
+            return angle
+
+    def correctIMU(self, currAtt):
+        """
+        Correct IMU by subtracting imuZero.
+        """
+        corrAtt = []
+        for att, zero in zip(currAtt, IMU_ZERO):
+            corrAtt.append(np.rad2deg(self.boundAngle(np.deg2rad(att) - np.deg2rad(zero))))
+
+        return corrAtt
+
     
     def message(self) -> DepthIMU:
         # Fill in the header
@@ -149,6 +176,14 @@ class DepthIMUHandler(SensorHandler):
         self.new_rp = False
         self.new_y = False
 
+        # # TODO: Race condition
+        # currAtt = [self.depth_imu_msg.roll, self.depth_imu_msg.pitch, self.depth_imu_msg.yaw]
+        # correctedAtt = self.correctIMU(currAtt)
+
+        # self.depth_imu_msg.roll = correctedAtt[0]
+        # self.depth_imu_msg.pitch = correctedAtt[1]
+        # self.depth_imu_msg.yaw = correctedAtt[2]
+        
         return self.depth_imu_msg
 
     def log_info(self) -> str:
