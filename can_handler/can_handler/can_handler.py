@@ -62,7 +62,7 @@ class CanReaderNode(Node):
         # self.imu_handler.publish()
         # self.depth_handler.publish()
         self.depth_imu_handler.publish()
-        self.start_switch_handler.publish()
+        # self.start_switch_handler.publish()
 
     def publish_voltage(self):
         self.voltage_handler.publish()

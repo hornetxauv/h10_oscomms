@@ -17,6 +17,8 @@ import time
 import binascii
 import json
 
+from can_handler.imu_zero import main as imu_zero_main
+
 # from control_panel.control_panel import create_control_panel, ControlPanelItem as CPI #this is a package in PL repo
 
 with open("/home/aa/h10_workspace/src/oscomms/can_handler/can_handler/imu_zero.json", "r") as f:
@@ -215,10 +217,15 @@ class StartSwitchHandler(SensorHandler):
         self.start = False
 
     def process_data(self):
-        self.new = True
+        if not self.start:
+            self.node.get_logger().info("Running IMU Zero Calibration...")
+            imu_zero_main(self.node) #call imu zeroing using self.node so that rclpy can run using self.node
+            self.node.get_logger().info("IMU Zero Calibration Complete.")
+
         self.start = not self.start
+        self.new = True
         self.start_msg.data = self.start
-        #TODO Cutoff programs
+        self.publish() #somehow it needs this otherwise movement_controller never starts...
         
     def message(self) -> Battery:
         return self.start_msg
